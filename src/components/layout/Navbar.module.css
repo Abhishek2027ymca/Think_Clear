@@ -1,0 +1,563 @@
+.header {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  /* position: sticky;
+  top: 0; */
+  /* position: fixed;
+  top: 0; */
+}
+
+
+
+.nav {
+  width: 100%;
+  padding: 19px 60px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.logoText {
+  color: #0D1B4B;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+/* Desktop Nav */
+
+.desktopNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+  list-style: none;
+}
+.NavFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.navLink {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+  font-size:  15px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.15s ease;
+  margin-left: 11px;
+}
+
+.navLink:hover {
+  color: #0D1B4B;
+}
+
+.activeLink {
+  background-color: #060A30;
+  color: white;
+  font-size:  15px;
+  font-weight: 500;
+  padding: 10px  15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Buttons */
+
+.desktopButton {
+  display: block;
+}
+
+.bookButton {
+  background-color: #060A30;
+  width: 135px;
+  color: white;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.bookButton:hover {
+  background-color: #162260;
+}
+
+/* Mobile */
+
+.mobileMenuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: #0D1B4B;
+  cursor: pointer;
+}
+
+.mobileMenu {
+  display: none;
+  background-color: white;
+  border-top: 1px solid #f3f4f6;
+  padding: 0 1.5rem 1rem;
+}
+
+.mobileNavList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+  padding-top: 0.75rem;
+}
+
+.mobileNavLink {
+  display: block;
+  color: #4b5563;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.mobileNavLink:hover {
+  color: #0D1B4B;
+}
+
+.mobileActiveLink {
+  display: block;
+  background-color: #0D1B4B;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.mobileBookButton {
+  width: 100%;
+  margin-top: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #0D1B4B;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .desktopNav,
+  .desktopButton {
+    display: none;
+  }
+
+  .mobileMenuButton {
+    display: block;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+
+  .nav {
+    padding: 0 1rem;
+  }
+}
+
+
+/* =========================
+   1600px
+========================= */
+
+/* @media (max-width: 1600px) {
+
+  .nav {
+    padding: 19px 60px;
+  }
+
+  .logoText {
+    font-size: 2vw;
+  }
+
+  .desktopNav {
+    gap: 1.3rem;
+  }
+
+  .NavFlex {
+    gap: 2vw;
+  }
+
+  .bookButton {
+    width: 9vw;
+    min-width: 130px;
+  }
+} */
+
+
+/* =========================
+   1440px
+========================= */
+
+@media (max-width: 1440px) {
+
+  .nav {
+    padding: 19px 60px;
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .logoText {
+    font-size: 28px;
+  }
+
+  .desktopNav {
+    gap: 1rem;
+  }
+
+  .NavFlex {
+    gap: 35px;
+  }
+
+  .navLink,
+  .activeLink {
+    font-size: 14px;
+  }
+
+  .bookButton {
+    width: 130px;
+    font-size: 15px;
+  }
+}
+
+
+/* =========================
+   1200px
+========================= */
+
+@media (max-width: 1200px) {
+
+  .nav {
+    padding: 19px 60px;
+  }
+
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logoText {
+    font-size: 26px;
+  }
+
+  .desktopNav {
+    gap: 0.8rem;
+  }
+
+  .NavFlex {
+    gap: 22px;
+  }
+
+  .navLink,
+  .activeLink {
+    font-size: 13px;
+  }
+
+  .activeLink {
+    padding: 9px 13px;
+  }
+
+  .bookButton {
+    width: 120px;
+    height: 42px;
+    font-size: 14px;
+  }
+}
+
+
+/* =========================
+   1024px
+========================= */
+
+@media (max-width: 1024px) {
+
+  .nav {
+    padding: 14px 3%;
+    height: auto;
+  }
+
+  .logoText {
+    font-size: 24px;
+  }
+
+  .desktopNav {
+    gap: 0.7rem;
+  }
+
+  .NavFlex {
+    gap: 18px;
+  }
+
+  .navLink,
+  .activeLink {
+    font-size: 12px;
+  }
+
+  .bookButton {
+    width: 110px;
+    height: 40px;
+    font-size: 13px;
+  }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .desktopNav,
+  .desktopButton {
+    display: none;
+  }
+
+  .mobileMenuButton {
+    display: block;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+
+  .nav {
+    padding: 15px 4%;
+    height: auto;
+  }
+
+  .NavFlex {
+    gap: 12px;
+  }
+
+  .logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  .logoText {
+    font-size: 22px;
+  }
+
+  .mobileMenuButton svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .mobileMenu {
+    padding: 0 4% 1rem;
+  }
+
+  .mobileNavList {
+    gap: 0.7rem;
+  }
+
+  .mobileNavLink,
+  .mobileActiveLink {
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+
+  .mobileBookButton {
+    height: 45px;
+    font-size: 15px;
+  }
+}
+
+
+/* =========================
+   MOBILE LARGE
+========================= */
+
+@media (max-width: 768px) {
+
+  .nav {
+    padding: 14px 20px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logoText {
+    font-size: 20px;
+  }
+
+  .mobileMenuButton svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .mobileMenu {
+    padding: 0 20px 1rem;
+  }
+
+  .mobileNavLink,
+  .mobileActiveLink {
+    font-size: 14px;
+    padding: 11px 13px;
+  }
+
+  .mobileBookButton {
+    height: 44px;
+    font-size: 14px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 576px) {
+
+  .nav {
+    padding: 12px 16px;
+  }
+
+  .logoWrapper {
+    gap: 0.4rem;
+  }
+
+  .logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .logoText {
+    font-size: 18px;
+  }
+
+  .mobileMenuButton svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .mobileMenu {
+    padding: 0 16px 1rem;
+  }
+
+  .mobileNavLink,
+  .mobileActiveLink {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .mobileBookButton {
+    height: 42px;
+    font-size: 13px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 420px) {
+
+  .nav {
+    padding: 10px 14px;
+  }
+
+  .logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .logoText {
+    font-size: 16px;
+  }
+
+  .mobileMenuButton svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .mobileMenu {
+    padding: 0 14px 1rem;
+  }
+
+  .mobileNavLink,
+  .mobileActiveLink {
+    font-size: 12px;
+    padding: 9px 11px;
+  }
+
+  .mobileBookButton {
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
+
+/* =========================
+   EXTRA SMALL
+========================= */
+
+@media (max-width: 320px) {
+
+  .nav {
+    padding: 10px 10px;
+  }
+
+  .logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .logoText {
+    font-size: 14px;
+  }
+
+  .mobileMenuButton svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .mobileNavLink,
+  .mobileActiveLink {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+
+  .mobileBookButton {
+    height: 38px;
+    font-size: 11px;
+  }
+}
