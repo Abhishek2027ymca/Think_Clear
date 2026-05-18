@@ -1,0 +1,430 @@
+.HomeAbout {
+    width: 100%;
+    padding: 50px 60px;
+}
+
+.HomeAboutText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.HomeAboutText h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.HomeColor {
+    background: linear-gradient(90deg, #060A30 0%, #1C2259 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.HomeLine {
+    margin-top: 10px;
+    width: 150px;
+    height: 2px;
+    background-color: #060A30;
+}
+
+.HomeAboutFlex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.HomeAboutRight{
+    margin-top: 70px;
+}
+.HomeAboutRight h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+.HomeAboutPara{
+    margin-top: 25px;
+}
+.HomeAboutPara p{
+    font-size: 16px;
+    max-width: 600px;
+    color: rgba(0, 0, 0, 0.753);
+}
+.HomeAboutPara1{
+    margin-top: 15px;
+}
+.HomeAboutRight button{
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #060A30;
+    border: 1px solid #060A30;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.3s ease-in;
+}
+
+.HomeAboutRight button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: width 0.4s ease;
+}
+.HomeAboutRight button:hover::before {
+    width: 100%;
+}
+
+.HomeAboutRight button:hover {
+    color: #151B54;
+}
+.HomeAboutImage{
+    margin-top: 70px;
+    width: 500px;
+    height: 450px;
+}
+
+.HomeAbout img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   1600px
+========================= */
+@media (max-width: 1600px) {
+
+    .HomeAbout {
+        padding: 50px 60px;
+    }
+
+    .HomeAboutText h1 {
+        font-size:  50px;
+    }
+
+    .HomeAboutRight h1 {
+        font-size:  48px;
+        line-height: 1.3;
+    }
+
+    .HomeAboutPara p {
+        max-width: 43vw;
+        font-size: 1.1vw;
+        line-height: 1.8;
+    }
+
+    .HomeAboutImage {
+        width: 42vw;
+        height:33vw;
+    }
+
+    .HomeAboutRight button {
+        padding: 12px  20px;
+        font-size: 18px;
+    }
+}
+
+
+/* =========================
+   1440px
+========================= */
+@media (max-width: 1440px) {
+
+    .HomeAbout {
+        padding: 50px 60px;
+    }
+
+    .HomeAboutText h1 {
+        font-size: 46px;
+    }
+
+    .HomeAboutFlex {
+        gap: 40px;
+    }
+
+    .HomeAboutRight h1 {
+        font-size: 44px;
+    }
+
+    .HomeAboutPara p {
+        font-size: 15px;
+        max-width: 580px;
+        line-height: 1.8;
+    }
+
+    .HomeAboutImage {
+        width: 490px;
+        height: 430px;
+    }
+
+    .HomeAboutRight button {
+        font-size: 16px;
+    }
+}
+
+
+/* =========================
+   1280px
+========================= */
+@media (max-width: 1280px) {
+
+    .HomeAbout {
+        padding: 50px 55px;
+    }
+
+    .HomeAboutFlex {
+        gap: 35px;
+    }
+
+    .HomeAboutRight h1 {
+        font-size:40px;
+    }
+
+    .HomeAboutPara p {
+        font-size: 15px;
+        max-width: 540px;
+    }
+
+    .HomeAboutImage {
+        width: 510px;
+        height: 465px;
+    }
+
+    .HomeAboutRight button {
+        padding: 10px 18px;
+        font-size: 15px;
+    }
+}
+
+
+/* =========================
+   1024px
+========================= */
+@media (max-width: 1024px) {
+
+    .HomeAbout {
+        padding: 45px 50px;
+    }
+
+    .HomeAboutFlex {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .HomeAboutRight {
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .HomeAboutRight h1 {
+        font-size: 34px;
+    }
+
+    .HomeAboutPara {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .HomeAboutPara p {
+        max-width: 90%;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .HomeAboutImage {
+        margin-top: 30px;
+        width: 430px;
+        height: 390px;
+    }
+
+    .HomeAboutRight button {
+        margin-top: 30px;
+    }
+}
+
+
+/* =========================
+   900px
+========================= */
+@media (max-width: 900px) {
+
+    .HomeAbout {
+        padding: 40px 40px;
+    }
+
+    .HomeAboutText h1 {
+        font-size: 34px;
+    }
+
+    .HomeAboutRight h1 {
+        font-size: 30px;
+    }
+
+    .HomeAboutPara p {
+        font-size: 14px;
+    }
+
+    .HomeAboutImage {
+        width: 390px;
+        height: 350px;
+    }
+}
+
+
+/* =========================
+   768px
+========================= */
+@media (max-width: 768px) {
+
+    .HomeAbout {
+        padding: 40px 5%;
+    }
+
+    .HomeAboutText h1 {
+        font-size: 30px;
+    }
+
+    .HomeLine {
+        width: 120px;
+    }
+
+    .HomeAboutRight h1 {
+        font-size: 28px;
+        line-height: 1.4;
+    }
+
+    .HomeAboutPara {
+        margin-top: 20px;
+    }
+
+    .HomeAboutPara p {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .HomeAboutImage {
+        width: 340px;
+        height: 310px;
+    }
+
+    .HomeAboutRight button {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+}
+
+
+/* =========================
+   600px
+========================= */
+@media (max-width: 600px) {
+
+    .HomeAbout {
+        padding: 35px 20px;
+    }
+
+    .HomeAboutText h1 {
+        font-size: 26px;
+    }
+
+    .HomeLine {
+        width: 100px;
+    }
+
+    .HomeAboutRight h1 {
+        font-size: 24px;
+    }
+
+    .HomeAboutPara p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .HomeAboutImage {
+        width: 300px;
+        height: 270px;
+    }
+
+    .HomeAboutRight button {
+        font-size: 14px;
+        padding: 11px 18px;
+    }
+}
+
+
+/* =========================
+   480px
+========================= */
+@media (max-width: 480px) {
+
+    .HomeAbout {
+        padding: 30px 16px;
+    }
+
+    .HomeAboutText h1 {
+        font-size: 23px;
+    }
+
+    .HomeAboutRight h1 {
+        font-size: 21px;
+    }
+
+    .HomeAboutPara p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .HomeAboutImage {
+        width: 100%;
+        height: 240px;
+    }
+
+    .HomeAboutRight button {
+        width: 100%;
+        font-size: 13px;
+    }
+}
+
+
+/* =========================
+   380px
+========================= */
+@media (max-width: 380px) {
+
+    .HomeAboutText h1 {
+        font-size: 20px;
+    }
+
+    .HomeAboutRight h1 {
+        font-size: 18px;
+    }
+
+    .HomeAboutPara p {
+        font-size: 11px;
+    }
+
+    .HomeAboutImage {
+        height: 210px;
+    }
+
+    .HomeAboutRight button {
+        font-size: 12px;
+        padding: 10px 14px;
+    }
+}

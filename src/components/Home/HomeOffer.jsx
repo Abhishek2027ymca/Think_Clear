@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './HomeOffer.module.css'
 import Inter from '../../assets/images/IB.jpeg'
 import IGCSE from '../../assets/images/IGCSE.jpeg'
-import Level from  '../../assets/images/Level.jpeg'
+import Level from '../../assets/images/Level.jpeg'
 import { motion } from 'framer-motion';
 import { User } from 'lucide-react';
 
@@ -46,7 +46,10 @@ function HomeOffer() {
                 <div className={styles.CourseContainer}>
                     {
                         courseItems.map((item) => (
-                            <div className={styles.CourseCard} key={item.id}>
+                            <motion.div className={styles.CourseCard} key={item.id} initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }} overlay
+                                transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
                                 <img src={item.img} alt={item.title} />
 
                                 <div className={styles.CourseContent}>
@@ -55,7 +58,7 @@ function HomeOffer() {
 
                                     <button>View More</button>
                                 </div>
-                            </div>
+                            </motion.div>
                         ))
                     }
                 </div>

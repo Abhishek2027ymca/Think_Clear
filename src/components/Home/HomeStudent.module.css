@@ -1,0 +1,471 @@
+.HomeStudent{
+    padding: 50px 60px;
+}
+
+/* text */
+
+.HomeText {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.HomeText h1 {
+    font-size: 43px;
+    font-weight: 500;
+}
+
+.HomeLine {
+    margin-top: 10px;
+    width: 150px;
+    height: 2px;
+    background-color: #060A30;
+}
+
+.HomeColor {
+    background: linear-gradient(90deg, #060A30 0%, #1C2259 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.HomeText p {
+    margin-top: 25px;
+    max-width: 640px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.776);
+}
+
+/* cards */
+
+.ReviewContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.ReviewCard{
+    background: #fff;
+    border: 8px solid #11154D;
+    border-radius: 10px;
+    padding: 19px;
+}
+
+.ReviewCard h3{
+    font-size: 24px;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 16px;
+}
+
+.Description{
+    font-size: 13px;
+    line-height: 1.5;
+    color: #555;
+    max-width: 290px;
+    margin-bottom: 25px;
+}
+
+.BottomSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Profile img{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Profile h4{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    color: #111;
+}
+
+.Profile span{
+    font-size: 12px;
+    color: #666;
+}
+
+.Rating{
+    text-align: right;
+}
+
+.Stars{
+    display: flex;
+    gap: 2px;
+    justify-content: flex-end;
+    margin-bottom: 3px;
+}
+
+.Rating span{
+    font-size: 12px;
+    color: #666;
+}
+
+/* Responsive */
+
+/* =========================
+   1600px
+========================= */
+@media (max-width: 1600px) {
+
+    .HomeStudent{
+        padding: 50px 60px;
+    }
+
+    .HomeText h1{
+        font-size: 50px;
+    }
+
+    .HomeText p{
+        font-size: 1.1vw;
+        max-width: 47vw;
+    }
+
+    .ReviewContainer{
+        gap: 1.5vw;
+    }
+
+    .ReviewCard{
+        padding: 1.4vw;
+    }
+
+    .ReviewCard h3{
+        font-size: 1.5vw;
+    }
+
+    .Description{
+        font-size: 1.1vw;
+        max-width: 25vw;
+    }
+}
+
+
+/* =========================
+   1440px
+========================= */
+@media (max-width: 1440px){
+
+    .HomeStudent{
+        padding: 50px 60px;
+    }
+
+    .HomeText h1{
+        font-size: 40px;
+    }
+
+    .HomeText p{
+        font-size: 15px;
+        max-width: 620px;
+    }
+
+    .ReviewContainer{
+        gap: 22px;
+    }
+
+    .ReviewCard{
+        padding: 18px;
+    }
+
+    .ReviewCard h3{
+        font-size: 22px;
+    }
+
+    .Description{
+        font-size: 13px;
+        max-width: 280px;
+    }
+}
+
+
+/* =========================
+   1280px
+========================= */
+@media (max-width: 1280px){
+
+    .HomeStudent{
+        padding: 50px 5%;
+    }
+
+    .ReviewContainer{
+        gap: 20px;
+    }
+
+    .ReviewCard h3{
+        font-size: 21px;
+    }
+
+    .Description{
+        max-width: 100%;
+    }
+}
+
+
+/* =========================
+   1024px
+========================= */
+@media (max-width: 1024px){
+
+    .HomeText h1{
+        font-size: 36px;
+    }
+
+    .HomeText p{
+        font-size: 15px;
+        max-width: 90%;
+    }
+
+    .ReviewContainer{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .ReviewCard{
+        padding: 20px;
+    }
+
+    .ReviewCard h3{
+        font-size: 20px;
+    }
+
+    .Description{
+        font-size: 13px;
+        line-height: 1.7;
+    }
+}
+
+
+/* =========================
+   900px
+========================= */
+@media (max-width: 900px){
+
+    .HomeStudent{
+        padding: 45px 5%;
+    }
+
+    .HomeText h1{
+        font-size: 34px;
+    }
+
+    .HomeText p{
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .ReviewContainer{
+        gap: 18px;
+    }
+
+    .ReviewCard{
+        border-width: 6px;
+    }
+
+    .ReviewCard h3{
+        font-size: 19px;
+    }
+}
+
+
+/* =========================
+   768px
+========================= */
+@media (max-width: 768px){
+
+    .HomeStudent{
+        padding: 40px 5%;
+    }
+
+    .HomeText{
+        align-items: center;
+        text-align: center;
+    }
+
+    .HomeText h1{
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .HomeText p{
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .HomeLine{
+        width: 120px;
+    }
+
+    .ReviewContainer{
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+
+    .ReviewCard{
+        padding: 20px;
+    }
+
+    .BottomSection{
+        gap: 15px;
+    }
+}
+
+
+/* =========================
+   600px
+========================= */
+@media (max-width: 600px){
+
+    .HomeStudent{
+        padding: 35px 20px;
+    }
+
+    .HomeText h1{
+        font-size: 26px;
+    }
+
+    .HomeText p{
+        font-size: 13px;
+    }
+
+    .ReviewCard{
+        padding: 18px;
+        border-width: 5px;
+    }
+
+    .ReviewCard h3{
+        font-size: 18px;
+    }
+
+    .Description{
+        font-size: 12px;
+        margin-bottom: 22px;
+    }
+
+    .BottomSection{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .Rating{
+        text-align: left;
+    }
+
+    .Stars{
+        justify-content: flex-start;
+    }
+}
+
+
+/* =========================
+   480px
+========================= */
+@media (max-width: 480px){
+
+    .HomeStudent{
+        padding: 30px 16px;
+    }
+
+    .HomeText h1{
+        font-size: 23px;
+    }
+
+    .HomeText p{
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .ReviewCard{
+        padding: 16px;
+        border-width: 4px;
+    }
+
+    .ReviewCard h3{
+        font-size: 17px;
+    }
+
+    .Description{
+        font-size: 11px;
+    }
+
+    .Profile img{
+        width: 38px;
+        height: 38px;
+    }
+
+    .Profile h4{
+        font-size: 13px;
+    }
+
+    .Profile span{
+        font-size: 11px;
+    }
+
+    .Rating span{
+        font-size: 11px;
+    }
+}
+
+
+/* =========================
+   380px
+========================= */
+@media (max-width: 380px){
+
+    .HomeText h1{
+        font-size: 20px;
+    }
+
+    .HomeText p{
+        font-size: 11px;
+    }
+
+    .ReviewCard{
+        padding: 14px;
+    }
+
+    .ReviewCard h3{
+        font-size: 15px;
+    }
+
+    .Description{
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    .Profile{
+        gap: 8px;
+    }
+
+    .Profile img{
+        width: 34px;
+        height: 34px;
+    }
+
+    .Profile h4{
+        font-size: 12px;
+    }
+
+    .Profile span,
+    .Rating span{
+        font-size: 10px;
+    }
+}
+
+
+
+

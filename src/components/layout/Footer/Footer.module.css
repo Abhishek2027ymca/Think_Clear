@@ -1,0 +1,55 @@
+.Footer {
+    width: 100%;
+    background-color: #0D1132;
+    color: white;
+}
+
+/* text */
+
+.FooterName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.FooterLine {
+    margin-top: 10px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.FooterLines {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.FooterName h1 {
+    font-size: 114px;
+    text-transform: capitalize;
+}
+
+/* Footer */
+
+.Footerwidth{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+}
+
+/* TextPara */
+.FooterClass{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.FooterImgText{
+    display: flex;
+    gap: 10px;
+}

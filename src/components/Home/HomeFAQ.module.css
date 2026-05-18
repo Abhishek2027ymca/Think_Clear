@@ -1,0 +1,545 @@
+.HomeFAQ {
+    width: 100%;
+    padding: 50px 60px;
+}
+
+/* text */
+
+.HomeText {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.HomeText h1 {
+    font-size: 43px;
+    font-weight: 500;
+}
+
+.HomeLine {
+    margin-top: 10px;
+    width: 150px;
+    height: 2px;
+    background-color: #060A30;
+}
+
+.HomeColor {
+    background: linear-gradient(90deg, #060A30 0%, #1C2259 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.HomeText p {
+    margin-top: 25px;
+    max-width: 640px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.776);
+}
+
+/* carder */
+
+
+.FaqContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 30px;
+    margin-top: 50px;
+    align-items: start;
+}
+
+.FaqImage {
+    width: 540px;
+    height: 477px;
+}
+
+
+.FaqImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* FAQ Content */
+
+.FaqContent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.FaqCard {
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    padding: 10px 15px;
+    background: white;
+    transition: 0.3s ease;
+}
+
+/* Active Card */
+
+.Active {
+    background: #1B1F63;
+    color: white;
+    border-color: #1B1F63;
+}
+
+.Active {
+    background: #1B1F63;
+    color: white;
+    border-color: #1B1F63;
+}
+
+.Active .Question h3 {
+    color: white;
+}
+
+.Active .AnswerWrapper p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.Active h3,
+.Active p {
+    color: white;
+}
+
+/* Question */
+
+.Question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.Question h3 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #111;
+    transition: 0.3s;
+}
+
+/* Icon */
+
+.IconBox {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 50%;
+    background: #1B1F63;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Active .IconBox {
+    background: white;
+    color: #1B1F63;
+}
+
+/* Answer Animation */
+
+.AnswerWrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.ShowAnswer {
+    max-height: 200px;
+    margin-top: 18px;
+}
+
+.AnswerWrapper p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive */
+
+/* =========================================
+   1600px
+========================================= */
+@media (max-width: 1600px) {
+
+    .HomeFAQ{
+        padding: 50px 60px;
+    }
+
+    .HomeText h1{
+        font-size: 50px;
+    }
+
+    .HomeText p{
+        font-size: 16px;
+        max-width: 42vw;
+    }
+
+    .FaqContainer{
+        gap: 2vw;
+    }
+
+    .FaqImage{
+        width: 43vw;
+        height: 34.5vw;
+    }
+
+    .FaqCard{
+        padding: 0.9vw 1vw;
+    }
+
+    .Question h3{
+        font-size: 1.1vw;
+    }
+
+    .AnswerWrapper p{
+        font-size: 0.92vw;
+    }
+
+    .IconBox{
+        width: 3.3vw;
+        height: 3.3vw;
+        min-width: 3.3vw;
+    }
+}
+
+
+/* =========================================
+   1440px
+========================================= */
+@media (max-width: 1440px) {
+
+    .HomeFAQ{
+        padding: 50px 60px;
+    }
+
+    .HomeText h1{
+        font-size: 45px;
+    }
+
+    .HomeText p{
+        font-size: 16px;
+        max-width: 620px;
+    }
+
+    .FaqImage{
+        width: 500px;
+        height: 450px;
+    }
+
+    .Question h3{
+        font-size: 16px;
+    }
+
+    .AnswerWrapper p{
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================
+   1280px
+========================================= */
+@media (max-width: 1280px) {
+
+    .HomeFAQ{
+        padding: 50px 60px;
+    }
+
+    .FaqContainer{
+        gap: 25px;
+    }
+
+    .FaqImage{
+        width: 527px;
+        height: 469.5px;
+    }
+    .HomeText h1{
+        font-size: 38px;
+    }
+
+    .HomeText p{
+        font-size: 15px;
+    }
+
+    .Question h3{
+        font-size: 15px;
+    }
+
+    .IconBox{
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+    }
+}
+
+
+/* =========================================
+   1024px
+========================================= */
+@media (max-width: 1024px) {
+
+    .HomeFAQ{
+        padding: 45px 55px;
+    }
+
+    .HomeText{
+        align-items: center;
+        text-align: center;
+    }
+
+    .HomeText h1{
+        font-size: 36px;
+    }
+
+    .HomeText p{
+        max-width: 90%;
+        font-size: 15px;
+    }
+
+    .FaqContainer{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 45px;
+    }
+
+    .FaqImage{
+        width: 70%;
+        height: auto;
+    }
+
+    .FaqContent{
+        width: 100%;
+    }
+
+    .Question h3{
+        font-size: 16px;
+    }
+
+    .AnswerWrapper p{
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================
+   900px
+========================================= */
+@media (max-width: 900px) {
+
+    .HomeText h1{
+        font-size: 34px;
+    }
+
+    .HomeText p{
+        font-size: 14px;
+    }
+
+    .FaqImage{
+        width: 80%;
+    }
+
+    .FaqCard{
+        padding: 12px 14px;
+    }
+
+    .Question h3{
+        font-size: 15px;
+    }
+
+    .IconBox{
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+    }
+}
+
+
+/* =========================================
+   768px
+========================================= */
+@media (max-width: 768px) {
+
+    .HomeFAQ{
+        padding: 40px 5%;
+    }
+
+    .HomeText h1{
+        font-size: 31px;
+        line-height: 1.3;
+    }
+
+    .HomeText p{
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .FaqContainer{
+        margin-top: 40px;
+        gap: 35px;
+    }
+
+    .FaqImage{
+        width: 100%;
+        height: auto;
+    }
+
+    .FaqCard{
+        border-radius: 10px;
+    }
+
+    .Question{
+        gap: 15px;
+    }
+
+    .Question h3{
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .AnswerWrapper p{
+        font-size: 13px;
+    }
+
+    .IconBox{
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+}
+
+
+/* =========================================
+   600px
+========================================= */
+@media (max-width: 600px) {
+
+    .HomeFAQ{
+        padding: 35px 20px;
+    }
+
+    .HomeText h1{
+        font-size: 28px;
+    }
+
+    .HomeText p{
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .FaqContainer{
+        margin-top: 35px;
+    }
+
+    .FaqCard{
+        padding: 10px 12px;
+    }
+
+    .Question h3{
+        font-size: 14px;
+    }
+
+    .AnswerWrapper p{
+        font-size: 12px;
+    }
+
+    .IconBox{
+        width: 38px;
+        height: 38px;
+        min-width: 38px;
+    }
+
+    .ShowAnswer{
+        margin-top: 14px;
+    }
+}
+
+
+/* =========================================
+   480px
+========================================= */
+@media (max-width: 480px) {
+
+    .HomeFAQ{
+        padding: 30px 16px;
+    }
+
+    .HomeText h1{
+        font-size: 24px;
+    }
+
+    .HomeText p{
+        font-size: 12px;
+    }
+
+    .HomeLine{
+        width: 110px;
+    }
+
+    .FaqContainer{
+        gap: 28px;
+    }
+
+    .FaqCard{
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .Question{
+        gap: 12px;
+    }
+
+    .Question h3{
+        font-size: 13px;
+    }
+
+    .AnswerWrapper p{
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .IconBox{
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+    }
+}
+
+
+/* =========================================
+   380px
+========================================= */
+@media (max-width: 380px) {
+
+    .HomeText h1{
+        font-size: 21px;
+    }
+
+    .HomeText p{
+        font-size: 11px;
+    }
+
+    .FaqCard{
+        padding: 9px;
+    }
+
+    .Question h3{
+        font-size: 12px;
+    }
+
+    .AnswerWrapper p{
+        font-size: 10px;
+    }
+
+    .IconBox{
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+    }
+}
