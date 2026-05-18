@@ -1,0 +1,409 @@
+.AboutProfile {
+    padding: 50px 60px;
+    width: 100%;
+}
+
+/*  text */
+.HomeAboutText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.HomeAboutText h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.HomeColor {
+    background: linear-gradient(90deg, #060A30 0%, #1C2259 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.HomeLine {
+    margin-top: 10px;
+    width: 150px;
+    height: 2px;
+    background-color: #060A30;
+}
+
+/*flex  */
+
+.HomeProfileFlex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 60px;
+}
+
+/* para   */
+.AboutTextPa {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.AboutText {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.AboutText h1 {
+    font-size: 39px;
+    font-weight: 500;
+}
+
+.AboutText p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.696);
+}
+
+.para {
+    max-width: 580px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.637);
+
+}
+
+/* iMG */
+
+.ImageWrapper {
+    width: 510px;
+    height: 338px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+}
+
+.ImageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 28px;
+    display: block;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+/* Hover Animation */
+
+.ImageWrapper:hover img{
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   1600px
+========================= */
+@media (max-width: 1600px){
+
+    .AboutProfile{
+        padding: 50px 60px;
+    }
+    .HomeAboutText h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+    .HomeProfileFlex{
+        gap: 60px;
+    }
+
+    .ImageWrapper{
+        width: 42vw;
+        height: 24vw;
+    }
+
+    .AboutText h1{
+        font-size: 40px;
+    }
+
+    .para{
+        max-width: 43vw;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+}
+
+
+/* =========================
+   1440px
+========================= */
+@media (max-width: 1440px){
+
+    .AboutProfile{
+        padding: 50px 60px;
+    }
+
+    .HomeAboutText h1{
+        font-size: 42px;
+    }
+
+    .HomeProfileFlex{
+        gap: 50px;
+    }
+
+    .ImageWrapper{
+        width: 480px;
+        height: 330px;
+    }
+
+    .AboutText h1{
+        font-size: 38px;
+    }
+
+    .para{
+        max-width: 540px;
+        font-size: 14px;
+    }
+}
+
+
+/* =========================
+   1280px
+========================= */
+@media (max-width: 1280px){
+
+    .AboutProfile{
+        padding: 50px 50px;
+    }
+
+    .HomeProfileFlex{
+        gap: 40px;
+        align-items: center;
+    }
+
+    .ImageWrapper{
+        width: 530px;
+        height: 305px;
+    }
+
+    .AboutText h1{
+        font-size: 40px;
+    }
+
+    .para{
+        max-width: 590px;
+        font-size: 14px;
+    }
+}
+
+
+/* =========================
+   1024px
+========================= */
+@media (max-width: 1024px){
+
+    .AboutProfile{
+        padding: 50px 5%;
+    }
+
+    .HomeProfileFlex{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .AboutTextPa{
+        align-items: center;
+        text-align: center;
+    }
+
+    .AboutText{
+        align-items: center;
+    }
+
+    .ImageWrapper{
+        width: 75%;
+        height: auto;
+    }
+
+    .AboutText h1{
+        font-size: 36px;
+    }
+
+    .para{
+        max-width: 90%;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+}
+
+
+/* =========================
+   900px
+========================= */
+@media (max-width: 900px){
+
+    .HomeAboutText h1{
+        font-size: 36px;
+    }
+
+    .ImageWrapper{
+        width: 82%;
+    }
+
+    .AboutText h1{
+        font-size: 32px;
+    }
+
+    .para{
+        font-size: 14px;
+    }
+}
+
+
+/* =========================
+   768px
+========================= */
+@media (max-width: 768px){
+
+    .AboutProfile{
+        padding: 45px 5%;
+    }
+
+    .HomeAboutText h1{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .HomeLine{
+        width: 120px;
+    }
+
+    .HomeProfileFlex{
+        margin-top: 45px;
+        gap: 40px;
+    }
+
+    .ImageWrapper{
+        width: 100%;
+        border-radius: 22px;
+    }
+
+    .ImageWrapper img{
+        border-radius: 22px;
+    }
+
+    .AboutText{
+        gap: 10px;
+    }
+
+    .AboutText h1{
+        font-size: 28px;
+    }
+
+    .para{
+        max-width: 100%;
+        font-size: 13px;
+    }
+}
+
+
+/* =========================
+   600px
+========================= */
+@media (max-width: 600px){
+
+    .AboutProfile{
+        padding: 40px 20px;
+    }
+
+    .HomeAboutText h1{
+        font-size: 28px;
+    }
+
+    .ImageWrapper{
+        width: 100%;
+        border-radius: 18px;
+    }
+
+    .ImageWrapper img{
+        border-radius: 18px;
+    }
+
+    .AboutTextPa{
+        gap: 22px;
+    }
+
+    .AboutText h1{
+        font-size: 24px;
+    }
+
+    .para{
+        font-size: 12px;
+        line-height: 1.7;
+    }
+}
+
+
+/* =========================
+   480px
+========================= */
+@media (max-width: 480px){
+
+    .AboutProfile{
+        padding: 35px 16px;
+    }
+
+    .HomeAboutText h1{
+        font-size: 24px;
+    }
+
+    .HomeLine{
+        width: 100px;
+    }
+
+    .ImageWrapper{
+        border-radius: 16px;
+    }
+
+    .ImageWrapper img{
+        border-radius: 16px;
+    }
+
+    .AboutText h1{
+        font-size: 22px;
+    }
+
+    .para{
+        font-size: 11px;
+        line-height: 1.7;
+    }
+}
+
+
+/* =========================
+   380px
+========================= */
+@media (max-width: 380px){
+
+    .HomeAboutText h1{
+        font-size: 21px;
+    }
+
+    .AboutText h1{
+        font-size: 20px;
+    }
+
+    .para{
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    .ImageWrapper{
+        border-radius: 14px;
+    }
+
+    .ImageWrapper img{
+        border-radius: 14px;
+    }
+}
