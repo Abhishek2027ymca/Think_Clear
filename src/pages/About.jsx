@@ -3,6 +3,7 @@ import AboutBanner from '../components/About/AboutBanner';
 import AboutFounder from '../components/About/AboutFounder';
 import AboutProfile from '../components/About/AboutProfile';
 import AboutTeaching from '../components/About/AboutTeaching';
+import AboutEducation from '../components/About/AboutEducation';
 
 function About() {
     return ( 
@@ -11,6 +12,7 @@ function About() {
         <AboutFounder />
         <AboutProfile />
         <AboutTeaching />
+        <AboutEducation />
         </>
      );
 }

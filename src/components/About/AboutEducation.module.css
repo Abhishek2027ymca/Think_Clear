@@ -1,0 +1,497 @@
+.AboutEducation {
+    width: 100%;
+    padding: 50px 60px;
+}
+
+/* Text */
+
+.HomeAboutText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.HomeAboutText h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.HomeColor {
+    background: linear-gradient(90deg, #060A30 0%, #1C2259 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.HomeLine {
+    margin-top: 10px;
+    width: 150px;
+    height: 2px;
+    background-color: #060A30;
+}
+
+/* flex */
+.HomeEducFlex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 60px;
+}
+
+/* Img */
+
+.ImageWrapper {
+    width: 530px;
+    height: 490px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+}
+
+.ImageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 28px;
+    display: block;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+/* Hover Animation */
+
+.ImageWrapper:hover img {
+    transform: scale(1.08);
+}
+
+/* Text */
+
+.AboutTextPa {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.AboutText {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.AboutText h1 {
+    font-size: 39px;
+    font-weight: 500;
+}
+
+.AboutText p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.696);
+}
+
+.para {
+    max-width: 570px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.637);
+
+}
+
+/* DemoButton.module.css */
+
+.demoBtn {
+    position: relative;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: #060A30;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+/* Icon Circle */
+.iconBox {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 50%;
+    background: white;
+    color: #060A30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 2px;
+    transition: all 0.4s ease;
+}
+
+/* Text */
+.text {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+/* Hover Effect */
+.demoBtn:hover .iconBox {
+    left: calc(100% - 50px);
+}
+
+.demoBtn:hover .text {
+    transform: translateX(-18px);
+}
+
+
+
+/* =========================
+   1600px
+========================= */
+@media (max-width: 1600px) {
+
+    .AboutEducation{
+        padding: 50px  60px;
+    }
+
+    .HomeEducFlex{
+        gap: 4%;
+        align-items: center;
+    }
+    .HomeAboutText h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+    
+
+    .ImageWrapper{
+        width: 47%;
+        height: auto;
+    }
+
+    .AboutTextPa{
+        width: 56%;
+    }
+
+    .AboutText h1{
+        font-size: 40px;
+    }
+
+    .para{
+        max-width: 100%;
+        font-size: 16px;
+    }
+}
+
+
+/* =========================
+   1440px
+========================= */
+@media (max-width: 1440px) {
+
+    .AboutEducation{
+        padding: 50px 60px;
+    }
+
+    .HomeAboutText h1{
+        font-size: 42px;
+    }
+
+    .AboutText h1{
+        font-size: 36px;
+    }
+
+    .para{
+        font-size: 14px;
+    }
+
+    .ImageWrapper{
+        width: 480px;
+        height: 450px;
+    }
+}
+
+
+/* =========================
+   1280px
+========================= */
+@media (max-width: 1280px) {
+
+    .AboutEducation{
+        padding: 50px 50px;
+    }
+
+    .HomeEducFlex{
+        gap: 40px;
+    }
+
+    .AboutTextPa{
+        gap: 24px;
+    }
+
+    .AboutText h1{
+        font-size: 39px;
+    }
+
+    .para{
+        font-size: 15px;
+    }
+    .para {
+    max-width: 540px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.637);
+
+}
+
+    .ImageWrapper{
+        width: 490px;
+        height: 470px;
+    }
+
+    .demoBtn{
+        width: 210px;
+        height: 48px;
+    }
+}
+
+
+/* =========================
+   1024px
+========================= */
+@media (max-width: 1024px) {
+
+    .AboutEducation{
+        padding: 50px 5%;
+    }
+
+    .HomeEducFlex{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .AboutTextPa{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .AboutText{
+        align-items: center;
+    }
+
+    .AboutText h1{
+        font-size: 38px;
+    }
+
+    .para{
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .ImageWrapper{
+        width: 70%;
+        height: auto;
+    }
+}
+
+
+/* =========================
+   900px
+========================= */
+@media (max-width: 900px) {
+
+    .HomeAboutText h1{
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .AboutText h1{
+        font-size: 34px;
+    }
+
+    .para{
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .ImageWrapper{
+        width: 80%;
+    }
+}
+
+
+/* =========================
+   768px
+========================= */
+@media (max-width: 768px) {
+
+    .AboutEducation{
+        padding: 50px 5%;
+    }
+
+    .HomeAboutText h1{
+        font-size: 32px;
+    }
+
+    .AboutText h1{
+        font-size: 30px;
+    }
+
+    .HomeEducFlex{
+        margin-top: 45px;
+        gap: 40px;
+    }
+
+    .AboutTextPa{
+        gap: 22px;
+    }
+
+    .para{
+        font-size: 14px;
+    }
+
+    .ImageWrapper{
+        width: 100%;
+        height: auto;
+        border-radius: 22px;
+    }
+
+    .demoBtn{
+        width: 200px;
+        height: 46px;
+    }
+
+    .text{
+        font-size: 14px;
+    }
+}
+
+
+/* =========================
+   600px
+========================= */
+@media (max-width: 600px) {
+
+    .AboutEducation{
+        padding: 40px 20px;
+    }
+
+    .HomeAboutText h1{
+        font-size: 28px;
+    }
+
+    .AboutText h1{
+        font-size: 26px;
+    }
+
+    .para{
+        font-size: 13px;
+    }
+
+    .ImageWrapper{
+        border-radius: 18px;
+    }
+
+    .demoBtn{
+        width: 190px;
+        height: 45px;
+    }
+
+    .iconBox{
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+    }
+}
+
+
+/* =========================
+   480px
+========================= */
+@media (max-width: 480px) {
+
+    .AboutEducation{
+        padding: 35px 16px;
+    }
+
+    .HomeAboutText h1{
+        font-size: 24px;
+    }
+
+    .AboutText h1{
+        font-size: 22px;
+    }
+
+    .HomeLine{
+        width: 120px;
+    }
+
+    .para{
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .ImageWrapper{
+        border-radius: 16px;
+    }
+
+    .demoBtn{
+        width: 180px;
+        height: 44px;
+    }
+
+    .text{
+        font-size: 13px;
+    }
+
+    .iconBox{
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+    }
+}
+
+
+/* =========================
+   380px
+========================= */
+@media (max-width: 380px) {
+
+    .HomeAboutText h1{
+        font-size: 21px;
+    }
+
+    .AboutText h1{
+        font-size: 20px;
+    }
+
+    .para{
+        font-size: 11px;
+    }
+
+    .demoBtn{
+        width: 170px;
+        height: 42px;
+    }
+
+    .text{
+        font-size: 12px;
+    }
+
+    .iconBox{
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+}

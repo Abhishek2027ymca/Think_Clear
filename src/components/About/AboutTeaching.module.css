@@ -114,6 +114,10 @@
     .HomeTeachingFlex{
         gap: 60px;
     }
+    .HomeAboutText h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
 
     .ImageWrapper{
         width: 45vw;
