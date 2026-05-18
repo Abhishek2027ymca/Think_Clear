@@ -7,6 +7,7 @@ import AboutEducation from '../components/About/AboutEducation';
 import AboutGrowing from '../components/About/AboutGrowing';
 import AboutLearning from '../components/About/AboutLearning';
 import AboutCards from '../components/About/AboutCards';
+import AboutPurpose from '../components/About/AboutPurpose';
 
 function About() {
     return ( 
@@ -19,6 +20,7 @@ function About() {
         <AboutGrowing />
         <AboutLearning />
         <AboutCards />
+        <AboutPurpose />
         </>
      );
 }

@@ -1,0 +1,428 @@
+.AboutPurpose{
+    width: 100%;
+    padding: 50px 60px;
+}
+
+/* text */
+
+
+.HomeText {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.HomeText h1 {
+    font-size: 43px;
+    font-weight: 500;
+}
+
+.HomeLine {
+    margin-top: 10px;
+    width: 150px;
+    height: 2px;
+    background-color: #060A30;
+}
+
+.HomeColor {
+    background: linear-gradient(90deg, #060A30 0%, #1C2259 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.HomeText p {
+    margin-top: 25px;
+    max-width: 590px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.776);
+}
+
+/* cards */
+
+.CardContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 60px;
+}
+
+.Card{
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 20px;
+    background: white;
+    transition: 0.3s ease;
+}
+
+.Card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+/* Icon */
+
+.IconBox{
+    width: 60px;
+    height: 60px;
+
+    border-radius: 6px;
+
+    background: #060A30;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 14px;
+}
+
+/* Title */
+
+.Card h3{
+    font-size: 24px;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 12px;
+}
+
+/* Description */
+
+.Card p{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666;
+    max-width: 95%;
+}
+
+/* Responsive */
+
+@media(max-width: 768px){
+
+    .CardContainer{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================
+   1600px
+========================= */
+@media (max-width: 1600px) {
+
+    .AboutPurpose{
+        padding: 50px 60px;
+    }
+
+    .HomeText h1{
+        font-size: 50px;
+    }
+
+    .HomeText p{
+        max-width: 48%;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .CardContainer{
+        gap: 1.3vw;
+    }
+
+    .Card{
+        padding: 1.5vw;
+    }
+
+    .Card h3{
+        font-size: 24px;
+    }
+
+    .Card p{
+        font-size: 16px;
+    }
+}
+
+
+/* =========================
+   1440px
+========================= */
+@media (max-width: 1440px) {
+
+    .AboutPurpose{
+        padding: 50px 60px;
+    }
+
+    .HomeText h1{
+        font-size: 42px;
+    }
+
+    .HomeText p{
+        max-width: 600px;
+        font-size: 15px;
+    }
+
+    .Card{
+        padding: 22px;
+    }
+
+    .Card h3{
+        font-size: 22px;
+    }
+
+    .Card p{
+        font-size: 14px;
+    }
+}
+
+
+/* =========================
+   1280px
+========================= */
+@media (max-width: 1280px) {
+
+    .AboutPurpose{
+        padding: 50px 50px;
+    }
+
+    .CardContainer{
+        gap: 20px;
+    }
+
+    .Card{
+        padding: 20px;
+    }
+
+    .IconBox{
+        width: 56px;
+        height: 56px;
+    }
+
+    .Card h3{
+        font-size: 20px;
+    }
+
+    .Card p{
+        font-size: 13px;
+    }
+}
+
+
+/* =========================
+   1024px
+========================= */
+@media (max-width: 1024px) {
+
+    .AboutPurpose{
+        padding: 50px 5%;
+    }
+
+    .HomeText{
+        align-items: center;
+        text-align: center;
+    }
+
+    .HomeText h1{
+        font-size: 38px;
+    }
+
+    .HomeText p{
+        max-width: 90%;
+        font-size: 15px;
+    }
+
+    .CardContainer{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .Card{
+        padding: 24px;
+    }
+}
+
+
+/* =========================
+   900px
+========================= */
+@media (max-width: 900px) {
+
+    .HomeText h1{
+        font-size: 34px;
+    }
+
+    .HomeText p{
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .Card h3{
+        font-size: 19px;
+    }
+
+    .Card p{
+        font-size: 13px;
+    }
+}
+
+
+/* =========================
+   768px
+========================= */
+@media (max-width: 768px) {
+
+    .AboutPurpose{
+        padding: 50px 5%;
+    }
+
+    .HomeText h1{
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .HomeText p{
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .CardContainer{
+        grid-template-columns: 1fr;
+        margin-top: 45px;
+        gap: 24px;
+    }
+
+    .Card{
+        padding: 22px;
+    }
+
+    .IconBox{
+        width: 58px;
+        height: 58px;
+    }
+
+    .Card h3{
+        font-size: 22px;
+    }
+
+    .Card p{
+        font-size: 14px;
+        max-width: 100%;
+    }
+}
+
+
+/* =========================
+   600px
+========================= */
+@media (max-width: 600px) {
+
+    .AboutPurpose{
+        padding: 40px 20px;
+    }
+
+    .HomeText h1{
+        font-size: 27px;
+    }
+
+    .HomeText p{
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .Card{
+        padding: 20px;
+    }
+
+    .IconBox{
+        width: 54px;
+        height: 54px;
+    }
+
+    .Card h3{
+        font-size: 20px;
+    }
+
+    .Card p{
+        font-size: 13px;
+    }
+}
+
+
+/* =========================
+   480px
+========================= */
+@media (max-width: 480px) {
+
+    .AboutPurpose{
+        padding: 35px 16px;
+    }
+
+    .HomeText h1{
+        font-size: 24px;
+    }
+
+    .HomeLine{
+        width: 120px;
+    }
+
+    .HomeText p{
+        font-size: 12px;
+    }
+
+    .CardContainer{
+        margin-top: 35px;
+    }
+
+    .Card{
+        padding: 18px;
+        border-radius: 10px;
+    }
+
+    .IconBox{
+        width: 50px;
+        height: 50px;
+    }
+
+    .Card h3{
+        font-size: 18px;
+    }
+
+    .Card p{
+        font-size: 12px;
+        line-height: 1.7;
+    }
+}
+
+
+/* =========================
+   380px
+========================= */
+@media (max-width: 380px) {
+
+    .HomeText h1{
+        font-size: 21px;
+    }
+
+    .HomeText p{
+        font-size: 11px;
+    }
+
+    .Card{
+        padding: 16px;
+    }
+
+    .IconBox{
+        width: 46px;
+        height: 46px;
+    }
+
+    .Card h3{
+        font-size: 16px;
+    }
+
+    .Card p{
+        font-size: 11px;
+    }
+}
