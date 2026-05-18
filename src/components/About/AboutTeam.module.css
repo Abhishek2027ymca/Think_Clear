@@ -1,0 +1,409 @@
+.AboutTeam{
+    padding: 50px 60px;
+    width: 100%;
+}
+
+/* text */
+
+.HomeAboutText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.HomeAboutText h1 {
+    font-size:  39px;
+    font-weight: 500;
+}
+
+.HomeColor {
+    background: linear-gradient(90deg, #060A30 0%, #1C2259 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.HomeLine {
+    margin-top: 10px;
+    width: 150px;
+    height: 2px;
+    background-color: #060A30;
+}
+
+/* flex */
+.AboutTeamFlex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 60px;
+}
+
+
+/* para */
+
+
+.AboutTextPa {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.AboutText {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.AboutText h1 {
+    font-size: 39px;
+    font-weight: 500;
+}
+
+
+.para {
+    max-width: 520px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.637);
+
+}
+
+
+/* image */
+
+.ImageWrapper {
+    width: 515px;
+    height: 370px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+}
+
+.ImageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 28px;
+    display: block;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+/* Hover Animation */
+
+.ImageWrapper:hover img{
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   1600px
+========================= */
+@media (max-width: 1600px) {
+
+    .AboutTeam{
+        padding: 50px 60px;
+    }
+
+    .HomeAboutText h1{
+        font-size: 40px;
+    }
+
+    .AboutTeamFlex{
+        gap: 4%;
+        margin-top: 4%;
+    }
+
+    .AboutText h1{
+        font-size: 2.4vw;
+    }
+
+    .para{
+        max-width: 43vw;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .ImageWrapper{
+        width: 45vw;
+        height: 24vw;
+    }
+
+}
+
+
+/* =========================
+   1440px
+========================= */
+@media (max-width: 1440px) {
+
+    .AboutTeam{
+        padding: 50px 55px;
+    }
+
+    .HomeAboutText h1{
+        font-size: 38px;
+    }
+
+    .AboutText h1{
+        font-size: 37px;
+    }
+
+    .para{
+        max-width: 500px;
+        font-size: 14px;
+    }
+
+    .ImageWrapper{
+        width: 480px;
+        height: 350px;
+    }
+
+}
+
+
+/* =========================
+   1280px
+========================= */
+@media (max-width: 1280px) {
+
+    .AboutTeam{
+        padding: 50px 60px;
+    }
+
+    .AboutTeamFlex{
+        gap: 35px;
+    }
+
+    .AboutText h1{
+        font-size: 35px;
+    }
+
+    .para{
+        max-width: 550px;
+        font-size: 14px;
+    }
+    .AboutTeamFlex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 60px;
+}
+
+    .ImageWrapper{
+        width: 570px;
+        height: 350px;
+    }
+
+}
+
+
+/* =========================
+   1024px
+========================= */
+@media (max-width: 1024px) {
+
+    .AboutTeam{
+        padding: 45px 5%;
+    }
+
+    .HomeAboutText h1{
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .AboutTeamFlex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .AboutTextPa{
+        align-items: center;
+        text-align: center;
+    }
+
+    .AboutText h1{
+        font-size: 32px;
+    }
+
+    .para{
+        max-width: 90%;
+        font-size: 15px;
+    }
+
+    .ImageWrapper{
+        width: 75%;
+        height: auto;
+    }
+
+}
+
+
+/* =========================
+   900px
+========================= */
+@media (max-width: 900px) {
+
+    .HomeAboutText h1{
+        font-size: 32px;
+    }
+
+    .AboutText h1{
+        font-size: 30px;
+    }
+
+    .para{
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .ImageWrapper{
+        width: 85%;
+    }
+
+}
+
+
+/* =========================
+   768px
+========================= */
+@media (max-width: 768px) {
+
+    .AboutTeam{
+        padding: 40px 5%;
+    }
+
+    .HomeAboutText h1{
+        font-size: 28px;
+    }
+
+    .AboutText h1{
+        font-size: 27px;
+        line-height: 1.4;
+    }
+
+    .AboutTextPa{
+        gap: 22px;
+    }
+
+    .para{
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .ImageWrapper{
+        width: 100%;
+        height: auto;
+        border-radius: 22px;
+    }
+
+    .ImageWrapper img{
+        border-radius: 22px;
+    }
+
+}
+
+
+/* =========================
+   600px
+========================= */
+@media (max-width: 600px) {
+
+    .AboutTeam{
+        padding: 35px 20px;
+    }
+
+    .HomeAboutText h1{
+        font-size: 25px;
+    }
+
+    .AboutText h1{
+        font-size: 24px;
+    }
+
+    .para{
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .ImageWrapper{
+        border-radius: 18px;
+    }
+
+    .ImageWrapper img{
+        border-radius: 18px;
+    }
+
+}
+
+
+/* =========================
+   480px
+========================= */
+@media (max-width: 480px) {
+
+    .AboutTeam{
+        padding: 30px 16px;
+    }
+
+    .HomeLine{
+        width: 120px;
+    }
+
+    .HomeAboutText h1{
+        font-size: 22px;
+    }
+
+    .AboutText h1{
+        font-size: 21px;
+    }
+
+    .AboutTextPa{
+        gap: 18px;
+    }
+
+    .para{
+        font-size: 12px;
+    }
+
+    .ImageWrapper{
+        border-radius: 16px;
+    }
+
+    .ImageWrapper img{
+        border-radius: 16px;
+    }
+
+}
+
+
+/* =========================
+   380px
+========================= */
+@media (max-width: 380px) {
+
+    .HomeAboutText h1{
+        font-size: 20px;
+    }
+
+    .AboutText h1{
+        font-size: 18px;
+    }
+
+    .para{
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .HomeLine{
+        width: 100px;
+    }
+
+}
