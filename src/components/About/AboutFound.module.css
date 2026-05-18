@@ -1,16 +1,17 @@
-.AboutFounder{
+.AboutFounder {
     width: 100%;
     padding: 50px 60px;
     margin-top: 6rem;
 }
 
-.HomeAboutText{
+.HomeAboutText {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.HomeAboutText h1{
+
+.HomeAboutText h1 {
     font-size: 40px;
     font-weight: 500;
 }
@@ -30,7 +31,7 @@
 
 /* flex */
 
-.AboutFounderFlex{
+.AboutFounderFlex {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -42,13 +43,13 @@
 
 /* Image */
 
-.ImageWrapper{
+.ImageWrapper {
     width: 520px;
     height: 388px;
     position: relative;
 }
 
-.ImageWrapper img{
+.ImageWrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -58,23 +59,23 @@
 
 /* Floating Card */
 
-.FloatingCard{
+.FloatingCard {
     position: absolute;
     right: -20px;
     bottom: -25px;
 
     width: 230px;
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
 
     padding: 14px 16px;
     border-radius: 10px;
 
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 
     animation: floatCard 3s ease-in-out infinite;
 }
 
-.FloatingCard p{
+.FloatingCard p {
     font-size: 11px;
     color: #666;
 
@@ -84,17 +85,17 @@
 
 /* Floating Animation */
 
-@keyframes floatCard{
+@keyframes floatCard {
 
-    0%{
+    0% {
         transform: translateY(0px);
     }
 
-    50%{
+    50% {
         transform: translateY(-12px);
     }
 
-    100%{
+    100% {
         transform: translateY(0px);
     }
 
@@ -102,7 +103,7 @@
 
 
 /* text */
-.AboutTextPa{
+.AboutTextPa {
     display: flex;
     justify-content: start;
     align-items: start;
@@ -110,23 +111,25 @@
     gap: 20px;
 }
 
-.AboutText{
+.AboutText {
     display: flex;
     justify-content: start;
     align-items: start;
     flex-direction: column;
     gap: 13px;
 }
-.AboutText h1{
+
+.AboutText h1 {
     font-size: 39px;
     font-weight: 500;
 }
-.AboutText p{
+
+.AboutText p {
     font-size: 18px;
     color: rgba(0, 0, 0, 0.696);
 }
 
-.para{
+.para {
     max-width: 560px;
     font-size: 15px;
     color: rgba(0, 0, 0, 0.637);
@@ -138,36 +141,36 @@
 /* =========================
    1600px
 ========================= */
-@media (max-width: 1600px){
+@media (max-width: 1600px) {
 
-    .AboutFounder{
-        padding: 50px  60px;
+    .AboutFounder {
+        padding: 50px 60px;
     }
 
-    .AboutFounderFlex{
+    .AboutFounderFlex {
         gap: 60px;
     }
 
-    .ImageWrapper{
+    .ImageWrapper {
         width: 43vw;
         height: 26vw;
     }
 
-    .FloatingCard{
+    .FloatingCard {
         width: 240px;
     }
 
-    .AboutText h1{
-        font-size:  45px;
+    .AboutText h1 {
+        font-size: 45px;
     }
 
-    .AboutText p{
+    .AboutText p {
         font-size: 18px;
     }
 
-    .para{
+    .para {
         max-width: 43vw;
-        font-size:  16px;
+        font-size: 16px;
         line-height: 1.7;
     }
 }
@@ -176,33 +179,41 @@
 /* =========================
    1440px
 ========================= */
-@media (max-width: 1440px){
+@media (max-width: 1440px) {
 
-    .AboutFounder{
+    .AboutFounder {
         padding: 50px 60px;
     }
 
-    .HomeAboutText h1{
+    .HomeAboutText h1 {
         font-size: 42px;
     }
 
-    .ImageWrapper{
+    .ImageWrapper {
         width: 500px;
     }
 
-    .AboutFounderFlex{
+    .AboutFounderFlex {
         gap: 50px;
     }
 
-    .AboutText h1{
+    .AboutText h1 {
         font-size: 38px;
     }
 
-    .AboutText p{
+    .FloatingCard p {
+        font-size: 11px;
+        color: #666;
+
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+    }
+
+    .AboutText p {
         font-size: 17px;
     }
 
-    .para{
+    .para {
         max-width: 540px;
         font-size: 14px;
     }
@@ -212,37 +223,45 @@
 /* =========================
    1280px
 ========================= */
-@media (max-width: 1280px){
+@media (max-width: 1280px) {
 
-    .AboutFounder{
+    .AboutFounder {
         padding: 50px 60px;
     }
 
-    .AboutFounderFlex{
+    .AboutFounderFlex {
         gap: 45px;
         align-items: center;
     }
 
-    .ImageWrapper{
+    .ImageWrapper {
         width: 560px;
-        height:  390px;
+        height: 390px;
     }
 
-    .FloatingCard{
-        width: 220px;
+    .FloatingCard p {
+        font-size: 11px;
+        color: #666;
+
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+    }
+
+    .FloatingCard {
+        width: 250px;
         right: -15px;
         bottom: -18px;
     }
 
-    .AboutText h1{
+    .AboutText h1 {
         font-size: 40px;
     }
 
-    .AboutText p{
+    .AboutText p {
         font-size: 17px;
     }
 
-    .para{
+    .para {
         max-width: 510px;
         font-size: 14px;
     }
@@ -252,48 +271,48 @@
 /* =========================
    1024px
 ========================= */
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
 
-    .AboutFounder{
+    .AboutFounder {
         padding: 50px 5%;
         margin-top: 4rem;
     }
 
-    .AboutFounderFlex{
+    .AboutFounderFlex {
         flex-direction: column;
         align-items: center;
         gap: 70px;
     }
 
-    .ImageWrapper{
+    .ImageWrapper {
         width: 75%;
         height: auto;
     }
 
-    .FloatingCard{
+    .FloatingCard {
         width: 250px;
         right: -10px;
         bottom: -20px;
     }
 
-    .AboutTextPa{
+    .AboutTextPa {
         align-items: center;
         text-align: center;
     }
 
-    .AboutText{
+    .AboutText {
         align-items: center;
     }
 
-    .AboutText h1{
+    .AboutText h1 {
         font-size: 36px;
     }
 
-    .AboutText p{
+    .AboutText p {
         font-size: 17px;
     }
 
-    .para{
+    .para {
         max-width: 90%;
         font-size: 15px;
         line-height: 1.8;
@@ -304,29 +323,29 @@
 /* =========================
    900px
 ========================= */
-@media (max-width: 900px){
+@media (max-width: 900px) {
 
-    .HomeAboutText h1{
+    .HomeAboutText h1 {
         font-size: 36px;
     }
 
-    .ImageWrapper{
+    .ImageWrapper {
         width: 82%;
     }
 
-    .FloatingCard{
+    .FloatingCard {
         width: 230px;
     }
 
-    .AboutText h1{
+    .AboutText h1 {
         font-size: 32px;
     }
 
-    .AboutText p{
+    .AboutText p {
         font-size: 15px;
     }
 
-    .para{
+    .para {
         font-size: 14px;
     }
 }
@@ -335,54 +354,54 @@
 /* =========================
    768px
 ========================= */
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    .AboutFounder{
+    .AboutFounder {
         padding: 45px 5%;
     }
 
-    .HomeAboutText h1{
+    .HomeAboutText h1 {
         font-size: 32px;
         text-align: center;
     }
 
-    .HomeLine{
+    .HomeLine {
         width: 120px;
     }
 
-    .AboutFounderFlex{
+    .AboutFounderFlex {
         margin-top: 40px;
         gap: 60px;
     }
 
-    .ImageWrapper{
+    .ImageWrapper {
         width: 100%;
     }
 
-    .FloatingCard{
+    .FloatingCard {
         width: 210px;
         padding: 12px 14px;
         right: 10px;
         bottom: -20px;
     }
 
-    .FloatingCard p{
+    .FloatingCard p {
         font-size: 10px;
     }
 
-    .AboutText{
+    .AboutText {
         gap: 10px;
     }
 
-    .AboutText h1{
+    .AboutText h1 {
         font-size: 28px;
     }
 
-    .AboutText p{
+    .AboutText p {
         font-size: 14px;
     }
 
-    .para{
+    .para {
         max-width: 100%;
         font-size: 13px;
     }
@@ -392,35 +411,35 @@
 /* =========================
    600px
 ========================= */
-@media (max-width: 600px){
+@media (max-width: 600px) {
 
-    .AboutFounder{
+    .AboutFounder {
         padding: 40px 20px;
     }
 
-    .HomeAboutText h1{
+    .HomeAboutText h1 {
         font-size: 28px;
     }
 
-    .ImageWrapper{
+    .ImageWrapper {
         width: 100%;
     }
 
-    .FloatingCard{
+    .FloatingCard {
         width: 190px;
         right: 8px;
         bottom: -15px;
     }
 
-    .AboutText h1{
+    .AboutText h1 {
         font-size: 24px;
     }
 
-    .AboutText p{
+    .AboutText p {
         font-size: 13px;
     }
 
-    .para{
+    .para {
         font-size: 12px;
         line-height: 1.7;
     }
@@ -430,48 +449,48 @@
 /* =========================
    480px
 ========================= */
-@media (max-width: 480px){
+@media (max-width: 480px) {
 
-    .AboutFounder{
+    .AboutFounder {
         padding: 35px 16px;
     }
 
-    .HomeAboutText h1{
+    .HomeAboutText h1 {
         font-size: 24px;
     }
 
-    .HomeLine{
+    .HomeLine {
         width: 100px;
     }
 
-    .ImageWrapper{
+    .ImageWrapper {
         border-radius: 18px;
     }
 
-    .ImageWrapper img{
+    .ImageWrapper img {
         border-radius: 18px;
     }
 
-    .FloatingCard{
+    .FloatingCard {
         width: 170px;
         padding: 10px 12px;
         right: 5px;
         bottom: -12px;
     }
 
-    .FloatingCard p{
+    .FloatingCard p {
         font-size: 9px;
     }
 
-    .AboutText h1{
+    .AboutText h1 {
         font-size: 22px;
     }
 
-    .AboutText p{
+    .AboutText p {
         font-size: 12px;
     }
 
-    .para{
+    .para {
         font-size: 11px;
     }
 }
@@ -480,34 +499,34 @@
 /* =========================
    380px
 ========================= */
-@media (max-width: 380px){
+@media (max-width: 380px) {
 
-    .HomeAboutText h1{
+    .HomeAboutText h1 {
         font-size: 21px;
     }
 
-    .ImageWrapper{
+    .ImageWrapper {
         width: 100%;
     }
 
-    .FloatingCard{
+    .FloatingCard {
         width: 150px;
         padding: 9px 10px;
     }
 
-    .FloatingCard p{
+    .FloatingCard p {
         font-size: 8px;
     }
 
-    .AboutText h1{
+    .AboutText h1 {
         font-size: 20px;
     }
 
-    .AboutText p{
+    .AboutText p {
         font-size: 11px;
     }
 
-    .para{
+    .para {
         font-size: 10px;
         line-height: 1.6;
     }
