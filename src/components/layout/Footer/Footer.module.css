@@ -37,13 +37,14 @@
     display: flex;
     justify-content: space-between;
     align-items: start;
+    padding: 40px 50px;
     width: 100%;
 }
 
 /* TextPara */
 .FooterClass{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
     flex-direction: column;
     gap: 20px;
@@ -51,5 +52,72 @@
 
 .FooterImgText{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
+}
+.FooterImgText img{
+  width: 60px;
+}
+.FooterImgText h3{
+    font-size: 30px;
+}
+
+.FooterClass{
+    max-width: 390px;
+    font-size: 14px;
+}
+
+.SocialIcons{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.SocialIcons {
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.SocialIcons :hover{
+    transform: translateY(-4px);
+    color: #cfcfcf;
+}
+
+
+.FooterQuciK{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+.FooterQuciK h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+.FooterLinks{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.FooterLinks span{
+    font-size: 14px;
+}
+
+/* Last Links */
+.LastLinks{
+    padding: 10px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.LastLinks p{
+    font-size: 12px;
 }
