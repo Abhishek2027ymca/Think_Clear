@@ -1,0 +1,406 @@
+.AboutTeaching{
+    width: 100%;
+    padding: 50px 60px;
+}
+
+/* Text */
+
+.HomeAboutText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.HomeAboutText h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.HomeColor {
+    background: linear-gradient(90deg, #060A30 0%, #1C2259 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.HomeLine {
+    margin-top: 10px;
+    width: 150px;
+    height: 2px;
+    background-color: #060A30;
+}
+
+
+/* Flex */
+
+.HomeTeachingFlex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 70px;
+}
+
+
+.ImageWrapper {
+    width: 535px;
+    height: 410px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+}
+
+.ImageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 28px;
+    display: block;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+/* Hover Animation */
+
+.ImageWrapper:hover img{
+    transform: scale(1.08);
+}
+
+/* para */
+
+.AboutTextPa {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.AboutText {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.AboutText h1 {
+    font-size: 39px;
+    font-weight: 500;
+}
+
+.AboutText p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.696);
+}
+
+.para {
+    max-width: 560px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.637);
+
+}
+
+/* =========================
+   1600px
+========================= */
+@media (max-width: 1600px){
+
+    .AboutTeaching{
+        padding: 50px 60px;
+    }
+
+    .HomeTeachingFlex{
+        gap: 60px;
+    }
+    .HomeAboutText h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+    .ImageWrapper{
+        width: 45vw;
+        height: 26.5vw;
+    }
+
+    .AboutText h1{
+        font-size: 40px;
+    }
+
+    .para{
+        max-width: 43vw;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+}
+
+
+/* =========================
+   1440px
+========================= */
+@media (max-width: 1440px){
+
+    .AboutTeaching{
+        padding: 50px 60px;
+    }
+
+    .HomeTeachingFlex{
+        gap: 50px;
+    }
+
+    .ImageWrapper{
+        width: 500px;
+        height: 330px;
+    }
+
+    .AboutText h1{
+        font-size: 38px;
+    }
+
+    .para{
+        max-width: 540px;
+        font-size: 14px;
+    }
+}
+
+
+/* =========================
+   1280px
+========================= */
+@media (max-width: 1280px){
+
+    .AboutTeaching{
+        padding: 50px 60px;
+    }
+
+    .HomeTeachingFlex{
+        gap: 40px;
+        align-items: center;
+    }
+
+    .ImageWrapper{
+        width: 590px;
+        height: 445px;
+    }
+
+    .AboutText h1{
+        font-size: 39px;
+    }
+
+    .para{
+        max-width: 530px;
+        font-size: 14px;
+    }
+}
+
+
+/* =========================
+   1024px
+========================= */
+@media (max-width: 1024px){
+
+    .AboutTeaching{
+        padding: 50px 5%;
+    }
+
+    .HomeTeachingFlex{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .ImageWrapper{
+        width: 80%;
+        height: auto;
+    }
+
+    .AboutTextPa{
+        align-items: center;
+        text-align: center;
+    }
+
+    .AboutText{
+        align-items: center;
+    }
+
+    .AboutText h1{
+        font-size: 36px;
+    }
+
+    .para{
+        max-width: 90%;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+}
+
+
+/* =========================
+   900px
+========================= */
+@media (max-width: 900px){
+
+    .HomeAboutText h1{
+        font-size: 36px;
+    }
+
+    .ImageWrapper{
+        width: 85%;
+    }
+
+    .AboutText h1{
+        font-size: 32px;
+    }
+
+    .para{
+        font-size: 14px;
+    }
+}
+
+
+/* =========================
+   768px
+========================= */
+@media (max-width: 768px){
+
+    .AboutTeaching{
+        padding: 45px 5%;
+    }
+
+    .HomeAboutText h1{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .HomeLine{
+        width: 120px;
+    }
+
+    .HomeTeachingFlex{
+        margin-top: 50px;
+        gap: 40px;
+    }
+
+    .ImageWrapper{
+        width: 100%;
+        border-radius: 22px;
+    }
+
+    .ImageWrapper img{
+        border-radius: 22px;
+    }
+
+    .AboutText{
+        gap: 10px;
+    }
+
+    .AboutText h1{
+        font-size: 28px;
+    }
+
+    .para{
+        max-width: 100%;
+        font-size: 13px;
+    }
+}
+
+
+/* =========================
+   600px
+========================= */
+@media (max-width: 600px){
+
+    .AboutTeaching{
+        padding: 40px 20px;
+    }
+
+    .HomeAboutText h1{
+        font-size: 28px;
+    }
+
+    .ImageWrapper{
+        width: 100%;
+        border-radius: 18px;
+    }
+
+    .ImageWrapper img{
+        border-radius: 18px;
+    }
+
+    .AboutTextPa{
+        gap: 22px;
+    }
+
+    .AboutText h1{
+        font-size: 24px;
+    }
+
+    .para{
+        font-size: 12px;
+        line-height: 1.7;
+    }
+}
+
+
+/* =========================
+   480px
+========================= */
+@media (max-width: 480px){
+
+    .AboutTeaching{
+        padding: 35px 16px;
+    }
+
+    .HomeAboutText h1{
+        font-size: 24px;
+    }
+
+    .HomeLine{
+        width: 100px;
+    }
+
+    .ImageWrapper{
+        border-radius: 16px;
+    }
+
+    .ImageWrapper img{
+        border-radius: 16px;
+    }
+
+    .AboutText h1{
+        font-size: 22px;
+    }
+
+    .para{
+        font-size: 11px;
+        line-height: 1.6;
+    }
+}
+
+
+/* =========================
+   380px
+========================= */
+@media (max-width: 380px){
+
+    .HomeAboutText h1{
+        font-size: 21px;
+    }
+
+    .AboutText h1{
+        font-size: 20px;
+    }
+
+    .para{
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    .ImageWrapper{
+        border-radius: 14px;
+    }
+
+    .ImageWrapper img{
+        border-radius: 14px;
+    }
+}

@@ -5,6 +5,7 @@ import AboutProfile from '../components/About/AboutProfile';
 import AboutTeaching from '../components/About/AboutTeaching';
 import AboutEducation from '../components/About/AboutEducation';
 import AboutGrowing from '../components/About/AboutGrowing';
+import AboutLearning from '../components/About/AboutLearning';
 
 function About() {
     return ( 
@@ -15,6 +16,7 @@ function About() {
         <AboutTeaching />
         <AboutEducation />
         <AboutGrowing />
+        <AboutLearning />
         </>
      );
 }
