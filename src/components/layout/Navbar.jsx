@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
+import logo from '../../assets/Footer/logo.png'
 import styles from './Navbar.module.css'
 
 const NAV_LINKS = [
@@ -21,7 +22,7 @@ export default function Navbar() {
         {/* Logo */}
         <NavLink to="/" className={styles.logoWrapper}>
           <img
-            src="/src/assets/images/logo.png"
+            src={logo}
             alt="ThinkClear Logo"
             className={styles.logo}
           />
