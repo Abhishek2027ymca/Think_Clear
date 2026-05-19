@@ -1,135 +1,130 @@
-import './FAQSection.css'
-
+import styles from './FAQSection.module.css'
 import { useState } from 'react'
-import { Plus, X } from 'lucide-react'
-
+import { motion } from 'framer-motion';
+import {
+  Plus,
+  X
+} from 'lucide-react'
 import faqImage from '../../assets/images/faq-image.jpg'
 
-const FAQS = [
-  {
-    id: 1,
-    question: 'Are classes live or recorded?',
-    answer:
-      'All classes are conducted live with interactive sessions. Recorded sessions are also provided for revision and missed classes.',
-  },
-  {
-    id: 2,
-    question: 'Is study material included?',
-    answer:
-      'Yes, notes, assignments, and study materials are included with every course for better learning, revision, and exam preparation support.',
-  },
-  {
-    id: 3,
-    question: 'Do you provide doubt support?',
-    answer:
-      'Dedicated doubt-solving sessions and teacher support are available regularly for all enrolled students.',
-  },
-  {
-    id: 4,
-    question: 'Can students attend a demo class?',
-    answer:
-      'Yes, students can attend a free demo class before enrollment to understand our teaching methodology and learning environment.',
-  },
-  {
-    id: 5,
-    question: 'Are tests conducted regularly?',
-    answer:
-      'Regular tests, assessments, and revision practices are conducted to track student progress and improve performance.',
-  },
-]
 
 export default function FAQSection() {
   const [activeId, setActiveId] = useState(2)
 
-  const toggleFAQ = (id) => {
+  const toggleFaq = (id) => {
     setActiveId(activeId === id ? null : id)
   }
 
+  const faqData = [
+    {
+      id: 1,
+      question: 'Are classes live or recorded?',
+      answer: 'We provide both live interactive classes and recorded sessions for revision.'
+    },
+
+    {
+      id: 2,
+      question: 'Is study material included?',
+      answer: 'Yes, notes, assignments, and study materials are included with every course for better learning, revision, and exam preparation support.'
+    },
+
+    {
+      id: 3,
+      question: 'Do you provide doubt support?',
+      answer: 'Yes, students receive dedicated doubt-solving assistance.'
+    },
+
+    {
+      id: 4,
+      question: 'Can students attend a demo class?',
+      answer: 'Yes, free demo classes are available before enrollment.'
+    },
+
+    {
+      id: 5,
+      question: 'Are tests conducted regularly?',
+      answer: 'Yes, weekly tests and assessments are conducted to track progress.'
+    }
+  ]
+
   return (
-    <section className="faq-section">
+    <>
+      <section className={styles.HomeFAQ}>
 
-      <div className="faq-container">
+        <motion.div className={styles.HomeText} initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }} overlay
+          transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+          <h1>Frequently Asked <span className={styles.HomeColor}>Questions</span></h1>
+          <span className={styles.HomeLine}></span>
+          <p>Find answers to common questions about our courses, learning methods, demo
+            classes, study materials, and student support services.</p>
+        </motion.div>
 
-        {/* HEADER */}
-        <div className="faq-header">
+        <div className={styles.FaqContainer}>
 
-          <h2 className="faq-title">
-            Frequently Asked <span>Questions</span>
-          </h2>
-
-          <div className="faq-underline" />
-
-          <p className="faq-description">
-            Find answers to common questions about our courses, learning
-            methods, demo classes, study materials, and student support
-            services.
-          </p>
-
-        </div>
-
-        {/* MAIN CONTENT */}
-        <div className="faq-content">
-
-          {/* LEFT IMAGE */}
-          <div className="faq-image-wrapper">
-
+          {/* Left Image */}
+          <motion.div className={styles.FaqImage} initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} overlay
+            transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
             <img
               src={faqImage}
-              alt="FAQ Student"
-              className="faq-image"
+              alt='faq'
             />
+          </motion.div>
 
-          </div>
+          {/* Right FAQ */}
+          <motion.div className={styles.FaqContent} initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} overlay
+            transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
 
-          {/* RIGHT FAQ */}
-          <div className="faq-list">
+            {
+              faqData.map((item) => (
 
-            {FAQS.map(({ id, question, answer }) => {
-              const isOpen = activeId === id
-
-              return (
                 <div
-                  key={id}
-                  className={`faq-item ${isOpen ? 'faq-item-active' : ''}`}
+                  key={item.id}
+                  className={`${styles.FaqCard} ${activeId === item.id ? styles.Active : ''
+                    }`}
                 >
 
-                  {/* QUESTION */}
-                  <button
-                    className="faq-question"
-                    onClick={() => toggleFAQ(id)}
-                  >
-
-                    <span>{question}</span>
-
-                    <div className="faq-icon">
-                      {isOpen ? <X size={22} /> : <Plus size={22} />}
-                    </div>
-
-                  </button>
-
-                  {/* ANSWER */}
                   <div
-                    className={`faq-answer-wrapper ${
-                      isOpen ? 'faq-answer-open' : ''
-                    }`}
+                    className={styles.Question}
+                    onClick={() => toggleFaq(item.id)}
                   >
 
-                    <p className="faq-answer">
-                      {answer}
-                    </p>
+                    <h3>{item.question}</h3>
+
+                    <div className={styles.IconBox}>
+                      {
+                        activeId === item.id
+                          ? <X size={22} strokeWidth={2.5} />
+                          : <Plus size={22} strokeWidth={2.5} />
+                      }
+                    </div>
 
                   </div>
 
-                </div>
-              )
-            })}
+                  <div
+                    className={`${styles.AnswerWrapper} ${activeId === item.id
+                      ? styles.ShowAnswer
+                      : ''
+                      }`}
+                  >
+                    <p>{item.answer}</p>
+                  </div>
 
-          </div>
+                </div>
+
+              ))
+            }
+
+          </motion.div>
 
         </div>
 
-      </div>
-
-    </section>
+      </section>
+    </>
   )
 }

@@ -7,7 +7,7 @@ import CoursesHero from '../components/CoursesSection/CoursesHero';
 import FreeDemoSection from '../components/CoursesSection/FreeDemoSection';
 import TeachingApproachSection from '../components/CoursesSection/TeachingApproachSection';
 import CoursesFeaturesSection from '../components/CoursesSection/CourseFeaturesSection';
-// import FAQSection from '../components/CoursesSection/FAQSection'
+import FAQSection from '../components/CoursesSection/FAQSection'
 // import CTASection from '../components/CoursesSection/CTASection'
 
 
@@ -22,8 +22,8 @@ function Courses() {
         <FreeDemoSection />
         <TeachingApproachSection />
         <CoursesFeaturesSection />
-        {/* <FAQSection />
-        <CTASection />  */}
+        <FAQSection />
+        {/* <CTASection />  */}
         </>
      );
 }
