@@ -1,109 +1,90 @@
-import './CourseFeaturesSection.css'
-
+import styles from './CourseFeaturesSection.module.css'
 import { ArrowRight } from 'lucide-react'
-
 import doubtImg from '../../assets/courses/features/doubt-support.jpg'
 import notesImg from '../../assets/courses/features/notes-material.jpg'
 import testsImg from '../../assets/courses/features/tests.jpg'
+import { motion } from 'framer-motion';
 
-const FEATURES = [
+const learningData = [
   {
     id: 1,
+    img: doubtImg,
     title: 'Doubt Support',
-    description:
-      'Students receive dedicated doubt-solving sessions to clarify concepts and improve subject understanding through teacher guidance.',
-    image: doubtImg,
+    desc: 'Students receive dedicated doubt-solving sessions to clarify concepts and improve subject understanding through teacher guidance.'
   },
+
   {
     id: 2,
+    img: notesImg,
     title: 'Notes & Study Material',
-    description:
-      'Well-structured notes, assignments, and learning materials are provided for effective preparation and revision.',
-    image: notesImg,
+    desc: 'Well-structured notes, assignments, and learning materials are provided for effective preparation and revision.'
   },
+
   {
     id: 3,
-    title: 'Tests & Assessments',
-    description:
-      'Regular tests and assessments help students track progress, improve performance, and build exam confidence.',
-    image: testsImg,
-  },
+    img: testsImg,
+    title: 'Passive studying to active curiosity.',
+    desc: 'Regular tests and assessments help students track progress, improve performance, and build exam confidence.'
+  }
 ]
 
 export default function CourseFeaturesSection() {
   return (
-    <section className="features-section">
+    <>
+      <section className={styles.AboutCards}>
+        {/* text */}
 
-      <div className="features-container">
+        <motion.div className={styles.HomeText} initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }} overlay
+          transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+          <h1>Course <span className={styles.HomeColor}>Features</span></h1>
+          <span className={styles.HomeLine}></span>
+          <p>Our courses provide academic support through interactive learning, 
+            study materials, and regular assessments for better student performance.</p>
+        </motion.div>
+        {/* cards */}
+        <div className={styles.CardContainer}>
 
-        {/* HEADER */}
-        <div className="features-header">
+          {
+            learningData.map((item) => (
 
-          <h2 className="features-title">
-            Course <span>Features</span>
-          </h2>
+              <motion.div className={styles.Card} key={item.id} initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }} overlay
+                transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
 
-          <div className="features-underline" />
+                <div className={styles.CardImage}>
+                  <img className={styles.Img} src={item.img} alt={item.title} />
+                </div>
 
-          <p className="features-description">
-            Our courses provide academic support through interactive learning,
-            study materials, and regular assessments for better student
-            performance.
-          </p>
+                <div className={styles.CardContent}>
 
-        </div>
+                  <h3>{item.title}</h3>
 
-        {/* CARDS */}
-        <div className="features-grid">
+                  <p>{item.desc}</p>
 
-          {FEATURES.map(({ id, title, description, image }) => (
-            <div
-              key={id}
-              className="feature-card"
-            >
+                  <button className={styles.demoBtn}>
 
-              {/* IMAGE */}
-              <div className="feature-image-wrapper">
+                    <span className={styles.iconBox}>
+                      <ArrowRight size={18} />
+                    </span>
 
-                <img
-                  src={image}
-                  alt={title}
-                  className="feature-image"
-                />
+                    <span className={styles.text}>
+                      Enroll Now
+                    </span>
 
-              </div>
+                  </button>
 
-              {/* CONTENT */}
-              <div className="feature-content">
+                </div>
 
-                <h3 className="feature-title">
-                  {title}
-                </h3>
+              </motion.div>
 
-                <p className="feature-text">
-                  {description}
-                </p>
-
-                {/* BUTTON */}
-                <button className="feature-btn">
-
-                  <div className="feature-btn-icon">
-                    <ArrowRight size={18} />
-                  </div>
-
-                  <span>Enroll Now</span>
-
-                </button>
-
-              </div>
-
-            </div>
-          ))}
+            ))
+          }
 
         </div>
-
-      </div>
-
-    </section>
+      </section>
+    </>
   )
 }
