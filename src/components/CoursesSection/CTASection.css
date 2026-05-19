@@ -1,0 +1,164 @@
+.cta-section {
+  width: 100%;
+
+  background: #f7f7f7;
+
+  padding: 40px 0 70px;
+}
+
+.cta-container {
+  width: 1330px;
+  height: 365px;
+
+  margin: 0 auto;
+
+  background: #010547;
+
+  border-radius: 28px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-left: 58px;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.cta-container:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 24px 50px rgba(1, 5, 71, 0.22),
+    0 10px 24px rgba(1, 5, 71, 0.12);
+}
+
+/* LEFT CONTENT */
+
+.cta-content {
+  width: 720px;
+
+  z-index: 2;
+}
+
+.cta-title {
+  font-size: 64px;
+  line-height: 74px;
+  font-weight: 500;
+
+  letter-spacing: -2px;
+
+  color: white;
+
+  margin-bottom: 22px;
+}
+
+.cta-description {
+  width: 640px;
+
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  margin-bottom: 42px;
+}
+
+/* BUTTONS */
+
+.cta-buttons {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.cta-btn {
+  height: 54px;
+
+  border-radius: 8px;
+
+  border: none;
+
+  padding: 0 34px;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* PRIMARY */
+
+.cta-btn-primary {
+  background: white;
+
+  color: #111827;
+}
+
+.cta-btn-primary:hover {
+  transform: translateY(-2px);
+
+  background: #f3f4f6;
+
+  box-shadow:
+    0 10px 18px rgba(255, 255, 255, 0.12);
+}
+
+/* SECONDARY */
+
+.cta-btn-secondary {
+  background: white;
+
+  color: #111827;
+}
+
+.cta-btn-secondary:hover {
+  transform: translateY(-2px);
+
+  background: #f3f4f6;
+
+  box-shadow:
+    0 10px 18px rgba(255, 255, 255, 0.12);
+}
+
+/* IMAGE */
+
+.cta-image-wrapper {
+  position: absolute;
+
+  right: 35px;
+  bottom: 0;
+
+  height: 100%;
+
+  display: flex;
+  align-items: flex-end;
+
+  z-index: 1;
+}
+
+.cta-image {
+  height: 40px;
+
+  object-fit: contain;
+
+  transition: transform 0.35s ease;
+}
+
+.cta-container:hover .cta-image {
+  transform: translateY(-4px) scale(1.02);
+}

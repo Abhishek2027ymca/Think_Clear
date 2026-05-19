@@ -53,7 +53,7 @@ function Footer() {
 
                     </div>
                     {/* Quick */}
-                           <div className={styles.FooterQuciK}>
+                           {/* <div className={styles.FooterQuciK}>
                         <h4>Privacy Policy</h4>
                         <div className={styles.FooterLinks}>
                             <span>Information collected from users</span>
@@ -63,7 +63,7 @@ function Footer() {
                             <span>Conditions or limitations</span>
                         </div>
 
-                    </div>
+                    </div> */}
                     {/* Quick */}
                            <div className={styles.FooterQuciK}>
                         <h4>Contact Information</h4>
