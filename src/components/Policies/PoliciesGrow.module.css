@@ -1,0 +1,196 @@
+.PoliciesGrow{
+    width: 100%;
+    padding: 50px 60px;
+}
+
+/* Text */
+
+.HomeText {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.HomeText h1 {
+    font-size: 43px;
+    font-weight: 500;
+}
+
+.HomeLine {
+    margin-top: 10px;
+    width: 150px;
+    height: 2px;
+    background-color: #060A30;
+}
+
+.HomeColor {
+    background: linear-gradient(90deg, #060A30 0%, #1C2259 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.HomeText p {
+    margin-top: 25px;
+    max-width: 600px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.776);
+}
+
+/* cards */
+
+.PoliciesCards{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.Policies2{
+    display: flex;
+    justify-content:start;
+    align-items: start;
+    gap: 20px;
+    flex-direction: column;
+}
+.card1{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 18px;
+    width: 350px;
+    height: 210px;
+      background-image: url('../../../src/assets/Policies/img1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.card1 h1{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+
+}
+
+
+/* cards2 */
+
+.card2{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 18px;
+    width: 350px;
+    height: 210px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.iconBoxBlue{
+    width:54px;
+    height:54px;
+    background:#6A7DD8;
+    border-radius:8px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.iconsBoxBlue{
+    width:54px;
+    height:54px;
+    background:#BFB179;
+    border-radius:8px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.smallTitle{
+    margin-top:18px;
+    font-size:20px;
+    font-weight:500;
+    color:#151515;
+    line-height:1.3;
+}
+.smallText{
+    margin-top:12px;
+    font-size:13px;
+    line-height:1.6;
+    color:#6d6d6d;
+}
+
+
+/* middle */
+
+.middlecard{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    width: 350px;
+    background-color: #58479E;
+    color: white;
+    height: 440px;
+    border-radius: 20px;
+}
+
+.Combine{
+ padding: 18px;
+}
+.cardText{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 50px;
+}
+
+.PoliTitle{
+font-size: 18px;
+font-weight: 500px;
+}
+
+.arrow{
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    background:white;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+}
+
+.Combine p{
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.MiddleWidth{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MiddleImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+}
+
+.MiddleImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

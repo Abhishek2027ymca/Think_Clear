@@ -47,7 +47,10 @@ function PoliciesPlat() {
                 {/* cards */}
 
 
-                <div className={styles.PolicyContainer}>
+                <motion.div className={styles.PolicyContainer} initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }} overlay
+                    transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
 
                     {
                         policyData.map((item) => (
@@ -67,7 +70,7 @@ function PoliciesPlat() {
                         ))
                     }
 
-                </div>
+                </motion.div>
             </section>
         </>
     );
