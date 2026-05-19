@@ -2,9 +2,9 @@ import './CourseFeaturesSection.css'
 
 import { ArrowRight } from 'lucide-react'
 
-import doubtImg from '../../assets/images/courses/features/doubt-support.jpg'
-import notesImg from '../../assets/images/courses/features/notes-material.jpg'
-import testsImg from '../../assets/images/courses/features/tests.jpg'
+import doubtImg from '../../assets/courses/features/doubt-support.jpg'
+import notesImg from '../../assets/courses/features/notes-material.jpg'
+import testsImg from '../../assets/courses/features/tests.jpg'
 
 const FEATURES = [
   {
