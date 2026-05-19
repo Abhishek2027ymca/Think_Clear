@@ -9,6 +9,8 @@ import AboutLearning from '../components/About/AboutLearning';
 import AboutCards from '../components/About/AboutCards';
 import AboutPurpose from '../components/About/AboutPurpose';
 import AboutTeam from '../components/About/AboutTeam';
+import AboutFAQ from '../components/About/AboutFAQ';
+import AboutContact from '../components/About/AboutContact';
 
 function About() {
     return ( 
@@ -23,6 +25,8 @@ function About() {
         <AboutCards />
         <AboutPurpose />
         <AboutTeam />
+        <AboutFAQ />
+        <AboutContact />
         </>
      );
 }
