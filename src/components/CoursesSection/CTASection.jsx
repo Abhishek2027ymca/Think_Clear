@@ -1,53 +1,37 @@
-import './CTASection.css'
-
+import styles from './CTASection.module.css'
+import { motion } from 'framer-motion';
 import ctaStudent from '../../assets/images/cta-student.png'
 
 export default function CTASection() {
   return (
-    <section className="cta-section">
+    <>
 
-      <div className="cta-container">
+      <section className={styles.HomeContact}>
+        <div className={styles.HomeContactColor}>
 
-        {/* LEFT CONTENT */}
-        <div className="cta-content">
+          {/* Text */}
 
-          <h2 className="cta-title">
-            Start Your Journey with ThinkClear
-          </h2>
+          <motion.div className={styles.HomeJoinText} initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} overlay
+            transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+            <h1>Start Your Journey with ThinkClear</h1>
+            <p>Join structured academic programs designed to improve
+              understanding, confidence, and performance for Classes 6–12.</p>
+            <div className={styles.HomeBtn}>
+              <button>Explore Courses</button> <button>Book Free Demo </button>
+            </div>
+          </motion.div>
 
-          <p className="cta-description">
-            Join structured academic programs designed to improve
-            understanding, confidence, and performance for Classes 6–12.
-          </p>
-
-          {/* BUTTONS */}
-          <div className="cta-buttons">
-
-            <button className="cta-btn cta-btn-primary">
-              Enroll Now
-            </button>
-
-            <button className="cta-btn cta-btn-secondary">
-              Book Free Demo
-            </button>
-
-          </div>
+          <motion.div className={styles.HomeImg} initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} overlay
+            transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+            <img src={ctaStudent} alt='contact' />
+          </motion.div>
 
         </div>
-
-        {/* RIGHT IMAGE */}
-        <div className="cta-image-wrapper">
-
-          <img
-            src={ctaStudent}
-            alt="ThinkClear Student"
-            className="cta-image"
-          />
-
-        </div>
-
-      </div>
-
-    </section>
+      </section>
+    </>
   )
 }

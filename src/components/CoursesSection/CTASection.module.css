@@ -1,0 +1,400 @@
+.HomeContact {
+    width: 100%;
+    padding: 50px 60px;
+}
+
+
+.HomeContactColor {
+    background-color: #060A30;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+/*  text */
+
+.HomeJoinText {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.HomeJoinText h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.HomeJoinText p {
+    font-size: 14px;
+    max-width: 580px;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.HomeBtn{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+.HomeBtn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 10px 28px;
+    border-radius: 5px;
+    gap: 10px;
+    border: none;
+
+    /* Animation */
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.HomeBtn button:hover {
+    background-color: #060A30;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Click Effect */
+.HomeBtn button:active {
+    transform: scale(0.96);
+}
+
+
+
+/* img */
+.HomeImg{
+    width: 290px;
+    object-fit: cover;
+}
+
+.HomeImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* =========================================
+   1600px
+========================================= */
+@media (max-width: 1600px) {
+
+    .HomeContact{
+        padding: 50px 60px;
+    }
+
+    .HomeContactColor{
+    }
+
+    .HomeJoinText{
+        gap: 28px;
+    }
+    .HomeJoinText h1{
+        font-size: 50px;
+    }
+
+    .HomeJoinText p{
+        font-size: 1vw;
+        max-width: 44vw;
+    }
+
+    .HomeBtn button{
+        font-size: 0.95vw;
+        padding: 0.8vw 1.8vw;
+    }
+
+    .HomeImg{
+        width: 15vw;
+    }
+}
+
+
+/* =========================================
+   1440px
+========================================= */
+@media (max-width: 1440px) {
+
+    .HomeContact{
+        padding: 50px 60px;
+    }
+
+    .HomeContactColor{
+        padding: 0 60px;
+    }
+
+    .HomeJoinText h1{
+        font-size: 43px;
+    }
+
+    .HomeJoinText p{
+        font-size: 14px;
+        max-width: 540px;
+    }
+
+    .HomeImg{
+        width: 320px;
+    }
+}
+
+
+/* =========================================
+   1280px
+========================================= */
+@media (max-width: 1280px) {
+
+    .HomeContact{
+        padding: 50px 60px;
+    }
+
+    .HomeContactColor{
+        padding: 0 60px;
+        gap: 26px;
+    }
+
+    .HomeJoinText h1{
+        font-size: 43px;
+    }
+
+    .HomeJoinText p{
+        font-size: 14px;
+        max-width: 570px;
+    }
+
+    .HomeImg{
+        width: 200px;
+    }
+
+    .HomeBtn{
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* =========================================
+   1024px
+========================================= */
+@media (max-width: 1024px) {
+
+    .HomeContact{
+        padding: 0 55px;
+    }
+
+    .HomeContactColor{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 40px;
+        gap: 35px;
+    }
+
+    .HomeJoinText{
+        margin-top: 45px;
+        align-items: center;
+    }
+
+    .HomeJoinText h1{
+        font-size: 33px;
+    }
+
+    .HomeJoinText p{
+        max-width: 90%;
+        font-size: 14px;
+    }
+
+    .HomeBtn{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .HomeImg{
+        width: 320px;
+    }
+}
+
+
+/* =========================================
+   900px
+========================================= */
+@media (max-width: 900px) {
+
+    .HomeJoinText h1{
+        font-size: 31px;
+    }
+
+    .HomeJoinText p{
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .HomeImg{
+        width: 290px;
+    }
+
+    .HomeBtn button{
+        padding: 10px 24px;
+    }
+}
+
+
+/* =========================================
+   768px
+========================================= */
+@media (max-width: 768px) {
+
+    .HomeContact{
+        padding: 0 5%;
+    }
+
+    .HomeContactColor{
+        padding: 0 30px;
+        border-radius: 16px;
+    }
+
+    .HomeJoinText{
+        margin-top: 40px;
+        gap: 22px;
+    }
+
+    .HomeJoinText h1{
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .HomeJoinText p{
+        font-size: 13px;
+        max-width: 100%;
+    }
+
+    .HomeBtn{
+        width: 100%;
+        gap: 14px;
+    }
+
+    .HomeBtn button{
+        width: 48%;
+        font-size: 13px;
+        padding: 12px 16px;
+    }
+
+    .HomeImg{
+        width: 260px;
+    }
+}
+
+
+/* =========================================
+   600px
+========================================= */
+@media (max-width: 600px) {
+
+    .HomeContact{
+        padding: 35px 20px;
+    }
+
+    .HomeContactColor{
+        padding: 0 22px;
+    }
+    .HomeJoinText{
+        margin-top:30px ;
+    }
+
+    .HomeJoinText h1{
+        font-size: 25px;
+    }
+
+    .HomeJoinText p{
+        font-size: 12px;
+    }
+
+    .HomeBtn{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .HomeBtn button{
+        width: 100%;
+    }
+
+    .HomeImg{
+        width: 230px;
+    }
+}
+
+
+/* =========================================
+   480px
+========================================= */
+@media (max-width: 480px) {
+
+    .HomeContact{
+        padding: 30px 16px;
+    }
+
+    .HomeContactColor{
+        padding: 0 18px;
+        border-radius: 14px;
+    }
+    .HomeJoinText{
+        margin-top: 30px;
+    }
+
+    .HomeJoinText h1{
+        font-size: 22px;
+    }
+
+    .HomeJoinText p{
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .HomeBtn button{
+        font-size: 12px;
+        padding: 11px 14px;
+    }
+
+    .HomeImg{
+        width: 200px;
+    }
+}
+
+
+/* =========================================
+   380px
+========================================= */
+@media (max-width: 380px) {
+
+    .HomeJoinText h1{
+        font-size: 19px;
+    }
+
+    .HomeJoinText p{
+        font-size: 10px;
+    }
+
+    .HomeBtn button{
+        font-size: 11px;
+        padding: 10px 12px;
+    }
+
+    .HomeImg{
+        width: 170px;
+    }
+}

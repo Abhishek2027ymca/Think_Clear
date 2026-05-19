@@ -8,7 +8,7 @@ import FreeDemoSection from '../components/CoursesSection/FreeDemoSection';
 import TeachingApproachSection from '../components/CoursesSection/TeachingApproachSection';
 import CoursesFeaturesSection from '../components/CoursesSection/CourseFeaturesSection';
 import FAQSection from '../components/CoursesSection/FAQSection'
-// import CTASection from '../components/CoursesSection/CTASection'
+import CTASection from '../components/CoursesSection/CTASection'
 
 
 function Courses() {
@@ -23,7 +23,7 @@ function Courses() {
         <TeachingApproachSection />
         <CoursesFeaturesSection />
         <FAQSection />
-        {/* <CTASection />  */}
+        <CTASection /> 
         </>
      );
 }
