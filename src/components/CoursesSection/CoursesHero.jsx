@@ -19,7 +19,7 @@ export default function CoursesHero() {
                             viewport={{ once: true }} overlay
                             transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
                             <Dot style={{ color: "white" }} size={30} />
-                            <span>Policies ThinkClear</span>
+                            <span>Enroll in ThinkClear Courses Today</span>
                         </motion.div>
                         <h1>Everything Needed to <br />Launch & Grow ThinkClear</h1>
                         <p>Complete website, policy, branding, payment, and marketing

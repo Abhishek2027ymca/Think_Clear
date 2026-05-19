@@ -1,0 +1,191 @@
+.IBProgramSection{
+    width: 100%;
+    padding: 50px 60px;
+}
+
+
+.HomeText {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.HomeText h1 {
+    font-size: 43px;
+    font-weight: 500;
+}
+
+.HomeLine {
+    margin-top: 10px;
+    width: 150px;
+    height: 2px;
+    background-color: #060A30;
+}
+
+.HomeColor {
+    background: linear-gradient(90deg, #060A30 0%, #1C2259 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.HomeText p {
+    margin-top: 25px;
+    max-width: 700px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.776);
+}
+
+
+/* cards */
+
+
+
+.courseSection{
+    margin-top: 60px;
+    width:100%;
+    position:relative;
+    /* overflow:hidden; */
+}
+
+.navigation{
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+    margin-bottom:25px;
+}
+
+.navBtn,
+.navBtnDark{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.navBtn{
+    background:#fff;
+    border:1px solid #bfc4d2;
+}
+
+.navBtnDark{
+    background:#02053b;
+    color:white;
+    border:none;
+}
+
+.navBtn:hover,
+.navBtnDark:hover{
+    transform:scale(1.08);
+}
+
+.slider{
+    display:flex;
+    gap:25px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    scrollbar-width:none;
+}
+
+.slider::-webkit-scrollbar{
+    display:none;
+}
+
+.card{
+    min-width:270px;
+    max-width:270px;
+    background:#fff;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:
+    0 2px 10px rgba(0,0,0,.08);
+
+    flex-shrink:0;
+}
+
+.imageWrapper{
+    position:relative;
+    height:160px;
+}
+
+.image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.tag{
+    position:absolute;
+    top:10px;
+    left:10px;
+    background:#fff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:11px;
+    font-weight:500;
+}
+
+.content{
+    padding:14px;
+}
+
+.content h3{
+    margin:0;
+    font-size:18px;
+    color:#111;
+    font-weight:500;
+}
+
+.content p{
+    margin-top:10px;
+    font-size:13px;
+    line-height:1.5;
+    color:#6a6a6a;
+    min-height:70px;
+}
+
+
+.BtnFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin-bottom: 14px;
+}
+.enrollBtn{
+    width: 95%;
+    border:none;
+    height:40px;
+    background:#02053b;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.enrollBtn svg{
+    transition:.4s;
+}
+
+.enrollBtn:hover svg{
+    transform:translateX(6px);
+}
+
+@media(max-width:768px){
+
+.card{
+    min-width:230px;
+}
+
+.courseSection{
+    padding:40px 15px;
+}
+
+}

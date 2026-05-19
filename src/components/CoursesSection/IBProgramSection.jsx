@@ -1,12 +1,11 @@
-import './IBProgramSection.css'
-
+import styles from './IBProgramSection.module.css'
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
 import { useRef } from 'react'
-
 import mathImg from '../../assets/courses/maths.jpg'
 import physicsImg from '../../assets/courses/physics.jpg'
 import chemistryImg from '../../assets/courses/chemistry.jpg'
 import biologyImg from '../../assets/courses/biology.jpg'
+import { motion } from 'framer-motion';
 
 const COURSES = [
   {
@@ -41,118 +40,121 @@ const COURSES = [
       'Learn biological systems and scientific concepts with interactive and organized lessons.',
     image: biologyImg,
   },
+  {
+    id: 5,
+    subject: "Maths",
+    title: "Mathematics HL",
+    description:
+      "Advanced IB mathematics with conceptual and practical learning.",
+    image: mathImg,
+  },
+  {
+    id: 6,
+    subject: "Physics",
+    title: "Physics HL",
+    description:
+      "Explore deeper physics concepts and scientific applications.",
+    image: physicsImg,
+  },
+  {
+    id: 7,
+    subject: "Chemistry",
+    title: "Chemistry HL",
+    description:
+      "Structured chemistry learning with concepts and practice.",
+    image: chemistryImg,
+  },
 ]
 
 export default function IBProgramSection() {
-  const scrollRef = useRef(null)
+   const sliderRef = useRef();
 
-  const scroll = (direction) => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({
-        left: direction === 'left' ? -325 : 325,
-        behavior: 'smooth',
-      })
-    }
-  }
+  const slideLeft = () => {
+    sliderRef.current.scrollLeft -= 350;
+  };
+
+  const slideRight = () => {
+    sliderRef.current.scrollLeft += 350;
+  };
+
 
   return (
-    <section className="ib-section">
+    <>
 
-      <div className="ib-container">
+      <section className={styles.IBProgramSection}>
 
-        {/* HEADER */}
-        <div className="ib-header">
+        <motion.div className={styles.HomeText} initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }} overlay
+          transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+          <h1>International Baccalaureate <span className={styles.HomeColor}>Programmer</span></h1>
+          <span className={styles.HomeLine}></span>
+          <p>Internationally recognized curriculum focused on critical
+            thinking, analytical skills, and global learning.</p>
+        </motion.div>
 
-          {/* LEFT */}
-          <div className="ib-header-left">
 
-            <h2 className="ib-title">
-              International Baccalaureate{' '}
-              <span>Programmer</span>
-            </h2>
 
-            <div className="ib-underline" />
+        <div className={styles.courseSection}>
 
-            <p className="ib-description">
-              Internationally recognized curriculum focused on critical thinking,
-              analytical skills, and global learning.
-            </p>
-
-          </div>
-
-          {/* RIGHT */}
-          <div className="ib-nav-buttons">
+          <div className={styles.navigation}>
 
             <button
-              onClick={() => scroll('left')}
-              className="ib-nav-btn ib-nav-btn-light"
+              className={styles.navBtn}
+              onClick={slideLeft}
             >
-              <ChevronLeft size={22} />
+              <ChevronLeft size={20} />
             </button>
 
             <button
-              onClick={() => scroll('right')}
-              className="ib-nav-btn ib-nav-btn-dark"
+              className={styles.navBtnDark}
+              onClick={slideRight}
             >
-              <ChevronRight size={22} />
+              <ChevronRight size={20} />
             </button>
 
           </div>
 
-        </div>
+          <div className={styles.slider} ref={sliderRef}>
 
-        {/* CARDS */}
-        <div
-          ref={scrollRef}
-          className="ib-cards-row"
-        >
+            {COURSES.map((course) => (
+              <div className={styles.card} key={course.id}>
 
-          {COURSES.map(({ id, subject, title, description, image }) => (
-            <div
-              key={id}
-              className="ib-card"
-            >
+                <div className={styles.imageWrapper}>
+                  <img
+                    src={course.image}
+                    alt=""
+                    className={styles.image}
+                  />
 
-              {/* IMAGE */}
-              <div className="ib-card-image-wrapper">
+                  <span className={styles.tag}>
+                    {course.subject}
+                  </span>
 
-                <img
-                  src={image}
-                  alt={title}
-                  className="ib-card-image"
-                />
+                </div>
 
-                <div className="ib-subject-badge">
-                  {subject}
+                <div className={styles.content}>
+
+                  <h3>{course.title}</h3>
+
+                  <p>{course.description}</p>
+
+                </div>
+
+                <div className={styles.BtnFlex}>
+                <button className={styles.enrollBtn}>
+                  Enroll Now
+                  <ArrowRight size={18} />
+                </button>
                 </div>
 
               </div>
+            ))}
 
-              {/* CONTENT */}
-              <div className="ib-card-content">
-
-                <h3 className="ib-card-title">
-                  {title}
-                </h3>
-
-                <p className="ib-card-description">
-                  {description}
-                </p>
-
-                <button className="ib-enroll-btn">
-                  Enroll Now
-                  <ArrowRight size={17} />
-                </button>
-
-              </div>
-
-            </div>
-          ))}
-
+          </div>
         </div>
 
-      </div>
-
-    </section>
+      </section>
+    </>
   )
 }

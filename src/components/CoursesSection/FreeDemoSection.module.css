@@ -1,0 +1,536 @@
+.FreeDemoSection{
+    width: 100%;
+    padding: 50px 60px;
+}
+
+/* Text */
+
+.HomeAboutText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.HomeAboutText h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.HomeColor {
+    background: linear-gradient(90deg, #060A30 0%, #1C2259 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.HomeLine {
+    margin-top: 10px;
+    width: 150px;
+    height: 2px;
+    background-color: #060A30;
+}
+
+/* Flex */
+
+.FreeDemoSectionFlex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+/* para */
+
+.AboutTextPa {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.AboutText {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 60px;
+}
+
+.AboutText h1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.AboutText p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.696);
+}
+
+.para {
+    max-width: 560px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.637);
+
+}
+/* btn */
+.demoBtn {
+  position: relative;
+  width: 230px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background: #060A30;
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+/* Icon Circle */
+.iconBox {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  background: white;
+  color: #060A30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 2px;
+  transition: all 0.4s ease;
+}
+
+/* Text */
+.text {
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+/* Hover Effect */
+.demoBtn:hover .iconBox {
+  left: calc(100% - 47px);
+}
+
+.demoBtn:hover .text {
+  transform: translateX(-18px);
+}
+
+/* Image */
+
+
+.ImageWrapper {
+    width: 510px;
+    height: 285px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+    margin-top: 60px;
+}
+
+.ImageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 28px;
+    display: block;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+/* Hover Animation */
+
+.ImageWrapper:hover img{
+    transform: scale(1.08);
+}
+
+
+
+/* =========================
+   1600px
+========================= */
+@media (max-width: 1600px) {
+
+    .FreeDemoSection {
+        padding: 50px 60px;
+    }
+
+    .HomeAboutText h1 {
+        font-size: 50px;
+    }
+
+    .FreeDemoSectionFlex {
+        margin-top: 3vw;
+        gap: 4vw;
+    }
+
+    .AboutText {
+        margin-top: 2vw;
+    }
+
+    .AboutText h1 {
+        font-size: 45px;
+    }
+
+    .para {
+        max-width: 40vw;
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .ImageWrapper {
+        width: 40vw;
+        height: 21vw;
+        margin-top: 2vw;
+    }
+
+    .demoBtn {
+        width: 15vw;
+        height: 3.3vw;
+    }
+
+    .iconBox {
+        width: 3vw;
+        height: 3vw;
+        min-width: 3vw;
+    }
+
+    .text {
+        font-size: 1vw;
+    }
+}
+
+
+/* =========================
+   1440px
+========================= */
+@media (max-width: 1440px) {
+
+    .FreeDemoSection {
+        padding: 50px 60px;
+    }
+
+    .HomeAboutText h1 {
+        font-size: 42px;
+    }
+
+    .FreeDemoSectionFlex {
+        gap: 50px;
+    }
+
+    .AboutText h1 {
+        font-size: 34px;
+    }
+
+    .para {
+        max-width: 540px;
+        font-size: 15px;
+    }
+
+    .ImageWrapper {
+        width: 470px;
+        height: 270px;
+    }
+}
+
+
+/* =========================
+   1280px
+========================= */
+@media (max-width: 1280px) {
+
+    .FreeDemoSection {
+        padding: 50px 60px;
+    }
+
+    .HomeAboutText h1 {
+        font-size: 40px;
+    }
+
+    .FreeDemoSectionFlex {
+        gap: 40px;
+    }
+
+    .AboutText {
+        margin-top: 60px;
+    }
+
+    .AboutText h1 {
+        font-size: 36px;
+    }
+
+    .para {
+        max-width: 560px;
+        font-size: 15px;
+    }
+
+    .ImageWrapper {
+        margin-top: 60px;
+        width: 520px;
+        height: 300px;
+    }
+
+    .demoBtn {
+        width: 220px;
+        height: 48px;
+    }
+}
+
+
+/* =========================
+   1024px
+========================= */
+@media (max-width: 1024px) {
+
+    .FreeDemoSection {
+        padding: 45px 5%;
+    }
+
+    .HomeAboutText {
+        text-align: center;
+    }
+
+    .HomeAboutText h1 {
+        font-size: 35px;
+    }
+
+    .FreeDemoSectionFlex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-top: 40px;
+    }
+
+    .AboutTextPa {
+        align-items: center;
+        text-align: center;
+    }
+
+    .AboutText {
+        margin-top: 0;
+        align-items: center;
+    }
+
+    .AboutText h1 {
+        font-size: 30px;
+    }
+
+    .para {
+        max-width: 90%;
+        font-size: 15px;
+    }
+
+    .ImageWrapper {
+        width: 75%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        margin-top: 0;
+    }
+
+    .demoBtn {
+        width: 220px;
+    }
+}
+
+
+/* =========================
+   900px
+========================= */
+@media (max-width: 900px) {
+
+    .HomeAboutText h1 {
+        font-size: 32px;
+    }
+
+    .AboutText h1 {
+        font-size: 28px;
+    }
+
+    .para {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .ImageWrapper {
+        width: 85%;
+    }
+}
+
+
+/* =========================
+   768px
+========================= */
+@media (max-width: 768px) {
+
+    .FreeDemoSection {
+        padding: 40px 5%;
+    }
+
+    .HomeAboutText h1 {
+        font-size: 29px;
+        line-height: 1.4;
+    }
+
+    .AboutText h1 {
+        font-size: 26px;
+    }
+
+    .para {
+        font-size: 13px;
+    }
+
+    .ImageWrapper {
+        width: 100%;
+        border-radius: 22px;
+    }
+
+    .ImageWrapper img {
+        border-radius: 22px;
+    }
+
+    .demoBtn {
+        width: 210px;
+        height: 48px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================
+   600px
+========================= */
+@media (max-width: 600px) {
+
+    .FreeDemoSection {
+        padding: 35px 20px;
+    }
+
+    .HomeAboutText h1 {
+        font-size: 26px;
+    }
+
+    .AboutText h1 {
+        font-size: 24px;
+    }
+
+    .para {
+        font-size: 12px;
+    }
+
+    .demoBtn {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    .ImageWrapper {
+        border-radius: 18px;
+    }
+
+    .ImageWrapper img {
+        border-radius: 18px;
+    }
+}
+
+
+/* =========================
+   480px
+========================= */
+@media (max-width: 480px) {
+
+    .FreeDemoSection {
+        padding: 30px 16px;
+    }
+
+    .HomeAboutText h1 {
+        font-size: 23px;
+    }
+
+    .HomeLine {
+        width: 110px;
+    }
+
+    .AboutText h1 {
+        font-size: 21px;
+        line-height: 1.5;
+    }
+
+    .para {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .demoBtn {
+        width: 100%;
+        height: 46px;
+    }
+
+    .iconBox {
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+    }
+
+    .text {
+        font-size: 13px;
+    }
+
+    .demoBtn:hover .iconBox {
+        left: calc(100% - 45px);
+    }
+}
+
+
+/* =========================
+   380px
+========================= */
+@media (max-width: 380px) {
+
+    .HomeAboutText h1 {
+        font-size: 20px;
+    }
+
+    .AboutText h1 {
+        font-size: 18px;
+    }
+
+    .para {
+        font-size: 10px;
+    }
+
+    .demoBtn {
+        height: 44px;
+    }
+
+    .iconBox {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .ImageWrapper {
+        border-radius: 15px;
+    }
+
+    .ImageWrapper img {
+        border-radius: 15px;
+    }
+}

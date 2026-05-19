@@ -1,72 +1,62 @@
-import './FreeDemoSection.css'
-
-import { ArrowRight } from 'lucide-react'
+import styles from './FreeDemoSection.module.css'
+import { motion } from 'framer-motion';
+import { ArrowRight, ChevronRight } from 'lucide-react'
 import demoImage from '../../assets/images/free-demo.jpg'
 
 export default function FreeDemoSection() {
   return (
-    <section className="free-demo-section">
+    <>
+      <section className={styles.FreeDemoSection}>
+        {/* Text */}
+        <motion.div className={styles.HomeAboutText} initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }} overlay
+          transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+          <h1>Experience a Free <span className={styles.HomeColor}> Demo Class</span></h1>
+          <span className={styles.HomeLine}></span>
+        </motion.div>
 
-      <div className="free-demo-container">
+        {/* Flex */}
+        <div className={styles.FreeDemoSectionFlex}>
 
-        {/* TOP TITLE */}
-        <div className="free-demo-heading-wrapper">
+          {/* para */}
 
-          <h2 className="free-demo-title">
-            Experience a Free <span>Demo Class</span>
-          </h2>
+          <motion.div className={styles.AboutTextPa} initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} overlay
+            transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+            <motion.div className={styles.AboutText} initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }} overlay
+              transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+              <h1>Free Demo Learning Experience</h1>
+            </motion.div>
+            <p className={styles.para}>Join a free demo session at ThinkClear to explore our
+              teaching methods, course structure, and interactive learning environment before
+              enrollment. Students of Classes 6–12 can experience live interactive demo classes,
+              subject-wise trial sessions, doubt interaction opportunities, and concept-based learning
+              with expert teacher guidance before joining the full course.</p>
+            <button className={styles.demoBtn}>
+              <span className={styles.iconBox}>
+                <ChevronRight size={20} strokeWidth={2.5} />
+              </span>
 
-          <div className="free-demo-underline" />
-
-        </div>
-
-        {/* CONTENT */}
-        <div className="free-demo-content">
-
-          {/* LEFT */}
-          <div className="free-demo-left">
-
-            <h3 className="free-demo-subtitle">
-              Free Demo Learning Experience
-            </h3>
-
-            <p className="free-demo-description">
-              Join a free demo session at ThinkClear to explore our teaching
-              methods, course structure, and interactive learning environment
-              before enrollment. Students of Classes 6–12 can experience live
-              interactive demo classes, subject-wise trial sessions, doubt
-              interaction opportunities, and concept-based learning with expert
-              teacher guidance before joining the full course.
-            </p>
-
-            {/* BUTTON */}
-            <button className="free-demo-btn">
-
-              <div className="free-demo-btn-icon">
-                <ArrowRight size={20} />
-              </div>
-
-              <span>Book Free Demo</span>
-
+              <span className={styles.text}>Book Free Demo</span>
             </button>
+          </motion.div>
 
-          </div>
+          {/* img */}
+          <motion.div className={styles.ImageWrapper} initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} overlay
+            transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
 
-          {/* RIGHT IMAGE */}
-          <div className="free-demo-image-wrapper">
+            <img src={demoImage} alt="teacher" />
 
-            <img
-              src={demoImage}
-              alt="Free Demo"
-              className="free-demo-image"
-            />
-
-          </div>
+          </motion.div>
 
         </div>
-
-      </div>
-
-    </section>
+      </section>
+    </>
   )
 }
