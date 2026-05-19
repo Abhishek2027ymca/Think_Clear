@@ -6,6 +6,7 @@ import founder from '../../assets/About/founder.png'
 import customer from '../../assets/Policies/customer.png'
 
 
+
 function PoliciesBanner() {
     return (
         <>
