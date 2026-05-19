@@ -5,7 +5,7 @@ import CoursesHero from '../components/CoursesSection/CoursesHero';
 // import GCSEProgramSection from '../components/CoursesSection/GCSEProgramSection'
 // import ALevelProgramSection from '../components/CoursesSection/ALevelProgramSection'
 import FreeDemoSection from '../components/CoursesSection/FreeDemoSection';
-// import TeachingApproachSection from '../components/CoursesSection/TeachingApproachSection';
+import TeachingApproachSection from '../components/CoursesSection/TeachingApproachSection';
 // import CoursesFeaturesSection from '../components/CoursesSection/CourseFeaturesSection';
 // import FAQSection from '../components/CoursesSection/FAQSection'
 // import CTASection from '../components/CoursesSection/CTASection'
@@ -20,8 +20,8 @@ function Courses() {
         <GCSEProgramSection />
         <ALevelProgramSection /> */}
         <FreeDemoSection />
-        {/* <TeachingApproachSection />
-        <CoursesFeaturesSection />
+        <TeachingApproachSection />
+        {/* <CoursesFeaturesSection />
         <FAQSection />
         <CTASection />  */}
         </>

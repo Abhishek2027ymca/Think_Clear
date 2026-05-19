@@ -1,96 +1,80 @@
-import './TeachingApproachSection.css'
-
+import styles from './TeachingApproachSection.module.css'
+import { motion } from 'framer-motion';
 import {
   Lightbulb,
   ListOrdered,
   BrainCircuit,
-  Headphones,
+  Headphones
 } from 'lucide-react'
-
-const APPROACHES = [
-  {
-    id: 1,
-    icon: <Lightbulb size={30} strokeWidth={1.8} />,
-    title: 'Simplified Concept Learning',
-    description:
-      'Complex topics are explained in simple and easy-to-understand teaching methods for better learning.',
-  },
-  {
-    id: 2,
-    icon: <ListOrdered size={30} strokeWidth={1.8} />,
-    title: 'Step-by-Step Guidance',
-    description:
-      'Students learn concepts gradually with structured lessons and detailed explanations.',
-  },
-  {
-    id: 3,
-    icon: <BrainCircuit size={30} strokeWidth={1.8} />,
-    title: 'Practical Problem Solving',
-    description:
-      'Regular exercises and real examples improve analytical and problem-solving abilities.',
-  },
-  {
-    id: 4,
-    icon: <Headphones size={30} strokeWidth={1.8} />,
-    title: 'Academic Support',
-    description:
-      'Revision sessions, doubt solving, and practice tests ensure consistent improvement.',
-  },
-]
-
 export default function TeachingApproachSection() {
+  const supportData = [
+    {
+      id: 1,
+      icon: <Lightbulb size={30} strokeWidth={1.8} />,
+      title: 'Simplified Concept Learning',
+      desc: 'Complex topics are explained in simple and easy-to-understand teaching methods for better learning.'
+    },
+
+    {
+      id: 2,
+      icon: <ListOrdered size={30} strokeWidth={1.8} />,
+      title: 'Step-by-Step Guidance',
+      desc: 'Students learn concepts gradually with structured lessons and detailed explanations.'
+    },
+
+    {
+      id: 3,
+      icon: <BrainCircuit size={30} strokeWidth={1.8} />,
+      title: 'Practical Problem Solving',
+      desc: 'Regular exercises and real examples improve analytical and problem-solving abilities.'
+    },
+
+    {
+      id: 4,
+      icon: <Headphones size={30} strokeWidth={1.8} />,
+      title: 'Academic Support',
+      desc: 'Revision sessions, doubt solving, and practice tests ensure consistent improvement.'
+    }
+  ]
   return (
-    <section className="teaching-section">
 
-      <div className="teaching-container">
+    <>
 
-        {/* HEADER */}
-        <div className="teaching-header">
+      <section className={styles.TeachingApproachSection}>
+        <motion.div className={styles.HomeText} initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }} overlay
+          transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+          <h1>Our Teaching <span className={styles.HomeColor}>Approach</span></h1>
+          <span className={styles.HomeLine}></span>
+          <p>Student-focused learning with simplified concepts,
+            interactive teaching, and continuous academic support.</p>
+        </motion.div>
 
-          <h2 className="teaching-title">
-            Our Teaching <span>Approach</span>
-          </h2>
 
-          <div className="teaching-underline" />
 
-          <p className="teaching-description">
-            Student-focused learning with simplified concepts, interactive
-            teaching, and continuous academic support.
-          </p>
+        <div className={styles.CardContainer}>
 
-        </div>
+          {
+            supportData.map((item) => (
 
-        {/* CARDS */}
-        <div className="teaching-grid">
+              <div className={styles.Card} key={item.id}>
 
-          {APPROACHES.map(({ id, icon, title, description }) => (
-            <div
-              key={id}
-              className="teaching-card"
-            >
+                <div className={styles.IconBox}>
+                  {item.icon}
+                </div>
 
-              {/* ICON */}
-              <div className="teaching-icon-box">
-                {icon}
+                <h3>{item.title}</h3>
+
+                <p>{item.desc}</p>
+
               </div>
 
-              {/* TITLE */}
-              <h3 className="teaching-card-title">
-                {title}
-              </h3>
-
-              {/* DESCRIPTION */}
-              <p className="teaching-card-description">
-                {description}
-              </p>
-
-            </div>
-          ))}
+            ))
+          }
 
         </div>
-
-      </div>
-
-    </section>
+      </section>
+    </>
   )
 }
