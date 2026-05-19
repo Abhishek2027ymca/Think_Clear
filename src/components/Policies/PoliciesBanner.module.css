@@ -1,0 +1,630 @@
+.HomeBanner {
+    width: 100%;
+    min-height: 80vh;
+    padding: 0 50px;
+    background: #060A30;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    color: white;
+}
+
+.HomeBannerSpace {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.HomeTextValue {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.HomePadding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0 20px 0 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+}
+
+.HomePadding span {
+    font-size: 14px;
+    color: white;
+}
+
+.HomeTextValue h1 {
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.HomeTextValue p {
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 650px;
+}
+
+.HomeBtn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+}
+
+.HomeBtn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 16px;
+    margin-top: 35px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 10px 28px;
+    border-radius: 5px;
+    border: none;
+
+    transition: all 0.35s ease;
+}
+
+/* Hover Animation */
+.HomeBtn {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+}
+
+.HomeBtn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 10px 28px;
+    border-radius: 5px;
+    gap: 10px;
+    border: none;
+
+    /* Animation */
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.HomeBtn button:hover {
+    background-color: #060A30;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Click Effect */
+.HomeBtn button:active {
+    transform: scale(0.96);
+}
+
+
+/* Banner Image */
+
+
+.BannerImage {
+    margin-top: 1.9rem;
+
+}
+
+.ImageSection {
+    width: 300px;
+    /* height: 490px; */
+}
+
+.ImageSection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* cards */
+
+.AboutBanner {
+    position: absolute;
+    bottom: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 75px;
+}
+
+.AboutCardsPad {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 15px 50px;
+    background-color: #F6F6F6;
+    gap: 180px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.Abouttext {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.Abouttext h2 {
+    font-weight: 500;
+    font-size: 26px;
+    color: #1C2259;
+}
+
+.Abouttext p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.751);
+}
+
+
+
+
+/* =========================
+   1600px
+========================= */
+@media (max-width: 1600px) {
+
+    .HomeBanner {
+        min-height: 70vh;
+        padding: 0 60px;
+    }
+
+    .HomeTextValue {
+        margin-top:3rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .HomeTextValue h1 {
+        font-size: 60px;
+    }
+
+    .HomeTextValue p {
+        font-size: 16px;
+        max-width: 42vw;
+    }
+
+    .ImageSection {
+        width: 24vw;
+    }
+
+   
+
+
+    .Abouttext h2 {
+        font-size: 1.7vw;
+    }
+
+    .Abouttext p {
+        font-size: 0.95vw;
+    }
+}
+
+
+/* =========================
+   1440px
+========================= */
+@media (max-width: 1440px) {
+
+    .HomeBanner {
+         min-height: 75vh;
+        padding: 0 60px;
+    }
+
+    .HomeBannerSpace {
+        gap: 50px;
+    }
+
+    .HomeTextValue h1 {
+        font-size: 56px;
+    }
+
+    .HomeTextValue p {
+        font-size: 15px;
+        max-width: 620px;
+    }
+
+    .ImageSection {
+        width: 420px;
+    }
+
+    .AboutBanner {
+        padding: 0 60px;
+    }
+
+    .AboutCardsPad {
+        gap: 120px;
+        padding: 18px 40px;
+    }
+
+    .Abouttext h2 {
+        font-size: 24px;
+    }
+
+    .Abouttext p {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================
+   1280px
+========================= */
+@media (max-width: 1280px) {
+
+    .HomeBanner {
+        width: 100%;
+        min-height: 40vh;
+        padding: 0 50px;
+    }
+
+    .HomeTextValue h1 {
+        font-size: 46px;
+    }
+
+    .HomeTextValue {
+        margin: 0;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .HomeTextValue p {
+        font-size: 13px;
+        max-width: 560px;
+    }
+
+    .HomeBtn {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .HomeBtn button {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+
+    .ImageSection {
+        width: 310px;
+    }
+
+
+    .AboutCardsPad {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        padding: 15px 50px;
+        background-color: #F6F6F6;
+        gap: 180px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+    }
+
+    .Abouttext h2 {
+        font-size: 22px;
+    }
+}
+
+
+/* =========================
+   1024px
+========================= */
+@media (max-width: 1024px) {
+
+    .HomeBanner {
+        padding: 0 50px 0 50px;
+        min-height: auto;
+    }
+
+    .HomeBannerSpace {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .HomeTextValue {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .HomeTextValue h1 {
+        font-size: 42px;
+    }
+
+    .HomeTextValue p {
+        max-width: 90%;
+        font-size: 15px;
+    }
+
+    .HomeBtn {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .BannerImage {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ImageSection {
+        width: 380px;
+    }
+
+    .AboutBanner {
+        position: relative;
+        bottom: 0;
+        margin-top: 40px;
+        padding: 0 50px 50px;
+    }
+
+    .AboutCardsPad {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .Abouttext {
+        align-items: center;
+        text-align: center;
+    }
+
+    .Abouttext h2 {
+        font-size: 26px;
+    }
+
+    .Abouttext p {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================
+   900px
+========================= */
+@media (max-width: 900px) {
+
+    .HomeTextValue h1 {
+        font-size: 38px;
+    }
+
+    .HomeTextValue p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .ImageSection {
+        width: 340px;
+    }
+
+    .AboutCardsPad {
+        gap: 25px;
+    }
+}
+
+
+/* =========================
+   768px
+========================= */
+@media (max-width: 768px) {
+
+    .HomeBanner {
+        padding: 0px 5% 0px;
+    }
+
+    .HomePadding {
+        height: 38px;
+        padding: 0 16px 0 5px;
+    }
+
+    .HomePadding span {
+        font-size: 13px;
+    }
+
+    .HomeTextValue h1 {
+        font-size: 34px;
+        line-height: 1.3;
+    }
+
+    .HomeTextValue p {
+        margin-top: 20px;
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .HomeBtn {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .HomeBtn button {
+        width: 48%;
+        justify-content: center;
+        font-size: 14px;
+        padding: 12px 16px;
+    }
+
+    .ImageSection {
+        width: 300px;
+    }
+
+    .AboutBanner {
+        padding: 0 5% 40px;
+    }
+
+    .AboutCardsPad {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 24px;
+    }
+
+    .Abouttext h2 {
+        font-size: 22px;
+    }
+
+    .Abouttext p {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================
+   600px
+========================= */
+@media (max-width: 600px) {
+
+    .HomeBanner {
+        padding: 35px 20px 0px;
+    }
+
+    .HomeTextValue h1 {
+        font-size: 28px;
+    }
+
+    .HomeTextValue p {
+        font-size: 13px;
+    }
+
+    .HomeBtn {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .HomeBtn button {
+        width: 100%;
+    }
+
+    .ImageSection {
+        width: 270px;
+    }
+
+    .AboutCardsPad {
+        grid-template-columns: 1fr;
+        padding: 22px;
+    }
+
+    .Abouttext {
+        width: 100%;
+    }
+
+    .Abouttext h2 {
+        font-size: 21px;
+    }
+}
+
+
+/* =========================
+   480px
+========================= */
+@media (max-width: 480px) {
+
+    .HomeBanner {
+        padding: 30px 16px 0px;
+    }
+
+    .HomePadding {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .HomeTextValue h1 {
+        font-size: 24px;
+    }
+
+    .HomeTextValue p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .ImageSection {
+        width: 230px;
+    }
+
+    .HomeBtn button {
+        font-size: 13px;
+        padding: 11px 14px;
+    }
+
+    .AboutBanner {
+        padding: 0 16px 35px;
+    }
+
+    .AboutCardsPad {
+        border-radius: 14px;
+        padding: 20px 16px;
+    }
+
+    .Abouttext h2 {
+        font-size: 20px;
+    }
+
+    .Abouttext p {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================
+   380px
+========================= */
+@media (max-width: 380px) {
+
+    .HomeTextValue h1 {
+        font-size: 22px;
+    }
+
+    .HomeTextValue p {
+        font-size: 11px;
+    }
+
+    .ImageSection {
+        width: 200px;
+    }
+
+    .HomeBtn button {
+        font-size: 12px;
+    }
+
+    .AboutCardsPad {
+        padding: 18px 14px;
+    }
+
+    .Abouttext h2 {
+        font-size: 18px;
+    }
+
+    .Abouttext p {
+        font-size: 11px;
+    }
+}

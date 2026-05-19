@@ -1,0 +1,503 @@
+.AboutGalary {
+    width: 100%;
+    padding: 50px 60px;
+}
+
+.HomeText {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.HomeText h1 {
+    font-size: 43px;
+    font-weight: 500;
+}
+
+.HomeLine {
+    margin-top: 10px;
+    width: 150px;
+    height: 2px;
+    background-color: #060A30;
+}
+
+.HomeColor {
+    background: linear-gradient(90deg, #060A30 0%, #1C2259 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.HomeText p {
+    margin-top: 25px;
+    max-width: 600px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.776);
+}
+
+/* Image */
+
+
+.GalleryWrapper {
+    width: 100%;
+    position: relative;
+    margin-top: 60px;
+}
+
+.GalleryContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+.GalleryContainer {
+    overflow: hidden;
+}
+
+/* Cards */
+
+.GalleryCard {
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.GalleryCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.GalleryCard:hover img {
+    transform: scale(1.08);
+}
+
+/* Arrow Button */
+
+.ArrowBtn {
+    width: 58px;
+    height: 58px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #060A30;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition: 0.3s ease;
+}
+
+.ArrowBtn:hover {
+    background: #151B54;
+    transform: translateY(-50%) scale(1.08);
+}
+
+/* Right Arrow */
+
+.RightArrow {
+    right: -28px;
+}
+
+/* Left Arrow */
+
+.LeftArrow {
+    left: -28px;
+}
+
+/* Responsive */
+
+@media(max-width: 992px) {
+
+    .GalleryContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .GalleryCard {
+        height: 220px;
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    .GalleryContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .GalleryCard {
+        height: 240px;
+    }
+
+    .ArrowBtn {
+        width: 48px;
+        height: 48px;
+    }
+
+    .RightArrow {
+        right: -10px;
+    }
+
+    .LeftArrow {
+        left: -10px;
+    }
+
+}
+
+
+
+/* =========================
+   1600px
+========================= */
+@media (max-width: 1600px) {
+
+    .AboutGalary{
+        padding: 50px 60px;
+    }
+
+    .HomeText h1{
+        font-size: 50px;
+    }
+
+    .HomeText p{
+        max-width: 38vw;
+        font-size: 1vw;
+        line-height: 1.8;
+    }
+
+    .GalleryWrapper{
+        margin-top: 4%;
+    }
+
+    .GalleryContainer{
+        gap: 1vw;
+    }
+
+    .GalleryCard{
+        height: 25vw;
+    }
+
+    .ArrowBtn{
+        width: 3.8vw;
+        height: 3.8vw;
+    }
+
+    .RightArrow{
+        right: -1.8vw;
+    }
+
+    .LeftArrow{
+        left: -1.8vw;
+    }
+
+}
+
+
+/* =========================
+   1440px
+========================= */
+@media (max-width: 1440px) {
+
+    .AboutGalary{
+        padding: 50px 55px;
+    }
+
+    .HomeText h1{
+        font-size: 40px;
+    }
+
+    .HomeText p{
+        max-width: 580px;
+        font-size: 15px;
+    }
+
+    .GalleryCard{
+        height: 310px;
+    }
+
+    .ArrowBtn{
+        width: 55px;
+        height: 55px;
+    }
+
+}
+
+
+/* =========================
+   1280px
+========================= */
+@media (max-width: 1280px) {
+
+    .AboutGalary{
+        padding:50px 60px;
+    }
+
+    .GalleryContainer{
+        gap: 12px;
+    }
+
+    .GalleryCard{
+        height: 350px;
+    }
+
+    .HomeText h1{
+        font-size: 43px;
+    }
+
+    .HomeText p{
+        font-size: 14px;
+        max-width: 520px;
+    }
+
+}
+
+
+/* =========================
+   1024px
+========================= */
+@media (max-width: 1024px) {
+
+    .AboutGalary{
+        padding: 45px 5%;
+    }
+
+    .HomeText{
+        align-items: center;
+        text-align: center;
+    }
+
+    .HomeText h1{
+        font-size: 34px;
+    }
+
+    .HomeText p{
+        max-width: 90%;
+        font-size: 15px;
+    }
+
+    .GalleryContainer{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .GalleryCard{
+        height: 260px;
+    }
+
+    .ArrowBtn{
+        width: 52px;
+        height: 52px;
+    }
+
+    .RightArrow{
+        right: -18px;
+    }
+
+    .LeftArrow{
+        left: -18px;
+    }
+
+}
+
+
+/* =========================
+   900px
+========================= */
+@media (max-width: 900px) {
+
+    .HomeText h1{
+        font-size: 32px;
+    }
+
+    .HomeText p{
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .GalleryCard{
+        height: 240px;
+    }
+
+}
+
+
+/* =========================
+   768px
+========================= */
+@media (max-width: 768px) {
+
+    .AboutGalary{
+        padding: 40px 5%;
+    }
+
+    .HomeText h1{
+        font-size: 28px;
+    }
+
+    .HomeText p{
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .GalleryWrapper{
+        margin-top: 45px;
+    }
+
+    .GalleryContainer{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .GalleryCard{
+        height: 220px;
+        border-radius: 16px;
+    }
+
+    .GalleryCard img{
+        border-radius: 16px;
+    }
+
+    .ArrowBtn{
+        width: 48px;
+        height: 48px;
+    }
+
+    .RightArrow{
+        right: -12px;
+    }
+
+    .LeftArrow{
+        left: -12px;
+    }
+
+}
+
+
+/* =========================
+   600px
+========================= */
+@media (max-width: 600px) {
+
+    .AboutGalary{
+        padding: 35px 20px;
+    }
+
+    .HomeText h1{
+        font-size: 25px;
+    }
+
+    .HomeText p{
+        font-size: 13px;
+    }
+
+    .GalleryContainer{
+        grid-template-columns: 1fr;
+    }
+
+    .GalleryCard{
+        height: 260px;
+    }
+
+    .ArrowBtn{
+        width: 45px;
+        height: 45px;
+    }
+
+    .RightArrow{
+        right: -8px;
+    }
+
+    .LeftArrow{
+        left: -8px;
+    }
+
+}
+
+
+/* =========================
+   480px
+========================= */
+@media (max-width: 480px) {
+
+    .AboutGalary{
+        padding: 30px 16px;
+    }
+
+    .HomeText h1{
+        font-size: 22px;
+    }
+
+    .HomeLine{
+        width: 120px;
+    }
+
+    .HomeText p{
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .GalleryWrapper{
+        margin-top: 35px;
+    }
+
+    .GalleryCard{
+        height: 220px;
+        border-radius: 14px;
+    }
+
+    .GalleryCard img{
+        border-radius: 14px;
+    }
+
+    .ArrowBtn{
+        width: 42px;
+        height: 42px;
+    }
+
+}
+
+
+/* =========================
+   380px
+========================= */
+@media (max-width: 380px) {
+
+    .HomeText h1{
+        font-size: 20px;
+    }
+
+    .HomeText p{
+        font-size: 11px;
+    }
+
+    .HomeLine{
+        width: 100px;
+    }
+
+    .GalleryCard{
+        height: 190px;
+    }
+
+    .ArrowBtn{
+        width: 38px;
+        height: 38px;
+    }
+
+}

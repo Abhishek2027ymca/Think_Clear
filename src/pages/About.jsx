@@ -11,6 +11,7 @@ import AboutPurpose from '../components/About/AboutPurpose';
 import AboutTeam from '../components/About/AboutTeam';
 import AboutFAQ from '../components/About/AboutFAQ';
 import AboutContact from '../components/About/AboutContact';
+import AboutGalary from '../components/About/AboutGalary';
 
 function About() {
     return ( 
@@ -25,6 +26,7 @@ function About() {
         <AboutCards />
         <AboutPurpose />
         <AboutTeam />
+        <AboutGalary />
         <AboutFAQ />
         <AboutContact />
         </>
