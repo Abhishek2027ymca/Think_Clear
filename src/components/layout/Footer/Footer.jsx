@@ -64,6 +64,18 @@ function Footer() {
                         </div>
 
                     </div> */}
+                           <div className={styles.FooterQuciK}>
+                        <h4>Courses</h4>
+                        <div className={styles.FooterLinks}>
+                            <span>Class 6–8 Foundation</span>
+                            <span>Class 9–10 Academic Courses</span>
+                            <span>Class 11–12 Science Stream</span>
+                            <span>Maths & Science Special Programs</span>
+                        </div>
+
+                    </div>
+
+
                     {/* Quick */}
                            <div className={styles.FooterQuciK}>
                         <h4>Contact Information</h4>

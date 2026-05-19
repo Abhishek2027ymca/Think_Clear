@@ -1,73 +1,51 @@
-import './CoursesHero.css'
-
-import { ArrowRight } from 'lucide-react'
+import styles from './CoursesHero.module.css'
+import { CloudMoonRain, Dot, ChevronRight, MoveRight } from 'lucide-react';
 import coursesHero from '../../assets/images/courses-hero.png'
+import { motion } from 'framer-motion';
+
 
 export default function CoursesHero() {
   return (
-    <section className="courses-hero-section">
+    <>
+     <section className={styles.HomeBanner}>
+                <div className={styles.HomeBannerSpace}>
+                    {/* text */}
+                    <motion.div className={styles.HomeTextValue} initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }} overlay
+                        transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+                        <motion.div className={styles.HomePadding} initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }} overlay
+                            transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+                            <Dot style={{ color: "white" }} size={30} />
+                            <span>Policies ThinkClear</span>
+                        </motion.div>
+                        <h1>Everything Needed to <br />Launch & Grow ThinkClear</h1>
+                        <p>Complete website, policy, branding, payment, and marketing
+                             setup for ThinkClear’s professional online growth.</p>
+                        <div className={styles.HomeBtn}>
+                            <button>Explore Courses</button> <button>Book Free Demo    <MoveRight /></button>
+                        </div>
+                    </motion.div>
+                    {/* Image */}
 
-      <div className="courses-hero-container">
+                    {/* <div className={styles.BannerImage}>
+                                <div className={styles.ImageSection}>
+                                    <img  src={Hero} alt='hero' />
+                                </div>
+                            </div> */}
 
-        {/* LEFT CONTENT */}
-        <div className="courses-hero-left">
-
-          {/* Badge */}
-          <div className="courses-hero-badge">
-
-            <span className="courses-hero-badge-dot" />
-
-            <span className="courses-hero-badge-text">
-              Enroll in ThinkClear Courses Today
-            </span>
-
-          </div>
-
-          {/* Heading */}
-          <h1 className="courses-hero-title">
-            Comprehensive Learning
-            <br />
-            Programs for Classes 6–12
-          </h1>
-
-          {/* Description */}
-          <p className="courses-hero-description">
-            Structured learning programs for Classes 6–12 designed to improve
-            concept clarity, confidence, and academic performance with expert
-            guidance.
-          </p>
-
-          {/* Buttons */}
-          <div className="courses-hero-buttons">
-
-            {/* Explore */}
-            <button className="courses-hero-btn">
-              Explore Courses
-            </button>
-
-            {/* Demo */}
-            <button className="courses-hero-btn">
-              Book Free Demo
-              <ArrowRight size={16} />
-            </button>
-
-          </div>
-
-        </div>
-
-        {/* RIGHT IMAGE */}
-        <div className="courses-hero-right">
-
-          <img
-            src={coursesHero}
-            alt="ThinkClear student"
-            className="courses-hero-image"
-          />
-
-        </div>
-
-      </div>
-
-    </section>
+                    <motion.div className={styles.BannerImage} initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }} overlay
+                        transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+                        <div className={styles.ImageSection}>
+                            <img src={coursesHero} alt='hero' />
+                        </div>
+                    </motion.div>
+                </div>
+            </section>
+    </>
   )
 }
