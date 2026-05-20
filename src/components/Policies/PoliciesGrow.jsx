@@ -30,7 +30,10 @@ function PoliciesGrow() {
 
         {/* cards */}
 
-        <div className={styles.PoliciesCards}>
+        <motion.div className={styles.PoliciesCards} initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }} overlay
+          transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
           {/*  */}
           <div className={styles.Policies2}>
             <div className={styles.card1}>
@@ -96,17 +99,17 @@ function PoliciesGrow() {
 
               <p className={styles.smallText}>
                 Plan affordable, location-based marketing campaigns
-                 to help more students discover and learn about ThinkClear courses.
+                to help more students discover and learn about ThinkClear courses.
               </p>
 
             </div>
 
             {/*  */}
-            <div className={styles.card1}>
+            <div className={styles.cards1}>
             </div>
 
           </div>
-        </div>
+        </motion.div>
 
       </section>
     </>
