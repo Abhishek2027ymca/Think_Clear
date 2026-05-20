@@ -1,47 +1,49 @@
-import './IBProgramSection.css'
-
+import styles from './ALevelProgramSection.module.css'
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
 import { useRef } from 'react'
+import mathsImg from '../../assets/images/maths.jpg'
+import Biologyg from '../../assets/images/biology.jpg'
+import physicsImg from '../../assets/images/physcis.jpg'
+import chemistryImg from '../../assets/images/chemistry.jpg'
+import { motion } from 'framer-motion';
 
-import mathsImg from '../../assets/courses/alevel/maths.jpg'
-import furtherMathsImg from '../../assets/courses/alevel/further-maths.jpg'
-import physicsImg from '../../assets/courses/alevel/physics.jpg'
-import chemistryImg from '../../assets/courses/alevel/chemistry.jpg'
 
-const COURSES = [
+const courses = [
   {
     id: 1,
-    subject: 'maths',
-    title: 'Mathematics',
+    subject: "maths",
+    title: "Mathematics",
     description:
-      'Master advanced mathematical concepts and problem-solving techniques confidently.',
-    image: mathsImg,
+      "Master algebra, geometry, trigonometry, and calculus with step-by-step guidance and conceptual clarity.",
+    image:
+      "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1000",
   },
   {
     id: 2,
-    subject: 'maths',
-    title: 'Further Mathematics',
+    subject: "Biology",
+    title: "Biology",
     description:
-      'Develop deeper analytical and advanced mathematical reasoning skills.',
-    image: furtherMathsImg,
+      "Explore human physiology, genetics, and life science concepts through visual learning and detailed explanations.",
+    image: Biologyg,
   },
   {
     id: 3,
-    subject: 'Physics',
-    title: 'Physics',
+    subject: "Physics",
+    title: "Physics",
     description:
-      'Study advanced physics concepts with practical applications and numerical mastery.',
-    image: physicsImg,
+      "Develop understanding of motion, force, energy, electricity, and modern physics through interactive explanations.",
+    image:physicsImg,
   },
   {
     id: 4,
-    subject: 'Chemistry',
-    title: 'Chemistry',
+    subject: "Chemistry",
+    title: "Chemistry",
     description:
-      'Build strong conceptual understanding for organic, physical, and inorganic chemistry.',
-    image: chemistryImg,
+      "Learn physical, organic, and inorganic chemistry with simplified explanations and practical examples.",
+    image:chemistryImg,
   },
-]
+];
+
 
 export default function ALevelProgramSection() {
   const scrollRef = useRef(null)
@@ -56,101 +58,48 @@ export default function ALevelProgramSection() {
   }
 
   return (
-    <section className="ib-section">
+    <>
+      <section className={styles.ALevelProgramSection}>
 
-      <div className="ib-container">
+        <motion.div className={styles.HomeText} initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }} overlay
+          transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+          <h1>Explore Our <span className={styles.HomeColor}>Core Subjects</span></h1>
+          <span className={styles.HomeLine}></span>
+          <p>Structured subject programs that strengthen concepts,
+            problem-solving, and academic performance.</p>
+        </motion.div>
 
-        {/* HEADER */}
-        <div className="ib-header">
 
-          <div className="ib-header-left">
+        <motion.div className={styles.container} initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }} overlay
+          transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+          {courses.map((course) => (
+            <div className={styles.card} key={course.id}>
+              <div className={styles.imageWrapper}>
+                <img src={course.image} alt={course.title} />
 
-            <h2 className="ib-title">
-              A Level <span>Programmer</span>
-            </h2>
-
-            <div className="ib-underline" />
-
-            <p className="ib-description">
-              Advanced subject specialization focused on university preparation
-              and deeper academic understanding.
-            </p>
-
-          </div>
-
-          {/* NAVIGATION */}
-          <div className="ib-nav-buttons">
-
-            <button
-              onClick={() => scroll('left')}
-              className="ib-nav-btn ib-nav-btn-light"
-            >
-              <ChevronLeft size={22} />
-            </button>
-
-            <button
-              onClick={() => scroll('right')}
-              className="ib-nav-btn ib-nav-btn-dark"
-            >
-              <ChevronRight size={22} />
-            </button>
-
-          </div>
-
-        </div>
-
-        {/* CARDS */}
-        <div
-          ref={scrollRef}
-          className="ib-cards-row"
-        >
-
-          {COURSES.map(({ id, subject, title, description, image }) => (
-            <div
-              key={id}
-              className="ib-card"
-            >
-
-              {/* IMAGE */}
-              <div className="ib-card-image-wrapper">
-
-                <img
-                  src={image}
-                  alt={title}
-                  className="ib-card-image"
-                />
-
-                <div className="ib-subject-badge">
-                  {subject}
-                </div>
-
+                <span className={styles.tag}>
+                  {course.subject}
+                </span>
               </div>
 
-              {/* CONTENT */}
-              <div className="ib-card-content">
+              <div className={styles.content}>
+                <h3>{course.title}</h3>
 
-                <h3 className="ib-card-title">
-                  {title}
-                </h3>
+                <p>{course.description}</p>
 
-                <p className="ib-card-description">
-                  {description}
-                </p>
-
-                <button className="ib-enroll-btn">
+                <button className={styles.button}>
                   Enroll Now
-                  <ArrowRight size={17} />
+                  <span>➜</span>
                 </button>
-
               </div>
-
             </div>
           ))}
-
-        </div>
-
-      </div>
-
-    </section>
+        </motion.div>
+      </section>
+    </>
   )
 }

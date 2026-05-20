@@ -1,0 +1,476 @@
+.ALevelProgramSection {
+  width: 100%;
+  padding: 50px 60px;
+}
+
+/* Text */
+
+.HomeText {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.HomeText h1 {
+  font-size: 43px;
+  font-weight: 500;
+}
+
+.HomeLine {
+  margin-top: 10px;
+  width: 150px;
+  height: 2px;
+  background-color: #060A30;
+}
+
+.HomeColor {
+  background: linear-gradient(90deg, #060A30 0%, #1C2259 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.HomeText p {
+  margin-top: 25px;
+  max-width: 580px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.776);
+}
+
+
+/* cards */
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.card {
+  width: 274.5px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 170px;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  color: #333;
+  font-size: 12px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.content {
+  padding: 12px;
+}
+
+.content h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  color: #111;
+}
+
+.content p {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.button {
+  width: 100%;
+  height: 42px;
+  border: none;
+  background: #00003d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.button span {
+  font-size: 18px;
+}
+
+.card {
+  width: 275px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 12px;
+
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.content p {
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+
+  min-height: 35px;
+}
+
+/* Button same bottom */
+
+.button {
+  width: 100%;
+  height: 42px;
+  border: none;
+  background: #00003d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #12127a;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,61,0.25);
+}
+
+.button:active{
+  transform: scale(0.97);
+}
+
+@media (max-width:768px) {
+  .container {
+    justify-content: center;
+  }
+}
+
+
+/* =======================================================
+   1600px and Large Screens
+======================================================= */
+/* =========================
+   1600px and Above
+========================= */
+
+@media (min-width: 1600px){
+
+  .ALevelProgramSection{
+    padding: 50px 60px;
+  }
+
+  /* Heading */
+
+  .HomeText h1{
+    font-size: 50px;
+  }
+
+  .HomeText p{
+    max-width: 45%;
+    font-size: 1vw;
+    line-height: 1.8;
+  }
+
+  .HomeLine{
+    width: 9%;
+    height: 3px;
+  }
+
+  /* Cards */
+
+  .container{
+    margin-top: 5%;
+    gap: 1.5%;
+    justify-content: center;
+  }
+
+  .card{
+    width: 22%;
+    min-width: 360px;
+    max-width: 430px;
+    border-radius: 18px;
+  }
+
+  .imageWrapper{
+    height: 250px;
+  }
+
+  .tag{
+    font-size: 0.85vw;
+    padding: 0.45vw 1vw;
+    border-radius: 40px;
+    top: 18px;
+    left: 18px;
+  }
+
+  .content{
+    padding: 24px;
+  }
+
+  .content h3{
+    font-size: 2vw;
+    line-height: 1.3;
+  }
+
+  .content p{
+    font-size: 1vw;
+    line-height: 1.9;
+    min-height: 90px;
+    margin-top: 18px;
+    margin-bottom: 28px;
+  }
+
+  .button{
+    height: 58px;
+    font-size: 1vw;
+    border-radius: 12px;
+  }
+
+  .button span{
+    font-size: 1.2vw;
+  }
+
+}
+
+/* =========================
+   1400px - 1599px
+========================= */
+
+@media (max-width: 1599px){
+
+  .container{
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .card{
+    width: 23%;
+  }
+
+}
+
+/* =========================
+   1200px
+========================= */
+
+@media (max-width: 1200px){
+
+  .ALevelProgramSection{
+    padding: 50px 60px;
+  }
+
+  .card{
+    width: 34%;
+  }
+
+}
+
+/* =========================
+   992px
+========================= */
+
+@media (max-width: 992px){
+
+  .HomeText h1{
+    font-size: 38px;
+  }
+
+  .HomeText p{
+    max-width: 80%;
+    font-size: 15px;
+  }
+
+  .container{
+    gap: 20px;
+  }
+
+  .card{
+    width: 47%;
+  }
+
+}
+
+/* =========================
+   768px
+========================= */
+
+@media (max-width: 768px){
+
+  .ALevelProgramSection{
+    padding: 45px 24px;
+  }
+
+  .HomeText h1{
+    font-size: 34px;
+  }
+
+  .HomeText p{
+    max-width: 100%;
+    line-height: 1.7;
+  }
+
+  .container{
+    margin-top: 45px;
+  }
+
+  .card{
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .imageWrapper{
+    height: 220px;
+  }
+
+  .content h3{
+    font-size: 24px;
+  }
+
+  .content p{
+    font-size: 14px;
+  }
+
+}
+
+/* =========================
+   600px
+========================= */
+
+@media (max-width: 600px){
+
+  .ALevelProgramSection{
+    padding: 40px 18px;
+  }
+
+  .HomeText h1{
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .HomeLine{
+    width: 110px;
+  }
+
+  .HomeText p{
+    font-size: 14px;
+    margin-top: 18px;
+  }
+
+  .card{
+    width: 100%;
+  }
+
+  .imageWrapper{
+    height: 210px;
+  }
+
+  .content{
+    padding: 16px;
+  }
+
+  .content h3{
+    font-size: 22px;
+  }
+
+  .button{
+    height: 48px;
+    font-size: 14px;
+  }
+
+}
+
+/* =========================
+   480px
+========================= */
+
+@media (max-width: 480px){
+
+  .ALevelProgramSection{
+    padding: 35px 14px;
+  }
+
+  .HomeText h1{
+    font-size: 26px;
+  }
+
+  .HomeText p{
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .container{
+    gap: 16px;
+  }
+
+  .card{
+    border-radius: 14px;
+  }
+
+  .imageWrapper{
+    height: 190px;
+  }
+
+  .tag{
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+  .content h3{
+    font-size: 20px;
+  }
+
+  .content p{
+    font-size: 13px;
+    min-height: auto;
+  }
+
+  .button{
+    height: 44px;
+    font-size: 13px;
+  }
+
+}

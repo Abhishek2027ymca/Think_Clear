@@ -6,7 +6,8 @@ import {
     Video,
     ClipboardCheck,
     MessageCircleQuestion,
-    BadgeDollarSign
+    BadgeDollarSign,
+    Timer
 } from 'lucide-react'
 import { motion } from 'framer-motion';
 
@@ -27,9 +28,9 @@ const features = [
     },
     {
         id: 3,
-        icon: <Video size={42} />,
-        title: 'Live + Recorded Classes',
-        desc: 'Attend interactive live sessions and access recordings anytime for revision.'
+        icon: <Timer size={42} />,
+        title: 'Crash Courses',
+        desc: 'Complete 10–15 focused sessions with concept revision, doubt-clearing support, and exam-oriented preparation for better performance.'
     },
     {
         id: 4,
