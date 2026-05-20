@@ -1,0 +1,873 @@
+.contactInfoSection {
+  width: 100%;
+  padding: 50px 60px;
+}
+
+/* ── Header ── */
+.HomeText {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.HomeText h1 {
+    font-size: 43px;
+    font-weight: 500;
+}
+
+.HomeLine {
+    margin-top: 10px;
+    width: 150px;
+    height: 2px;
+    background-color: #060A30;
+}
+
+.HomeColor {
+    background: linear-gradient(90deg, #060A30 0%, #1C2259 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.HomeText p {
+    margin-top: 25px;
+    max-width: 600px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.776);
+}
+
+
+/* ── Main Card ── */
+.contactInfoCard {
+  margin-top: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+/* ── Form Side ── */
+.contactFormSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contactFormTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #08060d;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.contactFormUnderline {
+  width: 60px;
+  height: 2px;
+  background-color: #08060d;
+}
+
+.contactFormDesc {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #6b6375;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.contactFormRow {
+  display: flex;
+  gap: 16px;
+}
+
+.contactFormGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.fullWidth {
+  width: 100%;
+  flex: unset;
+}
+
+.contactFormGroup label {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #08060d;
+}
+
+.contactFormGroup input,
+.contactFormGroup textarea {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #6b6375;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 12px 16px;
+  outline: none;
+  background: #fff;
+  transition: border-color 0.2s;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.contactFormGroup input:focus,
+.contactFormGroup textarea:focus,
+.contactSelectWrapper select:focus {
+  border-color: #0D1B4B;
+}
+
+/* ── Select ── */
+.contactSelectWrapper {
+  position: relative;
+}
+
+.contactSelectWrapper select {
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #6b6375;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 12px 16px;
+  outline: none;
+  appearance: none;
+  background: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.contactSelectArrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #6b6375;
+  font-size: 16px;
+}
+
+/* ── Submit Button ── */
+.contactFormSubmitRow {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+/* .contactSubmitBtn {
+  display: flex;
+  align-items: center;
+  background: #060A30;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  width: 247px;
+  height: 55px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  transition: background 0.3s;
+}
+
+.contactSubmitBtn:hover {
+  background: #0D1B4B;
+}
+
+.contactSubmitIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: white;
+  flex-shrink: 0;
+  margin-left: 6px;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contactSubmitBtn:hover .contactSubmitIconWrapper {
+  transform: translateX(152px);
+}
+
+.contactSubmitIcon {
+  font-size: 22px;
+  line-height: 1;
+  color: #060A30;
+}
+
+.contactSubmitText {
+  flex: 1;
+  text-align: center;
+  padding-right: 12px;
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.25s ease;
+}
+
+.contactSubmitBtn:hover .contactSubmitText {
+  opacity: 0;
+} */
+
+
+.demoBtn {
+  position: relative;
+  width: 230px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background: #060A30;
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+/* Icon Circle */
+.iconBox {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  background:  white;
+  color: #060A30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 2px;
+  transition: all 0.4s ease;
+}
+
+/* Text */
+.text {
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+/* Hover Effect */
+.demoBtn:hover .iconBox {
+  left: calc(100% - 47px);
+}
+
+.demoBtn:hover .text {
+  transform: translateX(-18px);
+}
+/* ── Right Side ── */
+.contactRightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 450px;
+  flex-shrink: 0;
+}
+
+/* ── Info Box ── */
+.contactInfoBox {
+  background: #060A30;
+  border-radius: 20px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactInfoBoxTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.contactInfoItems {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contactInfoItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 10px;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.contactInfoItem:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.contactInfoIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contactInfoItemTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.70);
+  margin: 0;
+}
+
+.contactInfoItemValue {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* ── Social Icons ── */
+.contactSocialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 8px;
+}
+
+.contactSocialIcons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.10);
+  transition: background 0.2s;
+  text-decoration: none;
+}
+
+.contactSocialIcons a:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ── Map ── */
+.contactMap {
+  width: 450px;
+  height: 160px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+
+
+
+
+/* =======================================================
+   1600px and Large Screens
+======================================================= */
+
+@media (min-width: 1600px) {
+
+  .contactInfoSection{
+    padding: 50px 60px;
+  }
+
+  .HomeText h1{
+    font-size: 50px;
+  }
+
+  .HomeText p{
+    max-width: 48%;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .contactInfoCard{
+    margin-top: 5%;
+    padding: 3%;
+    gap: 3%;
+    border-radius: 28px;
+  }
+
+  /* Left Side */
+
+  .contactFormTitle{
+    font-size: 1.5vw;
+  }
+
+  .contactFormDesc{
+    font-size: 0.9vw;
+    line-height: 1.8;
+  }
+
+  .contactForm{
+    gap: 1.2vw;
+  }
+
+  .contactFormRow{
+    gap: 1.2vw;
+  }
+
+  .contactFormGroup label{
+    font-size: 0.9vw;
+  }
+
+  .contactFormGroup input,
+  .contactFormGroup textarea,
+  .contactSelectWrapper select{
+    padding: 1vw 1.2vw;
+    font-size: 0.95vw;
+    border-radius: 1.2vw;
+  }
+
+  .contactFormGroup textarea{
+    min-height: 10vw;
+  }
+
+  /* Button */
+
+  .demoBtn{
+    width: 17vw;
+    max-width: 280px;
+    height: 3.5vw;
+    max-height: 60px;
+  }
+
+  .iconBox{
+    width: 3.2vw;
+    height: 3.2vw;
+    min-width: 3.2vw;
+  }
+
+  .text{
+    font-size: 1vw;
+  }
+
+  .demoBtn:hover .iconBox{
+    left: calc(100% - 3.15vw);
+  }
+
+  /* Right Side */
+
+  .contactRightSide{
+    width: 32%;
+    gap: 1.2vw;
+  }
+
+  .contactInfoBox{
+    padding: 2vw;
+    border-radius: 1.5vw;
+    gap: 1.5vw;
+  }
+
+  .contactInfoBoxTitle{
+    font-size: 1.8vw;
+    line-height: 1.4;
+  }
+
+  .contactInfoItems{
+    gap: 1vw;
+  }
+
+  .contactInfoItem{
+    padding: 1vw 1.2vw;
+    border-radius: 0.8vw;
+    gap: 1vw;
+  }
+
+  .contactInfoIcon{
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .contactInfoItemTitle{
+    font-size: 0.9vw;
+  }
+
+  .contactInfoItemValue{
+    font-size: 1vw;
+  }
+
+  .contactSocialIcons{
+    gap: 1.4vw;
+  }
+
+  .contactSocialIcons a{
+    width: 2.8vw;
+    height: 2.8vw;
+  }
+
+  .contactMap{
+    width: 100%;
+    height: 14vw;
+    min-height: 220px;
+    border-radius: 1.5vw;
+  }
+
+}
+
+
+/* =======================================================
+   1400px
+======================================================= */
+
+@media (max-width: 1400px){
+
+  .contactInfoSection{
+    padding: 50px 50px;
+  }
+
+  .contactInfoCard{
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .contactRightSide{
+    width: 400px;
+  }
+
+  .contactMap{
+    width: 100%;
+  }
+
+}
+
+
+/* =======================================================
+   1200px
+======================================================= */
+
+@media (max-width: 1200px){
+
+  .HomeText h1{
+    font-size: 38px;
+  }
+
+  .contactInfoCard{
+    flex-direction: column;
+  }
+
+  .contactRightSide{
+    width: 100%;
+  }
+
+  .contactMap{
+    width: 100%;
+    height: 260px;
+  }
+
+}
+
+
+/* =======================================================
+   992px
+======================================================= */
+
+@media (max-width: 992px){
+
+  .contactInfoSection{
+    padding: 45px 40px;
+  }
+
+  .HomeText h1{
+    font-size: 34px;
+  }
+
+  .HomeText p{
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .contactInfoCard{
+    margin-top: 45px;
+    padding: 28px;
+    gap: 28px;
+  }
+
+  .contactFormRow{
+    flex-direction: column;
+  }
+
+  .contactFormTitle{
+    font-size: 20px;
+  }
+
+  .contactInfoBoxTitle{
+    font-size: 24px;
+  }
+
+}
+
+
+/* =======================================================
+   768px
+======================================================= */
+
+@media (max-width: 768px){
+
+  .contactInfoSection{
+    padding: 40px 24px;
+  }
+
+  .HomeText h1{
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .HomeText p{
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .contactInfoCard{
+    padding: 24px;
+    border-radius: 18px;
+  }
+
+  .contactFormGroup input,
+  .contactFormGroup textarea,
+  .contactSelectWrapper select{
+    font-size: 14px;
+    padding: 12px 14px;
+  }
+
+  .demoBtn{
+    width: 210px;
+    height: 48px;
+  }
+
+  .iconBox{
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+  }
+
+  .contactInfoBox{
+    padding: 24px;
+  }
+
+  .contactInfoBoxTitle{
+    font-size: 22px;
+  }
+
+  .contactMap{
+    height: 220px;
+  }
+
+}
+
+
+/* =======================================================
+   600px
+======================================================= */
+
+@media (max-width: 600px){
+
+  .contactInfoSection{
+    padding: 35px 18px;
+  }
+
+  .HomeText h1{
+    font-size: 26px;
+  }
+
+  .HomeLine{
+    width: 110px;
+  }
+
+  .HomeText p{
+    margin-top: 18px;
+    font-size: 13px;
+  }
+
+  .contactInfoCard{
+    margin-top: 35px;
+    padding: 18px;
+    gap: 20px;
+  }
+
+  .contactFormTitle{
+    font-size: 18px;
+  }
+
+  .contactFormDesc{
+    font-size: 13px;
+  }
+
+  .contactForm{
+    gap: 14px;
+  }
+
+  .contactFormGroup label{
+    font-size: 12px;
+  }
+
+  .contactFormGroup input,
+  .contactFormGroup textarea,
+  .contactSelectWrapper select{
+    padding: 11px 13px;
+    border-radius: 14px;
+    font-size: 13px;
+  }
+
+  .contactFormSubmitRow{
+    justify-content: center;
+  }
+
+  .demoBtn{
+    width: 100%;
+    max-width: 240px;
+  }
+
+  .contactInfoBox{
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .contactInfoBoxTitle{
+    font-size: 20px;
+  }
+
+  .contactInfoItem{
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .contactInfoIcon{
+    width: 38px;
+    height: 38px;
+  }
+
+  .contactInfoItemTitle{
+    font-size: 12px;
+  }
+
+  .contactInfoItemValue{
+    font-size: 13px;
+    word-break: break-word;
+  }
+
+  .contactSocialIcons{
+    gap: 16px;
+  }
+
+  .contactSocialIcons a{
+    width: 34px;
+    height: 34px;
+  }
+
+  .contactMap{
+    height: 200px;
+    border-radius: 16px;
+  }
+
+}
+
+
+/* =======================================================
+   480px
+======================================================= */
+
+@media (max-width: 480px){
+
+  .contactInfoSection{
+    padding: 30px 14px;
+  }
+
+  .HomeText h1{
+    font-size: 23px;
+  }
+
+  .contactInfoCard{
+    padding: 16px;
+  }
+
+  .contactFormTitle{
+    font-size: 17px;
+  }
+
+  .contactInfoBoxTitle{
+    font-size: 18px;
+  }
+
+  .demoBtn{
+    height: 46px;
+  }
+
+  .iconBox{
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+  }
+
+  .text{
+    font-size: 13px;
+  }
+
+  .contactMap{
+    height: 180px;
+  }
+
+}
+
+
+/* =======================================================
+   360px
+======================================================= */
+
+@media (max-width: 360px){
+
+  .HomeText h1{
+    font-size: 21px;
+  }
+
+  .contactInfoBoxTitle{
+    font-size: 17px;
+  }
+
+  .contactInfoItem{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contactSocialIcons{
+    flex-wrap: wrap;
+  }
+
+}

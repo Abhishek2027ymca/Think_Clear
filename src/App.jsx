@@ -5,6 +5,7 @@ import Footer from './components/layout/Footer/Footer'
 import About from './pages/About'
 import Policies from './pages/Policies'
 import Courses from './pages/Courses'
+import Contact from './pages/Contact'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/policies' element={<Policies />} />
         <Route path='/courses' element={<Courses />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
