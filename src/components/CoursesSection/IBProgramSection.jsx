@@ -6,68 +6,11 @@ import physicsImg from '../../assets/courses/physics.jpg'
 import chemistryImg from '../../assets/courses/chemistry.jpg'
 import biologyImg from '../../assets/courses/biology.jpg'
 import { motion } from 'framer-motion';
-
-const COURSES = [
-  {
-    id: 1,
-    subject: 'maths',
-    title: 'Mathematics AA/AI',
-    description:
-      'Build advanced problem-solving and analytical skills through structured IB mathematics learning.',
-    image: mathImg,
-  },
-  {
-    id: 2,
-    subject: 'Physics',
-    title: 'Physics',
-    description:
-      'Understand core physics concepts with practical applications and exam-focused preparation.',
-    image: physicsImg,
-  },
-  {
-    id: 3,
-    subject: 'Chemistry',
-    title: 'Chemistry',
-    description:
-      'Master chemistry concepts through clear explanations, numerical practice, and structured learning.',
-    image: chemistryImg,
-  },
-  {
-    id: 4,
-    subject: 'Biology',
-    title: 'Biology',
-    description:
-      'Learn biological systems and scientific concepts with interactive and organized lessons.',
-    image: biologyImg,
-  },
-  {
-    id: 5,
-    subject: "Maths",
-    title: "Mathematics HL",
-    description:
-      "Advanced IB mathematics with conceptual and practical learning.",
-    image: mathImg,
-  },
-  {
-    id: 6,
-    subject: "Physics",
-    title: "Physics HL",
-    description:
-      "Explore deeper physics concepts and scientific applications.",
-    image: physicsImg,
-  },
-  {
-    id: 7,
-    subject: "Chemistry",
-    title: "Chemistry HL",
-    description:
-      "Structured chemistry learning with concepts and practice.",
-    image: chemistryImg,
-  },
-]
-
+import { Check } from "lucide-react";
+import IB from '../../assets/Footer/ib.jpg'
+import GST from '../../assets/Footer/GST.jpg'
 export default function IBProgramSection() {
-   const sliderRef = useRef();
+  const sliderRef = useRef();
 
   const slideLeft = () => {
     sliderRef.current.scrollLeft -= 350;
@@ -81,77 +24,94 @@ export default function IBProgramSection() {
   return (
     <>
 
-      <section className={styles.IBProgramSection}>
-
-        <motion.div className={styles.HomeText} initial={{ opacity: 0, y: 100 }}
+      <section className={styles.FreeDemoSection}>
+        <motion.div className={styles.HomeAboutText} initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} overlay
           transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
-          <h1>International Baccalaureate <span className={styles.HomeColor}>Programmer</span></h1>
+          <h1>Middle School <span className={styles.HomeColor}>& Secondary (Grades 6–10)</span></h1>
           <span className={styles.HomeLine}></span>
-          <p>Internationally recognized curriculum focused on critical
-            thinking, analytical skills, and global learning.</p>
         </motion.div>
 
+        <div className={styles.FreeDemoSectionFlex}>
+          <motion.div className={styles.AboutTextPa} initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} overlay
+            transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+            <motion.div className={styles.AboutText} initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }} overlay
+              transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+              <h1>IB MYP Curriculum</h1>
+            </motion.div>
+            <p className={styles.para}>Develop analytical thinking, conceptual
+              understanding, and real-world problem-solving skills through interactive
+              and inquiry-based learning methods. Our teaching approach combines concept-based
+              learning, interactive live classes, and real-world application examples to make learning
+              engaging and practical. Students receive continuous support through activities, assessments,
+              personalized doubt-solving sessions, and regular progress
+              tracking to ensure steady academic growth and confidence.</p>
+            <button className={styles.demoBtn}>
+              <span className={styles.iconBox}>
+                <ChevronRight size={20} strokeWidth={2.5} />
+              </span>
 
-
-        <div className={styles.courseSection}>
-
-          <div className={styles.navigation}>
-
-            <button
-              className={styles.navBtn}
-              onClick={slideLeft}
-            >
-              <ChevronLeft size={20} />
+              <span className={styles.text}>Book Free Demo</span>
             </button>
+          </motion.div>
 
-            <button
-              className={styles.navBtnDark}
-              onClick={slideRight}
-            >
-              <ChevronRight size={20} />
+          {/* Img */}
+          <motion.div className={styles.ImageWrapper} initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} overlay
+            transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+
+            <img src={IB} alt="teacher" />
+
+          </motion.div>
+        </div>
+
+
+        <div className={styles.FreeDemoSectionFlex}>
+                    {/* Img */}
+          <motion.div className={styles.ImageWrapper} initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} overlay
+            transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+
+            <img src={GST} alt="teacher" />
+            </motion.div>
+
+            {/* Para */}
+                 <motion.div className={styles.AboutTextPa} initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} overlay
+            transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+            <motion.div className={styles.AboutText} initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }} overlay
+              transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+              <h1>GCSE / IGCSE  Curriculum</h1>
+            </motion.div>
+            <p className={styles.para}>Our GCSE / IGCSE Curriculum provides 
+              structured preparation designed to build strong subject mastery, 
+              effective exam techniques, and deep conceptual understanding 
+              aligned with international curriculum standards. Through topic-wise 
+              lessons, exam-oriented teaching methods, practice worksheets, assignments, 
+              and regular assessments with mock tests, students gain the skills and 
+              confidence needed for academic success. Recorded revision sessions and 
+              personalized one-to-one academic support further ensure 
+              continuous learning, clarity, and performance improvement throughout the program.</p>
+            <button className={styles.demoBtn}>
+              <span className={styles.iconBox}>
+                <ChevronRight size={20} strokeWidth={2.5} />
+              </span>
+
+              <span className={styles.text}>Book Free Demo</span>
             </button>
+          </motion.div>
+            
 
-          </div>
-
-          <div className={styles.slider} ref={sliderRef}>
-
-            {COURSES.map((course) => (
-              <div className={styles.card} key={course.id}>
-
-                <div className={styles.imageWrapper}>
-                  <img
-                    src={course.image}
-                    alt=""
-                    className={styles.image}
-                  />
-
-                  <span className={styles.tag}>
-                    {course.subject}
-                  </span>
-
-                </div>
-
-                <div className={styles.content}>
-
-                  <h3>{course.title}</h3>
-
-                  <p>{course.description}</p>
-
-                </div>
-
-                <div className={styles.BtnFlex}>
-                <button className={styles.enrollBtn}>
-                  Enroll Now
-                  <ArrowRight size={18} />
-                </button>
-                </div>
-
-              </div>
-            ))}
-
-          </div>
         </div>
 
       </section>

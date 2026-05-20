@@ -1,4 +1,4 @@
-import './IBProgramSection.css'
+import styles from './GCSEProgramSection.module.css'
 
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
 import { useRef } from 'react'
@@ -7,41 +7,10 @@ import mathsImg from '../../assets/courses/gcse/maths.jpg'
 import scienceImg from '../../assets/courses/gcse/science.jpg'
 import physicsImg from '../../assets/courses/gcse/physics.jpg'
 import chemistryImg from '../../assets/courses/gcse/chemistry.jpg'
-
-const COURSES = [
-  {
-    id: 1,
-    subject: 'maths',
-    title: 'Mathematics',
-    description:
-      'Develop strong numerical reasoning and exam-solving techniques for GCSE success.',
-    image: mathsImg,
-  },
-  {
-    id: 2,
-    subject: 'Science',
-    title: 'Combined Science',
-    description:
-      'Learn integrated science concepts with clear explanations and revision support.',
-    image: scienceImg,
-  },
-  {
-    id: 3,
-    subject: 'Physics',
-    title: 'Physics',
-    description:
-      'Build understanding of forces, energy, motion, and scientific applications.',
-    image: physicsImg,
-  },
-  {
-    id: 4,
-    subject: 'Chemistry',
-    title: 'Chemistry',
-    description:
-      'Explore chemical reactions, equations, and practical scientific concepts clearly.',
-    image: chemistryImg,
-  },
-]
+import { motion } from 'framer-motion';
+import { Check } from "lucide-react";
+import IB from '../../assets/Footer/studentss.jpg'
+import GST from '../../assets/Footer/learnings.jpg'
 
 export default function GCSEProgramSection() {
   const scrollRef = useRef(null)
@@ -56,101 +25,101 @@ export default function GCSEProgramSection() {
   }
 
   return (
-    <section className="ib-section">
+    <>
+      <section className={styles.FreeDemoSection}>
+        <motion.div className={styles.HomeAboutText} initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }} overlay
+          transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+          <h1>Senior Secondary  <span className={styles.HomeColor}>(Grades 11–12)</span></h1>
+          <span className={styles.HomeLine}></span>
+        </motion.div>
 
-      <div className="ib-container">
+        <div className={styles.FreeDemoSectionFlex}>
+          <motion.div className={styles.AboutTextPa} initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} overlay
+            transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+            <motion.div className={styles.AboutText} initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }} overlay
+              transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+              <h1>IBDP  Curriculum</h1>
+            </motion.div>
+            <p className={styles.para}>Our International Baccalaureate Diploma 
+              Programme coaching is designed to develop analytical thinking, 
+              conceptual understanding, research skills, and academic excellence 
+              through a comprehensive and student-focused learning approach. Using
+               inquiry-based teaching methods, concept-focused explanations, and real-world
+                application strategies, students gain deeper subject clarity and independent 
+                learning abilities. Personalized doubt-solving sessions and continuous performance
+                 tracking further ensure consistent academic
+               progress and confidence throughout the IBDP journey.</p>
+            <button className={styles.demoBtn}>
+              <span className={styles.iconBox}>
+                <ChevronRight size={20} strokeWidth={2.5} />
+              </span>
 
-        {/* HEADER */}
-        <div className="ib-header">
-
-          <div className="ib-header-left">
-
-            <h2 className="ib-title">
-              GCSE <span>Programmer</span>
-            </h2>
-
-            <div className="ib-underline" />
-
-            <p className="ib-description">
-              Comprehensive subject preparation designed to build academic
-              confidence and exam success.
-            </p>
-
-          </div>
-
-          {/* NAVIGATION */}
-          <div className="ib-nav-buttons">
-
-            <button
-              onClick={() => scroll('left')}
-              className="ib-nav-btn ib-nav-btn-light"
-            >
-              <ChevronLeft size={22} />
+              <span className={styles.text}>Book Free Demo</span>
             </button>
+          </motion.div>
 
-            <button
-              onClick={() => scroll('right')}
-              className="ib-nav-btn ib-nav-btn-dark"
-            >
-              <ChevronRight size={22} />
+          {/* Img */}
+          <motion.div className={styles.ImageWrapper} initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} overlay
+            transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+
+            <img src={IB} alt="teacher" />
+
+          </motion.div>
+        </div>
+
+
+        <div className={styles.FreeDemoSectionFlex}>
+          {/* Img */}
+          <motion.div className={styles.ImageWrapper} initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} overlay
+            transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+
+            <img src={GST} alt="teacher" />
+          </motion.div>
+
+          {/* Para */}
+          <motion.div className={styles.AboutTextPa} initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} overlay
+            transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+            <motion.div className={styles.AboutText} initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }} overlay
+              transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
+              <h1>•	A Levels Curriculum</h1>
+            </motion.div>
+            <p className={styles.para}>Our A Levels Program offers advanced
+               academic preparation focused on strengthening subject mastery, 
+               analytical thinking, problem-solving abilities, and exam performance
+               through structured and student-focused guidance. With topic-wise learning, 
+               numerical and analytical practice sessions, and exam-oriented teaching methods,
+                students build strong conceptual understanding and confidence in every subject.
+                 The program also includes regular mock assessments, recorded revision sessions,
+                  one-to-one doubt clarification, and continuous performance improvement support 
+              to help students achieve consistent academic success.</p>
+            <button className={styles.demoBtn}>
+              <span className={styles.iconBox}>
+                <ChevronRight size={20} strokeWidth={2.5} />
+              </span>
+
+              <span className={styles.text}>Book Free Demo</span>
             </button>
+          </motion.div>
 
-          </div>
 
         </div>
 
-        {/* CARDS */}
-        <div
-          ref={scrollRef}
-          className="ib-cards-row"
-        >
+      </section>
 
-          {COURSES.map(({ id, subject, title, description, image }) => (
-            <div
-              key={id}
-              className="ib-card"
-            >
-
-              {/* IMAGE */}
-              <div className="ib-card-image-wrapper">
-
-                <img
-                  src={image}
-                  alt={title}
-                  className="ib-card-image"
-                />
-
-                <div className="ib-subject-badge">
-                  {subject}
-                </div>
-
-              </div>
-
-              {/* CONTENT */}
-              <div className="ib-card-content">
-
-                <h3 className="ib-card-title">
-                  {title}
-                </h3>
-
-                <p className="ib-card-description">
-                  {description}
-                </p>
-
-                <button className="ib-enroll-btn">
-                  Enroll Now
-                  <ArrowRight size={17} />
-                </button>
-
-              </div>
-
-            </div>
-          ))}
-
-        </div>
-
-      </div>
-
-    </section>
+    </>
   )
 }

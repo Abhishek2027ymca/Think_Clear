@@ -3,6 +3,29 @@
   padding: 50px 60px;
 }
 
+/* .ALevelProgramSection {
+  width: 100%;
+  padding: 50px 60px;
+  position: relative;
+  overflow: hidden;
+} */
+
+/* Bottom Rounded Shape */
+
+/* .ALevelProgramSection::after {
+  content: "";
+  position: absolute;
+  bottom: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140%;
+  height: 250px;
+
+  background: #00003d;
+  border-radius: 50%;
+  z-index: -1;
+} */
+
 /* Text */
 
 .HomeText {
