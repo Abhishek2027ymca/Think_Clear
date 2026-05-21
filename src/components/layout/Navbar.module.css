@@ -82,6 +82,82 @@
   text-decoration: none;
 }
 
+
+.navLink {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 11px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  overflow: hidden;
+  color: black;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+.navLink::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #060A30;
+  border-radius: 5px;
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform 0.35s ease;
+  z-index: -1;
+}
+
+.navLink:hover::before {
+  transform: scaleX(1);
+}
+
+.navLink:hover {
+  color: white;
+}
+
+.activeLink {
+  position: relative;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.35s ease;
+}
+
+.activeLink::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #060A30;
+  border-radius: 5px;
+
+  animation: smoothSlide 0.35s ease forwards;
+  z-index: -1;
+}
+
+@keyframes smoothSlide {
+  from {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  to {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
 /* Buttons */
 
 .desktopButton {
