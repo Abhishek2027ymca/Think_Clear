@@ -16,6 +16,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
+    <section className={styles.Navbar}>
     <header className={styles.header}>
       <nav className={styles.nav}>
 
@@ -94,5 +95,6 @@ export default function Navbar() {
         </div>
       )}
     </header>
+    </section>
   )
 }

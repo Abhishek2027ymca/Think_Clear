@@ -1,0 +1,28 @@
+/* ScrollTopButton.module.css */
+
+.scrollBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background: #060A30;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.scrollBtn:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.scrollBtn:active {
+  transform: scale(0.95);
+}

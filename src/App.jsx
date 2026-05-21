@@ -8,6 +8,7 @@ import Courses from './pages/Courses'
 import Contact from './pages/Contact'
 import ScrollToTop from './components/ScrollToTop'
 import LogoLoader from './components/LogoLoader'
+import ScrollTopButton from './components/ScrollTopButton'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
+      <ScrollTopButton />
       </LogoLoader>
     </Router>
   )
