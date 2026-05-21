@@ -122,6 +122,97 @@
     left: -28px;
 }
 
+
+/* video */
+
+.GalleryCard video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 18px;
+}
+/* popup */
+
+.PopupOverlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.85);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+
+    padding: 20px;
+}
+
+.PopupContent {
+    width: 90%;
+    max-width: 1000px;
+
+    position: relative;
+
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.PopupContent img,
+.PopupContent video {
+    width: 100%;
+    max-height: 85vh;
+
+    object-fit: contain;
+    display: block;
+
+    border-radius: 22px;
+}
+
+/* Close Button */
+
+.CloseBtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition: 0.3s ease;
+}
+
+.CloseBtn:hover {
+    background: white;
+    color: black;
+}
+
+/* Video Inside Gallery */
+
+.GalleryCard video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 /* Responsive */
 
 @media(max-width: 992px) {

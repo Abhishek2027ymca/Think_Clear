@@ -13,6 +13,7 @@ import AboutFAQ from '../components/About/AboutFAQ';
 import AboutContact from '../components/About/AboutContact';
 import AboutGalary from '../components/About/AboutGalary';
 import AboutMath from '../components/About/AboutMath';
+import AboutAcademic from '../components/About/AboutAcademic';
 
 function About() {
     return ( 
@@ -20,6 +21,7 @@ function About() {
         <AboutBanner />
         <AboutFounder />
         <AboutMath />
+        <AboutAcademic />
         <AboutProfile />
         <AboutTeaching />
         <AboutEducation />
