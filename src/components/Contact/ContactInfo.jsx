@@ -265,7 +265,7 @@ ${formData.message}
 
                 {/* Email */}
                 <a
-                  href="mailto:info@thinkclear.in"
+                 href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@thinkclearsolutions.com"
                   className={styles.contactInfoItem}
                 >
                   <div className={styles.contactInfoIcon}>
@@ -278,7 +278,7 @@ ${formData.message}
                     </p>
 
                     <p className={styles.contactInfoItemValue}>
-                      info@thinkclear.in
+                      contact@thinkclearsolutions.com
                     </p>
                   </div>
                 </a>

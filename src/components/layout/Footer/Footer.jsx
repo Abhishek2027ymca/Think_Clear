@@ -7,6 +7,7 @@ import {
     FaLinkedinIn,
     FaTwitter
 } from "react-icons/fa";
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
@@ -50,11 +51,11 @@ function Footer() {
                     <div className={styles.FooterQuciK}>
                         <h4>Quick Links</h4>
                         <div className={styles.FooterLinks}>
-                            <span>Home</span>
-                            <span>Courses</span>
-                            <span>About Us</span>
-                            <span>Contact</span>
-                            <span>Policies</span>
+                            <Link to='/'><span>Home</span></Link>
+                            <Link to='/courses'><span>Courses</span></Link>
+                            <Link to='/about'><span>About Us</span></Link>
+                            <Link to='/contact'><span>Contact</span></Link>
+                            <Link to='/policies'><span>Policies</span></Link>
                         </div>
 
                     </div>
@@ -86,8 +87,20 @@ function Footer() {
                     <div className={styles.FooterQuciK}>
                         <h4>Contact Information</h4>
                         <div className={styles.FooterLinks}>
-                            <span>+447575441703</span>
-                            <span>info@thinkclear.in</span>
+                            <a href="https://wa.me/447575441703"><span>+447575441703</span></a>
+                            {/* <a href="mailto:contact@thinkclearsolutions.com?subject=Inquiry&body=Hello ThinkClear Solutions,"><span>contact@thinkclearsolutions.com</span></a> */}
+                            <a
+                                href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@thinkclearsolutions.com"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <span>contact@thinkclearsolutions.com</span>
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yadavcharu11@gmail.com"
+                                target="_blank"
+                                rel="noreferrer">
+                                <span> yadavcharu11@gmail.com</span>
+                            </a>
                             <span>WhatsApp Support</span>
                         </div>
 

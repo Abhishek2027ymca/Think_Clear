@@ -138,6 +138,28 @@
     font-size: 14px;
 }
 
+.FooterLinks span{
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.FooterLinks span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 1.5px;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+.FooterLinks span:hover::after{
+    width: 100%;
+}
+
 /* Last Links */
 .LastLinks{
     padding: 10px 50px;
