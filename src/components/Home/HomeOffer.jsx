@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import styles from './HomeOffer.module.css'
 import Inter from '../../assets/images/IB.jpeg'
 import IGCSE from '../../assets/images/IGCSE.jpeg'
@@ -56,7 +57,7 @@ function HomeOffer() {
                                     <h3>{item.title}</h3>
                                     <p>{item.desc}</p>
 
-                                    <button>View More</button>
+                                    <Link to='/courses'><button>View More</button></Link>
                                 </div>
                             </motion.div>
                         ))

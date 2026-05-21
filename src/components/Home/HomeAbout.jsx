@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './HomeAbout.module.css'
+import {Link} from 'react-router-dom'
 import { motion } from 'framer-motion';
 import HomeAbouts from '../../assets/images/HomeAbout.png'
 
@@ -35,7 +36,7 @@ function HomeAbout() {
                                 Physics, Chemistry, Biology, SST, and English
                                 through live classes, tests, doubt support, and personal mentorship.</p>
                         </motion.div>
-                        <button>Learn More About Us</button>
+                        <Link to="/about"><button>Learn More About Us</button></Link>
                     </motion.div>
 
                     {/* left */}

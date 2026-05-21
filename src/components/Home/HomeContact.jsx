@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './HomeContact.module.css'
+import {Link} from  'react-router-dom'
 import { motion } from 'framer-motion';
 import contact from '../../assets/images/contact.png'
 
@@ -19,7 +20,7 @@ function HomeContact() {
                         <p>Join ThinkClear today and start learning with expert guidance, clear explanations,
                             structured support, regular practice, and continuous academic improvement.</p>
                         <div className={styles.HomeBtn}>
-                            <button>Explore Courses</button> <button>Book Free Demo </button>
+                          <Link to='/courses'><button>Explore Courses</button></Link> <button>Book Free Demo </button>
                         </div>
                     </motion.div>
 

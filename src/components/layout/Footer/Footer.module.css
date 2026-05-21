@@ -30,6 +30,34 @@
     font-size: 114px;
     text-transform: capitalize;
 }
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.track {
+  display: flex;
+  gap: 80px;
+  width: max-content;
+  animation: scrollRight 12s linear infinite;
+}
+
+.track h1 {
+  white-space: nowrap;
+  font-size: 2rem;
+  color: white;
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
 
 /* Footer */
 
@@ -120,4 +148,315 @@
 }
 .LastLinks p{
     font-size: 12px;
+}
+
+
+/* =========================
+   1600px and Above
+========================= */
+
+@media (min-width: 1600px){
+
+  .Footer{
+    width: 100%;
+  }
+
+  /* Heading */
+
+  .FooterName h1{
+    font-size: 6vw;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .FooterLine,
+  .FooterLines{
+    height: 3px;
+  }
+
+  /* Footer Width */
+
+  .Footerwidth{
+    padding: 4% 7%;
+    gap: 4%;
+  }
+
+  /* Left Section */
+
+  .FooterClass{
+    max-width: 28%;
+    gap: 1.5vw;
+  }
+
+  .FooterClass p{
+    font-size: 1vw;
+    line-height: 1.9;
+  }
+
+  .FooterImgText{
+    gap: 14px;
+  }
+
+  .FooterImgText img{
+    width: 4vw;
+    min-width: 60px;
+    max-width: 85px;
+  }
+
+  .FooterImgText h3{
+    font-size: 2vw;
+  }
+
+  /* Social */
+
+  .SocialIcons{
+    gap: 1.2vw;
+    font-size: 1.5vw;
+  }
+
+  /* Footer Links */
+
+  .FooterQuciK{
+    gap: 1.4vw;
+  }
+
+  .FooterQuciK h4{
+    font-size: 1.4vw;
+  }
+
+  .FooterLinks{
+    gap: 0.7vw;
+  }
+
+  .FooterLinks span{
+    font-size: 1vw;
+    line-height: 1.8;
+  }
+
+  /* Bottom */
+
+  .LastLinks{
+    padding: 1.5% 7%;
+  }
+
+  .LastLinks p{
+    font-size: 0.9vw;
+  }
+
+}
+
+/* =========================
+   1400px - 1599px
+========================= */
+
+@media (max-width: 1599px){
+
+  .FooterName h1{
+    font-size: 134px;
+  }
+
+}
+
+/* =========================
+   1200px - 1399px
+========================= */
+
+@media (max-width: 1399px){
+
+  .FooterName h1{
+    font-size: 110px;
+  }
+
+  .Footerwidth{
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .FooterClass{
+    max-width: 320px;
+  }
+
+}
+
+/* =========================
+   992px - 1199px
+========================= */
+
+@media (max-width: 1199px){
+
+  .Footer{
+    padding-bottom: 10px;
+  }
+
+  .FooterName h1{
+    font-size: 58px;
+    text-align: center;
+  }
+
+  .Footerwidth{
+    padding: 40px 30px;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .FooterClass{
+    max-width: 100%;
+  }
+
+  .FooterQuciK{
+    width: 45%;
+  }
+
+  .LastLinks{
+    padding: 10px 30px;
+  }
+
+}
+
+/* =========================
+   768px - 991px
+========================= */
+
+@media (max-width: 991px){
+
+  .FooterName h1{
+    font-size: 44px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .Footerwidth{
+    padding: 35px 25px;
+    gap: 35px;
+  }
+
+  .FooterQuciK{
+    width: 47%;
+  }
+
+  .FooterImgText h3{
+    font-size: 26px;
+  }
+
+  .FooterClass p,
+  .FooterLinks span{
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .LastLinks{
+    flex-direction: column;
+    gap: 8px;
+    padding: 15px 25px;
+  }
+
+}
+
+/* =========================
+   576px - 767px
+========================= */
+
+@media (max-width: 767px){
+
+  .FooterName h1{
+    font-size: 34px;
+    line-height: 1.3;
+    text-align: center;
+    padding: 0 16px;
+  }
+
+  .Footerwidth{
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .FooterQuciK{
+    width: 100%;
+  }
+
+  .FooterClass{
+    max-width: 100%;
+  }
+
+  .FooterImgText img{
+    width: 55px;
+  }
+
+  .FooterImgText h3{
+    font-size: 24px;
+  }
+
+  .SocialIcons{
+    font-size: 20px;
+  }
+
+  .LastLinks{
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+  }
+
+  .LastLinks p{
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+}
+
+/* =========================
+   480px and Below
+========================= */
+
+@media (max-width: 480px){
+
+  .FooterName h1{
+    font-size: 26px;
+    line-height: 1.4;
+  }
+
+  .Footerwidth{
+    padding: 25px 16px;
+    gap: 28px;
+  }
+
+  .FooterImgText{
+    gap: 8px;
+  }
+
+  .FooterImgText img{
+    width: 48px;
+  }
+
+  .FooterImgText h3{
+    font-size: 22px;
+  }
+
+  .FooterClass p{
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .FooterQuciK h4{
+    font-size: 18px;
+  }
+
+  .FooterLinks span{
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .SocialIcons{
+    gap: 15px;
+    font-size: 18px;
+  }
+
+  .LastLinks{
+    padding: 14px 16px;
+  }
+
+  .LastLinks p{
+    font-size: 11px;
+  }
+
 }

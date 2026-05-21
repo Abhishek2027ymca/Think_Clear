@@ -16,7 +16,13 @@ function Footer() {
                 {/* Line */}
                 <div className={styles.FooterName}>
                     <div className={styles.FooterLine}></div>
-                    <h1>IMPROVE YOUR FUTURE</h1>
+                    <div className={styles.marquee}>
+                        <div className={styles.track}>
+                            <h1>IMPROVE YOUR FUTURE</h1>
+                            <h1>IMPROVE YOUR FUTURE</h1>
+                            <h1>IMPROVE YOUR FUTURE</h1>
+                        </div>
+                    </div>
                     <div className={styles.FooterLines}></div>
                 </div>
 
@@ -53,7 +59,7 @@ function Footer() {
 
                     </div>
                     {/* Quick */}
-                           {/* <div className={styles.FooterQuciK}>
+                    {/* <div className={styles.FooterQuciK}>
                         <h4>Privacy Policy</h4>
                         <div className={styles.FooterLinks}>
                             <span>Information collected from users</span>
@@ -64,7 +70,7 @@ function Footer() {
                         </div>
 
                     </div> */}
-                           <div className={styles.FooterQuciK}>
+                    <div className={styles.FooterQuciK}>
                         <h4>Courses</h4>
                         <div className={styles.FooterLinks}>
                             <span>Class 6–8 Foundation</span>
@@ -77,7 +83,7 @@ function Footer() {
 
 
                     {/* Quick */}
-                           <div className={styles.FooterQuciK}>
+                    <div className={styles.FooterQuciK}>
                         <h4>Contact Information</h4>
                         <div className={styles.FooterLinks}>
                             <span>+447575441703</span>

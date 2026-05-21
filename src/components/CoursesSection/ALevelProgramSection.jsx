@@ -6,7 +6,7 @@ import Biologyg from '../../assets/images/biology.jpg'
 import physicsImg from '../../assets/images/physcis.jpg'
 import chemistryImg from '../../assets/images/chemistry.jpg'
 import { motion } from 'framer-motion';
-
+import {Link} from 'react-router-dom'
 
 const courses = [
   {
@@ -91,10 +91,10 @@ export default function ALevelProgramSection() {
 
                 <p>{course.description}</p>
 
-                <button className={styles.button}>
+                <Link to='/contact'><button className={styles.button}>
                   Enroll Now
                   <span>➜</span>
-                </button>
+                </button></Link>
               </div>
             </div>
           ))}

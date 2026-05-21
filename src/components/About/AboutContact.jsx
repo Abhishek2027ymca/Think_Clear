@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './AboutContact.module.css'
 import { motion } from 'framer-motion';
 import contact from '../../assets/About/contact.png'
-
+import {Link} from 'react-router-dom'
 function AboutContact() {
     return ( 
         <>
@@ -19,7 +19,7 @@ function AboutContact() {
                         <p>Schedule a ThinkClear session to experience learning that builds clarity,
                              confidence, and understanding through personalized guidance.</p>
                         <div className={styles.HomeBtn}>
-                            <button>Explore Courses</button> <button>Book Free Demo </button>
+                           <Link to='/courses'> <button>Explore Courses</button></Link> <button>Book Free Demo </button>
                         </div>
                     </motion.div>
 

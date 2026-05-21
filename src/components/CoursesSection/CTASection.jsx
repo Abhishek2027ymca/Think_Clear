@@ -1,7 +1,7 @@
 import styles from './CTASection.module.css'
 import { motion } from 'framer-motion';
 import ctaStudent from '../../assets/images/cta-student.png'
-
+import {Link} from 'react-router-dom'
 export default function CTASection() {
   return (
     <>
@@ -19,7 +19,7 @@ export default function CTASection() {
             <p>Join structured academic programs designed to improve
               understanding, confidence, and performance for Classes 6–12.</p>
             <div className={styles.HomeBtn}>
-              <button>Explore Courses</button> <button>Book Free Demo </button>
+             <Link to='/about'> <button>Explore About</button></Link> <button>Book Free Demo </button>
             </div>
           </motion.div>
 

@@ -2,6 +2,7 @@ import styles from './CoursesHero.module.css'
 import { CloudMoonRain, Dot, ChevronRight, MoveRight } from 'lucide-react';
 import coursesHero from '../../assets/images/courses-hero.png'
 import { motion } from 'framer-motion';
+import {Link} from 'react-router-dom'
 
 
 export default function CoursesHero() {
@@ -25,7 +26,7 @@ export default function CoursesHero() {
                         <p>Complete website, policy, branding, payment, and marketing
                              setup for ThinkClear’s professional online growth.</p>
                         <div className={styles.HomeBtn}>
-                            <button>Explore Courses</button> <button>Book Free Demo    <MoveRight /></button>
+                            <Link to='/about'><button>Explore About</button></Link> <button>Book Free Demo    <MoveRight /></button>
                         </div>
                     </motion.div>
                     {/* Image */}

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { CloudMoonRain, Dot, ChevronRight, MoveRight } from 'lucide-react';
 import contactStudent from '../../assets/images/contact-hero.png'
 import styles from './hero.module.css'
-
+import {Link} from 'react-router-dom'
 export default function ContactHero() {
   return (
     <>
@@ -24,7 +24,7 @@ export default function ContactHero() {
             <p>We’re here to help students and parents with admissions and support. 
               Feel free to contact us through call, WhatsApp, or the contact form below.</p>
             <div className={styles.HomeBtn}>
-              <button>Explore Courses</button> <button>Book Free Demo    <MoveRight /></button>
+             <Link to='/courses'><button>Explore Courses</button></Link> <button>Book Free Demo    <MoveRight /></button>
             </div>
           </motion.div>
           {/* Image */}

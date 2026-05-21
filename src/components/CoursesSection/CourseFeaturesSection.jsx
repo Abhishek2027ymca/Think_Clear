@@ -4,6 +4,7 @@ import doubtImg from '../../assets/courses/features/doubt-support.jpg'
 import notesImg from '../../assets/courses/features/notes-material.jpg'
 import testsImg from '../../assets/courses/features/tests.jpg'
 import { motion } from 'framer-motion';
+import {Link} from 'react-router-dom'
 
 const learningData = [
   {
@@ -64,7 +65,7 @@ export default function CourseFeaturesSection() {
 
                   <p>{item.desc}</p>
 
-                  <button className={styles.demoBtn}>
+                <Link to='/contact'><button className={styles.demoBtn}>
 
                     <span className={styles.iconBox}>
                       <ArrowRight size={18} />
@@ -74,7 +75,7 @@ export default function CourseFeaturesSection() {
                       Enroll Now
                     </span>
 
-                  </button>
+                  </button></Link>
 
                 </div>
 

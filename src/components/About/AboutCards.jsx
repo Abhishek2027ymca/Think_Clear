@@ -5,6 +5,7 @@ import card1 from '../../assets/About/cards1.png'
 import card2 from '../../assets/About/card2.png'
 import card3 from '../../assets/About/card3.png'
 import { motion } from 'framer-motion';
+import {Link} from 'react-router-dom'
 
 
 
@@ -68,7 +69,7 @@ function AboutCards() {
 
                                     <p>{item.desc}</p>
 
-                                    <button className={styles.demoBtn}>
+                                  <Link to='/contact'>  <button className={styles.demoBtn}>
 
                                         <span className={styles.iconBox}>
                                             <ArrowRight size={18} />
@@ -78,7 +79,7 @@ function AboutCards() {
                                             Enroll Now
                                         </span>
 
-                                    </button>
+                                    </button></Link>
 
                                 </div>
 

@@ -1,8 +1,62 @@
-import { MessageCircle, Mail, Headphones } from 'lucide-react'
+import { MessageCircle, Mail, Headphones, HandPlatter } from 'lucide-react'
 import styles from './ContactInfo.module.css'
 import { ChevronRight } from "lucide-react";
 import { motion } from 'framer-motion';
+import { useState } from 'react'
 export default function ContactInfo() {
+
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    mobile: '',
+    className: '',
+    message: '',
+  })
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    })
+  }
+
+
+  const handleSubmit = (e) => {
+  e.preventDefault()
+
+  const message = `
+*New Free Demo Booking*
+
+👤 First Name: ${formData.firstName}
+
+👤 Last Name: ${formData.lastName}
+
+📧 Email: ${formData.email}
+
+📱 Mobile: ${formData.mobile}
+
+🎓 Class: ${formData.className}
+
+📝 Message:
+${formData.message}
+  `
+
+  const whatsappNumber = "447575441703"
+
+  const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
+
+  window.open(whatsappURL, "_blank")
+
+  setFormData({
+    firstName: '',
+    lastName: '',
+    email: '',
+    mobile: '',
+    className: '',
+    message: '',
+  })
+}
   return (
     <>
       <section className={styles.contactInfoSection}>
@@ -41,6 +95,7 @@ export default function ContactInfo() {
             </p>
 
             <form
+              onSubmit={handleSubmit}
               action="https://formspree.io/f/YOUR_FORM_ID"
               method="POST"
               className={styles.contactForm}
@@ -54,7 +109,9 @@ export default function ContactInfo() {
                   <input
                     type="text"
                     name="firstName"
+                    value={formData.firstName}
                     placeholder="Enter your first name"
+                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -65,7 +122,9 @@ export default function ContactInfo() {
                   <input
                     type="text"
                     name="lastName"
+                    value={formData.lastName}
                     placeholder="Enter your last name"
+                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -81,7 +140,9 @@ export default function ContactInfo() {
                   <input
                     type="email"
                     name="email"
+                    value={formData.email}
                     placeholder="Enter your Email"
+                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -94,6 +155,8 @@ export default function ContactInfo() {
                     name="mobile"
                     placeholder="Enter your Mobile No."
                     required
+                    value={formData.mobile}
+                    onChange={handleChange}
                   />
                 </div>
 
@@ -105,7 +168,8 @@ export default function ContactInfo() {
 
                 <div className={styles.contactSelectWrapper}>
 
-                  <select name="class" required defaultValue="">
+                  <select name="className" required value={formData.className}
+                    onChange={handleChange} defaultValue="">
                     <option value="" disabled>
                       Select your class
                     </option>
@@ -131,6 +195,8 @@ export default function ContactInfo() {
                 <textarea
                   name="message"
                   placeholder="Enter your message"
+                  value={formData.message}
+                  onChange={handleChange}
                   rows={4}
                   required
                 />

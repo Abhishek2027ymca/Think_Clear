@@ -19,7 +19,7 @@ export default function BookDemo() {
                         <p>Start your learning journey with expert guidance 
                           and interactive classes designed for student success.</p>
                         <div className={styles.HomeBtn}>
-                            <button>Explore Courses</button> <button>Book Free Demo </button>
+                            <Link to='/courses'><button>Explore Courses</button></Link> <button>Book Free Demo </button>
                         </div>
                     </motion.div>
 

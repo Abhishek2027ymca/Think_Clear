@@ -3,6 +3,7 @@ import styles from './AboutBanner.module.css'
 import { motion } from 'framer-motion';
 import { CloudMoonRain, Dot, ChevronRight, MoveRight } from 'lucide-react';
 import founder from '../../assets/About/founder.png'
+import {Link} from 'react-router-dom'
 
 
 function AboutBanner() {
@@ -26,7 +27,7 @@ function AboutBanner() {
                         <p>Helping students across IB, IGCSE, GCSE, and A-Level develop deep conceptual
                             understanding through engaging and confidence-driven learning experiences.</p>
                         <div className={styles.HomeBtn}>
-                            <button>Explore Courses</button> <button>Book Free Demo    <MoveRight /></button>
+                            <Link to='/courses'><button>Explore Courses</button></Link> <button>Book Free Demo    <MoveRight /></button>
                         </div>
                     </motion.div>
                     {/* Image */}

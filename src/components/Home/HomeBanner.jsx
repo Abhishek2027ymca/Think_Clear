@@ -3,6 +3,7 @@ import styles from './HomeBanner.module.css'
 import { CloudMoonRain, Dot, ChevronRight, MoveRight } from 'lucide-react';
 import Hero from '../../assets/images/Heros.png'
 import { motion } from 'framer-motion';
+import {Link} from 'react-router-dom'
 
 function HomeBanner() {
     return (
@@ -25,7 +26,7 @@ function HomeBanner() {
                         <p>Personalized online coaching for Maths, Science, SST, and more with live classes,
                             expert guidance, doubt support, and exam-focused learning.</p>
                         <div className={styles.HomeBtn}>
-                            <button>Explore Courses</button> <button>Book Free Demo    <MoveRight /></button>
+                            <Link to='/courses'><button>Explore Courses</button></Link> <button>Book Free Demo    <MoveRight /></button>
                         </div>
                     </motion.div>
                     {/* Image */}
