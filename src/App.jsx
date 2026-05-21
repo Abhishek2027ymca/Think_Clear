@@ -7,10 +7,12 @@ import Policies from './pages/Policies'
 import Courses from './pages/Courses'
 import Contact from './pages/Contact'
 import ScrollToTop from './components/ScrollToTop'
+import LogoLoader from './components/LogoLoader'
 
 function App() {
   return (
     <Router>
+      <LogoLoader>
       <ScrollToTop/>
       <Navbar />
       <Routes>
@@ -21,6 +23,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
+      </LogoLoader>
     </Router>
   )
 }
