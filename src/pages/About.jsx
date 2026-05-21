@@ -12,12 +12,14 @@ import AboutTeam from '../components/About/AboutTeam';
 import AboutFAQ from '../components/About/AboutFAQ';
 import AboutContact from '../components/About/AboutContact';
 import AboutGalary from '../components/About/AboutGalary';
+import AboutMath from '../components/About/AboutMath';
 
 function About() {
     return ( 
         <>
         <AboutBanner />
         <AboutFounder />
+        <AboutMath />
         <AboutProfile />
         <AboutTeaching />
         <AboutEducation />
