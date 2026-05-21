@@ -343,7 +343,7 @@
 @media (max-width: 1024px) {
 
     .HomeBanner {
-        padding: 0 50px 0 50px;
+        padding: 30px 50px 0 50px;
         min-height: auto;
     }
 
@@ -444,7 +444,7 @@
 @media (max-width: 768px) {
 
     .HomeBanner {
-        padding: 0px 5% 0px;
+        padding: 50px 5% 0 5%;
     }
 
     .HomePadding {

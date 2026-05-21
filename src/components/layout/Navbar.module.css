@@ -1,19 +1,20 @@
-.Navbar{
+.Navbar {
   width: 100%;
   background-color: white;
   position: relative;
 }
+
 .header {
   width: 100%;
   background-color: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   /* position: sticky;
   top: 0; */
-  position: fixed;
+  /* position: fixed;
   top: 0;
-    left: 0;
+  left: 0;
 
-  z-index: 1000;
+  z-index: 1000; */
 }
 
 
@@ -54,22 +55,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:15px;
+  gap: 15px;
   list-style: none;
 }
-.NavFlex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+
+.NavFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .navLink {
-  display: flex;  
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap:15px;
-  font-size:  15px;
+  gap: 15px;
+  font-size: 15px;
   font-weight: 400;
   text-decoration: none;
   transition: color 0.15s ease;
@@ -83,9 +85,9 @@
 .activeLink {
   background-color: #060A30;
   color: white;
-  font-size:  15px;
+  font-size: 15px;
   font-weight: 500;
-  padding: 10px  15px;
+  padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
 }
@@ -166,6 +168,7 @@
     transform-origin: left;
   }
 }
+
 /* Buttons */
 
 .desktopButton {
@@ -253,6 +256,7 @@
 /* Responsive */
 
 @media (max-width: 768px) {
+
   .desktopNav,
   .desktopButton {
     display: none;

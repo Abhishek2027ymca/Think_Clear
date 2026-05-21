@@ -19,7 +19,7 @@ export default function CTASection() {
             <p>Join structured academic programs designed to improve
               understanding, confidence, and performance for Classes 6–12.</p>
             <div className={styles.HomeBtn}>
-             <Link to='/about'> <button>Explore About</button></Link> <button>Book Free Demo </button>
+            <button> <Link to='/about'> Explore About</Link></button> <button>Book Free Demo </button>
             </div>
           </motion.div>
 

@@ -26,7 +26,7 @@ export default function CoursesHero() {
                         <p>Complete website, policy, branding, payment, and marketing
                              setup for ThinkClear’s professional online growth.</p>
                         <div className={styles.HomeBtn}>
-                            <Link to='/about'><button>Explore About</button></Link> <button>Book Free Demo    <MoveRight /></button>
+                            <button><Link to='/about'>Explore About</Link></button> <button>Book Free Demo    <MoveRight /></button>
                         </div>
                     </motion.div>
                     {/* Image */}

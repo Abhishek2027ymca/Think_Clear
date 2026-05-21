@@ -20,7 +20,7 @@ function HomeContact() {
                         <p>Join ThinkClear today and start learning with expert guidance, clear explanations,
                             structured support, regular practice, and continuous academic improvement.</p>
                         <div className={styles.HomeBtn}>
-                          <Link to='/courses'><button>Explore Courses</button></Link> <button>Book Free Demo </button>
+                          <button><Link to='/courses'>Explore Courses</Link></button> <button>Book Free Demo </button>
                         </div>
                     </motion.div>
 

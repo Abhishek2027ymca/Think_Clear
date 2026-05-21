@@ -27,7 +27,7 @@ function AboutBanner() {
                         <p>Helping students across IB, IGCSE, GCSE, and A-Level develop deep conceptual
                             understanding through engaging and confidence-driven learning experiences.</p>
                         <div className={styles.HomeBtn}>
-                            <Link to='/courses'><button>Explore Courses</button></Link> <button>Book Free Demo    <MoveRight /></button>
+                            <button><Link to='/courses'>Explore Courses</Link></button> <button>Book Free Demo    <MoveRight /></button>
                         </div>
                     </motion.div>
                     {/* Image */}

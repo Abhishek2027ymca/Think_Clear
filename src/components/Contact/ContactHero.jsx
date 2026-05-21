@@ -24,7 +24,7 @@ export default function ContactHero() {
             <p>We’re here to help students and parents with admissions and support. 
               Feel free to contact us through call, WhatsApp, or the contact form below.</p>
             <div className={styles.HomeBtn}>
-             <Link to='/courses'><button>Explore Courses</button></Link> <button>Book Free Demo    <MoveRight /></button>
+             <button><Link to='/courses'>Explore Courses</Link></button> <button>Book Free Demo    <MoveRight /></button>
             </div>
           </motion.div>
           {/* Image */}

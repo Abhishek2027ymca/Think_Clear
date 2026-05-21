@@ -19,7 +19,7 @@ function AboutContact() {
                         <p>Schedule a ThinkClear session to experience learning that builds clarity,
                              confidence, and understanding through personalized guidance.</p>
                         <div className={styles.HomeBtn}>
-                           <Link to='/courses'> <button>Explore Courses</button></Link> <button>Book Free Demo </button>
+                          <button><Link to='/courses'> Explore Courses</Link></button> <button>Book Free Demo </button>
                         </div>
                     </motion.div>
 

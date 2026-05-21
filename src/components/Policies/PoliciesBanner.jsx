@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { CloudMoonRain, Dot, ChevronRight, MoveRight } from 'lucide-react';
 import founder from '../../assets/About/founder.png'
 import customer from '../../assets/Policies/customer.png'
+import {Link} from 'react-router-dom'
 
 
 
@@ -28,7 +29,7 @@ function PoliciesBanner() {
                         <p>Complete website, policy, branding, payment, and marketing
                              setup for ThinkClear’s professional online growth.</p>
                         <div className={styles.HomeBtn}>
-                            <button>Explore Courses</button> <button>Book Free Demo    <MoveRight /></button>
+                            <button><Link to='/courses'>Explore Courses</Link></button> <button>Book Free Demo    <MoveRight /></button>
                         </div>
                     </motion.div>
                     {/* Image */}
