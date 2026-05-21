@@ -281,94 +281,94 @@
    1600px and Above
 ========================= */
 
-@media (min-width: 1600px){
+@media (min-width: 1600px) {
 
-  .AboutMath{
-    padding: 50px 60px;
-  }
+    .AboutMath {
+        padding: 50px 60px;
+    }
 
-  /* Heading */
+    /* Heading */
 
-  .HomeAboutText h1{
-    font-size: 50px;
-    line-height: 1.3;
-    text-align: center;
-  }
+    .HomeAboutText h1 {
+        font-size: 50px;
+        line-height: 1.3;
+        text-align: center;
+    }
 
-  .HomeLine{
-    width: 9%;
-    height: 3px;
-  }
+    .HomeLine {
+        width: 9%;
+        height: 3px;
+    }
 
-  /* Flex */
+    /* Flex */
 
-  .AboutMathsFlex{
-    margin-top: 5%;
-    gap: 5%;
-    align-items: center;
-  }
+    .AboutMathsFlex {
+        margin-top: 5%;
+        gap: 5%;
+        align-items: center;
+    }
 
-  /* Text */
+    /* Text */
 
-  .AboutTextPa{
-    width: 48%;
-    gap: 1.5vw;
-  }
+    .AboutTextPa {
+        width: 48%;
+        gap: 1.5vw;
+    }
 
-  .AboutText h1{
-    font-size: 45px;
-  }
+    .AboutText h1 {
+        font-size: 45px;
+    }
 
-  .para{
-    max-width: 100%;
-    font-size: 1vw;
-    line-height: 2;
-  }
+    .para {
+        max-width: 100%;
+        font-size: 1vw;
+        line-height: 2;
+    }
 
-  /* Image */
+    /* Image */
 
-  .ImageWrapper{
-    width: 48%;
-    height: 34vw;
-    max-height: 620px;
-    min-height: 450px;
-    border-radius: 34px;
-  }
+    .ImageWrapper {
+        width: 48%;
+        height: 34vw;
+        max-height: 620px;
+        min-height: 450px;
+        border-radius: 34px;
+    }
 
-  .ImageWrapper img{
-    border-radius: 34px;
-  }
+    .ImageWrapper img {
+        border-radius: 34px;
+    }
 
-  /* Floating Card */
+    /* Floating Card */
 
-  .FloatingCard{
-    width: 18vw;
-    max-width: 320px;
-    min-width: 260px;
+    .FloatingCard {
+        width: 18vw;
+        max-width: 320px;
+        min-width: 260px;
 
-    padding: 1.2vw;
-    gap: 1vw;
+        padding: 1.2vw;
+        gap: 1vw;
 
-    right: -2%;
-    bottom: -4%;
-    border-radius: 24px;
-  }
+        right: -2%;
+        bottom: -4%;
+        border-radius: 24px;
+    }
 
-  .CardIcon{
-    min-width: 3vw;
-    height: 3vw;
-    max-width: 54px;
-    max-height: 54px;
-  }
+    .CardIcon {
+        min-width: 3vw;
+        height: 3vw;
+        max-width: 54px;
+        max-height: 54px;
+    }
 
-  .CardContent h3{
-    font-size: 1vw;
-  }
+    .CardContent h3 {
+        font-size: 1vw;
+    }
 
-  .CardContent p{
-    font-size: 0.8vw;
-    line-height: 1.8;
-  }
+    .CardContent p {
+        font-size: 0.8vw;
+        line-height: 1.8;
+    }
 
 }
 
@@ -376,28 +376,28 @@
    1400px - 1599px
 ========================= */
 
-@media (max-width: 1599px){
+@media (max-width: 1599px) {
 
-  .AboutMathsFlex{
-    gap: 40px;
-  }
+    .AboutMathsFlex {
+        gap: 40px;
+    }
 
-  
-  .AboutText h1{
-    font-size: 45px;
-  }
 
-  .para {
-    max-width: 600px;
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.637);
+    .AboutText h1 {
+        font-size: 45px;
+    }
 
-}
+    .para {
+        max-width: 600px;
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.637);
 
-  .ImageWrapper{
-    width: 50%;
-    height: 380px;
-  }
+    }
+
+    .ImageWrapper {
+        width: 50%;
+        height: 380px;
+    }
 
 }
 
@@ -405,34 +405,35 @@
    1200px - 1399px
 ========================= */
 
-@media (max-width: 1399px){
+@media (max-width: 1399px) {
 
-  .AboutMath{
-    padding: 50px 60px;
-  }
+    .AboutMath {
+        padding: 50px 60px;
+    }
 
-  .HomeAboutText h1{
-    font-size: 50px;
-  }
+    .HomeAboutText h1 {
+        font-size: 50px;
+    }
 
-  .AboutText h1{
-    font-size: 36px;
-  }
+    .AboutText h1 {
+        font-size: 36px;
+    }
 
-  .ImageWrapper{
-    width: 47%;
-    height: 360px;
-  }
+    .ImageWrapper {
+        width: 47%;
+        height: 360px;
+    }
 
-  .FloatingCard{
-    width: 230px;
-  }
-  .para {
-    max-width: 570px;
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.637);
+    .FloatingCard {
+        width: 230px;
+    }
 
-}
+    .para {
+        max-width: 570px;
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.637);
+
+    }
 
 }
 
@@ -440,37 +441,37 @@
    992px - 1199px
 ========================= */
 
-@media (max-width: 1199px){
+@media (max-width: 1199px) {
 
-  .AboutMath{
-    padding: 45px 30px;
-  }
+    .AboutMath {
+        padding: 45px 30px;
+    }
 
-  .AboutMathsFlex{
-    gap: 35px;
-    align-items: center;
-  }
+    .AboutMathsFlex {
+        gap: 35px;
+        align-items: center;
+    }
 
-  .AboutTextPa{
-    width: 50%;
-  }
+    .AboutTextPa {
+        width: 50%;
+    }
 
-  .ImageWrapper{
-    width: 50%;
-    height: 320px;
-  }
+    .ImageWrapper {
+        width: 50%;
+        height: 320px;
+    }
 
-  .para{
-    max-width: 100%;
-    font-size: 14px;
-    line-height: 1.8;
-  }
+    .para {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.8;
+    }
 
-  .FloatingCard{
-    width: 220px;
-    right: -10px;
-    bottom: -18px;
-  }
+    .FloatingCard {
+        width: 220px;
+        right: -10px;
+        bottom: -18px;
+    }
 
 }
 
@@ -478,46 +479,53 @@
    768px - 991px
 ========================= */
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
 
-  .AboutMath{
-    padding: 40px 24px;
-  }
+    .AboutMath {
+        padding: 40px 24px;
+    }
 
-  .HomeAboutText h1{
-    font-size: 34px;
-    text-align: center;
-  }
+    .HomeAboutText h1 {
+        font-size: 34px;
+        text-align: center;
+    }
 
-  .AboutMathsFlex{
-    flex-direction: column;
-    gap: 50px;
-    margin-top: 50px;
-  }
+    .AboutMathsFlex {
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 50px;
+    }
 
-  .AboutTextPa{
-    width: 100%;
-  }
+    .AboutTextPa {
+        width: 100%;
+    }
 
-  .AboutText h1{
-    font-size: 32px;
-  }
+    .AboutText h1 {
+        font-size: 32px;
+    }
 
-  .para{
-    max-width: 100%;
-    font-size: 14px;
-    line-height: 1.9;
-  }
+    .para {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.9;
+    }
 
-  .ImageWrapper{
-    width: 100%;
-    height: 500px;
-  }
+    .ImageWrapper {
+        width: 100%;
+        height: 500px;
+    }
 
-  .FloatingCard{
-    right: 10px;
-    bottom: 10px;
-  }
+    .FloatingCard {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .FloatingCard {
+        width: 220px;
+        right: -10px;
+        bottom: -18px;
+    }
+
 
 }
 
@@ -525,54 +533,61 @@
    576px - 767px
 ========================= */
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
 
-  .AboutMath{
-    padding: 35px 20px;
-  }
+    .AboutMath {
+        padding: 35px 20px;
+    }
 
-  .HomeAboutText h1{
-    font-size: 28px;
-    text-align: center;
-    line-height: 1.4;
-  }
+    .HomeAboutText h1 {
+        font-size: 28px;
+        text-align: center;
+        line-height: 1.4;
+    }
 
-  .AboutMathsFlex{
-    flex-direction: column;
-    gap: 40px;
-    margin-top: 40px;
-  }
+    .AboutMathsFlex {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+    }
 
-  .AboutText{
-    gap: 10px;
-  }
+    .AboutText {
+        gap: 10px;
+    }
 
-  .AboutText h1{
-    font-size: 28px;
-  }
+    .AboutText h1 {
+        font-size: 28px;
+    }
 
-  .para{
-    font-size: 14px;
-    line-height: 1.9;
-  }
+    .para {
+        font-size: 14px;
+        line-height: 1.9;
+    }
 
-  .ImageWrapper{
-    width: 100%;
-    height: 420px;
-    border-radius: 24px;
-  }
+    .ImageWrapper {
+        width: 100%;
+        height: 420px;
+        border-radius: 24px;
+    }
 
-  .ImageWrapper img{
-    border-radius: 24px;
-  }
+    .ImageWrapper img {
+        border-radius: 24px;
+    }
 
-  .FloatingCard{
-    width: 220px;
-    padding: 14px;
-    right: 10px;
-    bottom: 10px;
-    border-radius: 18px;
-  }
+    .FloatingCard {
+        width: 220px;
+        padding: 14px;
+        right: 10px;
+        bottom: 10px;
+        border-radius: 18px;
+    }
+
+    .FloatingCard {
+        width: 220px;
+        right: -10px;
+        bottom: -18px;
+    }
+
 
 }
 
@@ -580,68 +595,75 @@
    480px and Below
 ========================= */
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
 
-  .AboutMath{
-    padding: 30px 16px;
-  }
+    .AboutMath {
+        padding: 30px 16px;
+    }
 
-  .HomeAboutText h1{
-    font-size: 24px;
-    line-height: 1.5;
-  }
+    .HomeAboutText h1 {
+        font-size: 24px;
+        line-height: 1.5;
+    }
 
-  .HomeLine{
-    width: 120px;
-  }
+    .HomeLine {
+        width: 120px;
+    }
 
-  .AboutMathsFlex{
-    gap: 35px;
-    margin-top: 35px;
-  }
+    .AboutMathsFlex {
+        gap: 35px;
+        margin-top: 35px;
+    }
 
-  .AboutText h1{
-    font-size: 24px;
-  }
+    .AboutText h1 {
+        font-size: 24px;
+    }
 
-  .para{
-    font-size: 13px;
-    line-height: 1.9;
-  }
+    .para {
+        font-size: 13px;
+        line-height: 1.9;
+    }
 
-  .ImageWrapper{
-    width: 100%;
-    height: 340px;
-    border-radius: 20px;
-  }
+    .ImageWrapper {
+        width: 100%;
+        height: 340px;
+        border-radius: 20px;
+    }
 
-  .ImageWrapper img{
-    border-radius: 20px;
-  }
+    .ImageWrapper img {
+        border-radius: 20px;
+    }
 
-  .FloatingCard{
-    width: 190px;
-    padding: 12px;
-    gap: 10px;
+    .FloatingCard {
+        width: 190px;
+        padding: 12px;
+        gap: 10px;
 
-    right: 8px;
-    bottom: 8px;
+        right: 8px;
+        bottom: 8px;
 
-    border-radius: 16px;
-  }
+        border-radius: 16px;
+    }
 
-  .CardIcon{
-    min-width: 34px;
-    height: 34px;
-  }
+    .CardIcon {
+        min-width: 34px;
+        height: 34px;
+    }
 
-  .CardContent h3{
-    font-size: 12px;
-  }
+    .CardContent h3 {
+        font-size: 12px;
+    }
 
-  .CardContent p{
-    font-size: 10px;
-    line-height: 1.7;
-  }
+    .CardContent p {
+        font-size: 10px;
+        line-height: 1.7;
+    }
+
+    .FloatingCard {
+        width: 220px;
+        right: -10px;
+        bottom: -18px;
+    }
+
 
 }
