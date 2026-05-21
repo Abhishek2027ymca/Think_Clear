@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './AboutTeaching.module.css'
 import { motion } from 'framer-motion';
-import teaching from '../../assets/About/teaching.png'
+import teaching from '../../assets/About/learning1.png'
 
 
 function AboutTeaching() {

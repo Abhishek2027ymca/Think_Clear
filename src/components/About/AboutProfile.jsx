@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './AboutProfile.module.css'
 import { motion } from 'framer-motion';
-import learn from '../../assets/About/learn1.png'
+import learn from '../../assets/About/laptop.png'
 
 function AboutProfile() {
     return (

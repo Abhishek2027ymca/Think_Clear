@@ -4,12 +4,12 @@ import styles from './AboutGalary.module.css'
 import { motion } from 'framer-motion';
 import { ChevronRight, ChevronLeft } from 'lucide-react'
 import { AnimatePresence } from "framer-motion";
-import learn1 from '../../assets/About/learn1.png'
+import learn1 from '../../assets/About/laptop.png'
 import learning from '../../assets/About/learning.jpeg'
-import student from '../../assets/About/student.jpeg'
-import teaching from '../../assets/About/teaching.png'
+import student from '../../assets/About/student1.png'
+import teaching from '../../assets/About/teaching1.png'
 import using from '../../assets/About/user.png'
-import last from '../../assets/About/last.jpg'
+import last from '../../assets/About/bus.png'
 
 const galleryData = [
     {
@@ -40,7 +40,7 @@ const galleryData = [
     {
         id: 6,
         img: last
-    }
+    },
 ]
 
 function AboutGalary() {

@@ -16,7 +16,13 @@
   left: 0;
   width: 100%;
   height: 50%;
-  background: #000;
+  background: linear-gradient(
+  180deg,
+  #000000 0%,
+  #060a30 35%,
+  #060a30 70%,
+  #060a30 100%
+);
   transition: transform 1.2s ease;
   z-index: 1;
 }
@@ -28,7 +34,13 @@
   left: 0;
   width: 100%;
   height: 50%;
-  background: #000;
+  background: linear-gradient(
+  180deg,
+  #060a30 0%,
+  #060a30 35%,
+  #060a30 70%,
+  #000000 100%
+);
   transition: transform 1.2s ease;
   z-index: 1;
 }

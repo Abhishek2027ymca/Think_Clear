@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './AboutEducation.module.css'
 import { motion } from 'framer-motion';
-import student from '../../assets/About/student.jpeg'
+import student from '../../assets/About/student1.png'
 import { ChevronRight } from "lucide-react";
 
 function AboutEducation() {
