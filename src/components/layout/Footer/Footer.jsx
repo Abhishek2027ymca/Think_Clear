@@ -71,7 +71,7 @@ function Footer() {
                         </div>
 
                     </div> */}
-                    <div className={styles.FooterQuciK}>
+                    {/* <div className={styles.FooterQuciK}>
                         <h4>Courses</h4>
                         <div className={styles.FooterLinks}>
                             <span>Class 6–8 Foundation</span>
@@ -80,7 +80,7 @@ function Footer() {
                             <span>Maths & Science Special Programs</span>
                         </div>
 
-                    </div>
+                    </div> */}
 
 
                     {/* Quick */}
@@ -109,7 +109,7 @@ function Footer() {
                 {/* Links */}
                 <div className={styles.LastLinks}>
                     <p>© 2026 ThinkClear. All Rights Reserved.</p>
-                    <p>© Designed & Developed By Yuvocreations.com</p>
+                    <p><a href='https://www.yuvocreations.com/'>© Designed & Developed By Yuvocreations.com</a></p>
                 </div>
             </section>
         </>
