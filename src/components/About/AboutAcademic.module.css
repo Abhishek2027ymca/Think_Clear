@@ -34,11 +34,11 @@
 
 /* Flez */
 
-.AboutMathsFlex{
+.AboutMathsFlex {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     margin-top: 60px;
 }
 
@@ -244,16 +244,16 @@
 
 .AboutTextPa {
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
 }
 
 .AboutText {
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 13px;
 }
@@ -269,6 +269,7 @@
 }
 
 .para {
+    text-align: center;
     max-width: 560px;
     font-size: 15px;
     color: rgba(0, 0, 0, 0.637);
@@ -276,7 +277,7 @@
 }
 
 
- /* =========================
+/* =========================
    1600px and Above
 ========================= */
 
@@ -383,12 +384,12 @@
 
 
     .AboutText h1 {
-        font-size: 45px;
+        font-size: 50px;
     }
 
     .para {
-        max-width: 600px;
-        font-size: 15px;
+        max-width: 700px;
+        font-size: 18px;
         color: rgba(0, 0, 0, 0.637);
 
     }
@@ -415,7 +416,7 @@
     }
 
     .AboutText h1 {
-        font-size: 36px;
+        font-size: 45px;
     }
 
     .ImageWrapper {
@@ -423,12 +424,21 @@
         height: 300px;
     }
 
+    .AboutMathsFlex {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+
     .FloatingCard {
         width: 220px;
     }
 
     .para {
-        max-width: 570px;
+        max-width: 670px;
         font-size: 15px;
         color: rgba(0, 0, 0, 0.637);
 

@@ -48,7 +48,7 @@ function Footer() {
                     </div>
                     {/* Quiks LInnks */}
 
-                    <div className={styles.FooterQuciK}>
+                    {/* <div className={styles.FooterQuciK}>
                         <h4>Quick Links</h4>
                         <div className={styles.FooterLinks}>
                             <Link to='/'><span>Home</span></Link>
@@ -58,7 +58,7 @@ function Footer() {
                             <Link to='/policies'><span>Policies</span></Link>
                         </div>
 
-                    </div>
+                    </div> */}
                     {/* Quick */}
                     {/* <div className={styles.FooterQuciK}>
                         <h4>Privacy Policy</h4>
@@ -84,26 +84,42 @@ function Footer() {
 
 
                     {/* Quick */}
-                    <div className={styles.FooterQuciK}>
-                        <h4>Contact Information</h4>
-                        <div className={styles.FooterLinks}>
-                            <a href="https://wa.me/447575441703"><span>+447575441703</span></a>
-                            {/* <a href="mailto:contact@thinkclearsolutions.com?subject=Inquiry&body=Hello ThinkClear Solutions,"><span>contact@thinkclearsolutions.com</span></a> */}
-                            <a
-                                href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@thinkclearsolutions.com"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <span>contact@thinkclearsolutions.com</span>
-                            </a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yadavcharu11@gmail.com"
-                                target="_blank"
-                                rel="noreferrer">
-                                <span> yadavcharu11@gmail.com</span>
-                            </a>
-                            <span>WhatsApp Support</span>
+                    <div className={styles.flexFooter}>
+                        {/*  */}
+                        <div className={styles.FooterQuciK}>
+                            <h4>Quick Links</h4>
+                            <div className={styles.FooterLinks}>
+                                <Link to='/'><span>Home</span></Link>
+                                <Link to='/courses'><span>Courses</span></Link>
+                                <Link to='/about'><span>About Us</span></Link>
+                                <Link to='/contact'><span>Contact</span></Link>
+                                <Link to='/policies'><span>Policies</span></Link>
+                            </div>
+
                         </div>
 
+                        {/*  */}
+                        <div className={styles.FooterQuciK}>
+                            <h4>Contact Information</h4>
+                            <div className={styles.FooterLinks}>
+                                <a href="https://wa.me/447575441703"><span>+447575441703</span></a>
+                                {/* <a href="mailto:contact@thinkclearsolutions.com?subject=Inquiry&body=Hello ThinkClear Solutions,"><span>contact@thinkclearsolutions.com</span></a> */}
+                                <a
+                                    href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@thinkclearsolutions.com"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <span>contact@thinkclearsolutions.com</span>
+                                </a>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yadavcharu11@gmail.com"
+                                    target="_blank"
+                                    rel="noreferrer">
+                                    <span> yadavcharu11@gmail.com</span>
+                                </a>
+                                <span>WhatsApp Support</span>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 {/* Links */}

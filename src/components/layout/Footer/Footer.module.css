@@ -115,6 +115,13 @@
 }
 
 
+.flexFooter{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 90px;
+}
+
 .FooterQuciK{
     display: flex;
     justify-content: start;
@@ -274,9 +281,17 @@
 @media (max-width: 1599px){
 
   .FooterName h1{
-    font-size: 134px;
+    font-size: 164px;
   }
-
+  .flexFooter{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 130px;
+}
+  .FooterClass{
+    max-width: 420px;
+  }
 }
 
 /* =========================
@@ -297,6 +312,24 @@
   .FooterClass{
     max-width: 320px;
   }
+
+  .FooterImgText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.FooterImgText img{
+  width: 60px;
+}
+.FooterImgText h3{
+    font-size: 35px;
+}
+.FooterClass{
+    max-width: 40px;
+    font-size: 14px;
+}
+
 
 }
 
@@ -408,6 +441,12 @@
   .FooterImgText h3{
     font-size: 24px;
   }
+    .flexFooter{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 50px;
+}
 
   .SocialIcons{
     font-size: 20px;
@@ -441,7 +480,13 @@
     padding: 25px 16px;
     gap: 28px;
   }
-
+    .flexFooter{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
   .FooterImgText{
     gap: 8px;
   }

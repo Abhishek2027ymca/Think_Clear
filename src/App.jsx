@@ -13,7 +13,6 @@ import ScrollTopButton from './components/ScrollTopButton'
 function App() {
   return (
     <Router>
-      <LogoLoader>
       <ScrollToTop/>
       <Navbar />
       <Routes>
@@ -25,7 +24,6 @@ function App() {
       </Routes>
       <Footer />
       <ScrollTopButton />
-      </LogoLoader>
     </Router>
   )
 }

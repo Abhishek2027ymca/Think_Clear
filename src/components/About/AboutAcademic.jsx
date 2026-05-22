@@ -18,12 +18,12 @@ function AboutAcademic() {
                 {/* Flex */}
                 <div className={styles.AboutMathsFlex}>
                     {/* Image */}
-                    <motion.div className={styles.ImageWrapper} initial={{ opacity: 0, y: 100 }}
+                    {/* <motion.div className={styles.ImageWrapper} initial={{ opacity: 0, y: 100 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }} overlay
                         transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
 
-                        <img src={founder} alt="teacher" />
+                        <img src={founder} alt="teacher" /> */}
 
                         {/* <div className={styles.FloatingCard}>
                             <h3>Mathematics Mentor</h3>
@@ -33,7 +33,7 @@ function AboutAcademic() {
                         </div> */}
 
 
-                        <div className={styles.FloatingCard}>
+                        {/* <div className={styles.FloatingCard}>
                             <div className={styles.CardIcon}>
                                 <Microscope size={22} />
                             </div>
@@ -47,7 +47,7 @@ function AboutAcademic() {
                             </div>
                         </div>
 
-                    </motion.div>
+                    </motion.div> */}
                     {/* para */}
 
                     <motion.div className={styles.AboutTextPa} initial={{ opacity: 0, y: 100 }}

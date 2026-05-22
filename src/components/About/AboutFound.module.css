@@ -83,7 +83,7 @@
     font-weight: 400;
 }
 
-/* Floating Animation */
+
 
 @keyframes floatCard {
 
@@ -100,6 +100,11 @@
     }
 
 }
+
+
+
+/* Floating Card */
+
 
 
 /* text */
@@ -340,6 +345,16 @@
     .AboutText h1 {
         font-size: 32px;
     }
+     /* .FloatingCard {
+        width: 220px;
+        right: 20px;
+        bottom: 30px;
+        padding: 15px;
+    }
+
+    .FloatingCard p {
+        font-size: 12px;
+    } */
 
     .AboutText p {
         font-size: 15px;
@@ -368,7 +383,7 @@
     .HomeLine {
         width: 120px;
     }
-
+   
     .AboutFounderFlex {
         margin-top: 40px;
         gap: 60px;

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './AboutFound.module.css'
 import { motion } from 'framer-motion';
 import Teacher from '../../assets/About/Teacher.png'
-
+import { Quote, Sparkles } from "lucide-react";
 function AboutFounder() {
     return (
         <>
@@ -31,6 +31,18 @@ function AboutFounder() {
                                 and stay curious.”
                             </p>
                         </div>
+                        {/* <div className={styles.FloatingCard}>
+                            <div className={styles.IconWrap}>
+                                <Quote size={18} />
+                            </div>
+
+                            <div className={styles.CardGlow}></div>
+
+                            <p>
+                                “Creating learning experiences that help students think clearly,
+                                learn confidently, and stay curious.”
+                            </p>
+                        </div> */}
 
                     </motion.div>
 
