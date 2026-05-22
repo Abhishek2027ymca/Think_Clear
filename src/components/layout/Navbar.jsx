@@ -17,84 +17,88 @@ export default function Navbar() {
 
   return (
     <section className={styles.Navbar}>
-    <header className={styles.header}>
-      <nav className={styles.nav}>
+      <header className={styles.header}>
+        <nav className={styles.nav}>
 
-        {/* Logo */}
-        <NavLink to="/" className={styles.logoWrapper}>
-          <img
-            src={logo}
-            alt="ThinkClear Logo"
-            className={styles.logo}
-          />
-          <span className={styles.logoText}>
-            Think<span style={{color:"#060A30"}}>Clear</span>
-          </span>
-        </NavLink>
-        <div className={styles.NavFlex}>
-        {/* Desktop Nav Links */}
-        <ul className={styles.desktopNav}>
-          {NAV_LINKS.map(({ label, to }) => (
-            <li key={to}>
-              <NavLink
-                to={to}
-                className={({ isActive }) =>
-                  isActive
-                    ? styles.activeLink
-                    : styles.navLink
-                }
-              >
-                {label}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
+          {/* Logo */}
+          <NavLink to="/" className={styles.logoWrapper}>
+            <img
+              src={logo}
+              alt="ThinkClear Logo"
+              className={styles.logo}
+            />
+            <span className={styles.logoText}>
+              Think<span style={{ color: "#060A30" }}>Clear</span>
+            </span>
+          </NavLink>
+          <div className={styles.NavFlex}>
+            {/* Desktop Nav Links */}
+            <ul className={styles.desktopNav}>
+              {NAV_LINKS.map(({ label, to }) => (
+                <li key={to}>
+                  <NavLink
+                    to={to}
+                    className={({ isActive }) =>
+                      isActive
+                        ? styles.activeLink
+                        : styles.navLink
+                    }
+                  >
+                    {label}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
 
-        {/* Book Demo CTA */}
-        <div className={styles.desktopButton}>
-          <button className={styles.bookButton}>
-            Book Demo
-          </button>
-        </div>
+            {/* Book Demo CTA */}
+            <div className={styles.desktopButton}>
+              <button className={styles.bookButton}>
+                <a href='https://calendly.com/thinkclearsolutions/30min' target="_blank" rel="noopener noreferrer">
+                  Book Demo
+                </a>
+              </button>
+            </div>
 
-        {/* Mobile Hamburger */}
-        <button
-          className={styles.mobileMenuButton}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-        </div>
-      </nav>
+            {/* Mobile Hamburger */}
+            <button
+              className={styles.mobileMenuButton}
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle menu"
+            >
+              {menuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+        </nav>
 
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className={styles.mobileMenu}>
-          <ul className={styles.mobileNavList}>
-            {NAV_LINKS.map(({ label, to }) => (
-              <li key={to}>
-                <NavLink
-                  to={to}
-                  onClick={() => setMenuOpen(false)}
-                  className={({ isActive }) =>
-                    isActive
-                      ? styles.mobileActiveLink
-                      : styles.mobileNavLink
-                  }
-                >
-                  {label}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
+        {/* Mobile Menu */}
+        {menuOpen && (
+          <div className={styles.mobileMenu}>
+            <ul className={styles.mobileNavList}>
+              {NAV_LINKS.map(({ label, to }) => (
+                <li key={to}>
+                  <NavLink
+                    to={to}
+                    onClick={() => setMenuOpen(false)}
+                    className={({ isActive }) =>
+                      isActive
+                        ? styles.mobileActiveLink
+                        : styles.mobileNavLink
+                    }
+                  >
+                    {label}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
 
-          <button className={styles.mobileBookButton}>
-            Book Demo
-          </button>
-        </div>
-      )}
-    </header>
+            <button className={styles.mobileBookButton}>
+              <a href='https://calendly.com/thinkclearsolutions/30min' target="_blank" rel="noopener noreferrer">
+              Book Demo
+              </a>
+            </button>
+          </div>
+        )}
+      </header>
     </section>
   )
 }
