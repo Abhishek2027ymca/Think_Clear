@@ -60,7 +60,7 @@ export default function GCSEProgramSection() {
                 <ChevronRight size={20} strokeWidth={2.5} />
               </span>
 
-              <span className={styles.text}>Book Free Demo</span>
+              <span className={styles.text}><a href='https://calendly.com/thinkclearsolutions/30min' target="_blank" rel="noopener noreferrer">Book Free Demo</a></span>
             </button>
           </motion.div>
 
@@ -111,7 +111,7 @@ export default function GCSEProgramSection() {
                 <ChevronRight size={20} strokeWidth={2.5} />
               </span>
 
-              <span className={styles.text}>Book Free Demo</span>
+              <span className={styles.text}><a href='https://calendly.com/thinkclearsolutions/30min' target="_blank" rel="noopener noreferrer">Book Free Demo</a></span>
             </button>
           </motion.div>
 

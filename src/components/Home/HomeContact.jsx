@@ -20,7 +20,7 @@ function HomeContact() {
                         <p>Join ThinkClear today and start learning with expert guidance, clear explanations,
                             structured support, regular practice, and continuous academic improvement.</p>
                         <div className={styles.HomeBtn}>
-                          <button><Link to='/courses'>Explore Courses</Link></button> <button>Book Free Demo </button>
+                          <button><Link to='/courses'>Explore Courses</Link></button> <button><a href='https://calendly.com/thinkclearsolutions/30min' target="_blank" rel="noopener noreferrer">Book Free Demo</a> </button>
                         </div>
                     </motion.div>
 

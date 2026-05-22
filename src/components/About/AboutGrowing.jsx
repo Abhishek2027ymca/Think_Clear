@@ -17,16 +17,16 @@ function AboutGrowing() {
                         transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
                         <h1>Our Growing and<br />Dynamic Team</h1>
                         <p>ThinkClear is currently growing as a collaborative learning initiative
-                             with educators, mentors, and creative thinkers who believe in meaningful 
-                             education and student-centered learning. Together, we are building an environment 
-                             that supports curiosity, clarity,
-                             and continuous learning for students across different curricula.</p>
+                            with educators, mentors, and creative thinkers who believe in meaningful
+                            education and student-centered learning. Together, we are building an environment
+                            that supports curiosity, clarity,
+                            and continuous learning for students across different curricula.</p>
                         <button className={styles.demoBtn}>
                             <span className={styles.iconBox}>
                                 <ChevronRight size={20} strokeWidth={2.5} />
                             </span>
 
-                            <span className={styles.text}>Book Free Demo</span>
+                            <span className={styles.text}><a href='https://calendly.com/thinkclearsolutions/30min' target="_blank" rel="noopener noreferrer">Book Free Demo</a></span>
                         </button>
                     </motion.div>
 

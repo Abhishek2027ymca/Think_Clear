@@ -26,7 +26,7 @@ export default function CoursesHero() {
                         <p>Complete website, policy, branding, payment, and marketing
                              setup for ThinkClear’s professional online growth.</p>
                         <div className={styles.HomeBtn}>
-                            <button><Link to='/about'>Explore About</Link></button> <button>Book Free Demo    <MoveRight /></button>
+                            <button><Link to='/about'>Explore About</Link></button> <button><a href='https://calendly.com/thinkclearsolutions/30min' target="_blank" rel="noopener noreferrer">Book Free Demo </a>   <MoveRight /></button>
                         </div>
                     </motion.div>
                     {/* Image */}

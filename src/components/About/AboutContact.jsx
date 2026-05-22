@@ -19,7 +19,7 @@ function AboutContact() {
                         <p>Schedule a ThinkClear session to experience learning that builds clarity,
                              confidence, and understanding through personalized guidance.</p>
                         <div className={styles.HomeBtn}>
-                          <button><Link to='/courses'> Explore Courses</Link></button> <button>Book Free Demo </button>
+                          <button><Link to='/courses'> Explore Courses</Link></button> <button><a href='https://calendly.com/thinkclearsolutions/30min' target="_blank" rel="noopener noreferrer">Book Free Demo </a></button>
                         </div>
                     </motion.div>
 

@@ -26,7 +26,7 @@ function HomeBanner() {
                         <p>Personalized online coaching for Maths, Science, SST, and more with live classes,
                             expert guidance, doubt support, and exam-focused learning.</p>
                         <div className={styles.HomeBtn}>
-                            <Link to='/courses'><button>Explore Courses</button></Link> <button>Book Free Demo    <MoveRight /></button>
+                            <button><Link to='/courses'>Explore Courses</Link></button> <button><a href='https://calendly.com/thinkclearsolutions/30min' target="_blank" rel="noopener noreferrer">Book Free Demo</a>    <MoveRight /></button>
                         </div>
                     </motion.div>
                     {/* Image */}

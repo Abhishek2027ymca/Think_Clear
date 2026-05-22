@@ -19,7 +19,7 @@ export default function BookDemo() {
                         <p>Start your learning journey with expert guidance 
                           and interactive classes designed for student success.</p>
                         <div className={styles.HomeBtn}>
-                            <button><Link to='/courses'>Explore Courses</Link></button> <button>Book Free Demo </button>
+                            <button><Link to='/courses'>Explore Courses</Link></button> <button><a href='https://calendly.com/thinkclearsolutions/30min' target="_blank" rel="noopener noreferrer">Book Free Demo</a> </button>
                         </div>
                     </motion.div>
 
