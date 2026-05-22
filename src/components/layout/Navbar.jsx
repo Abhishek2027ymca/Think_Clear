@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { label: 'Courses', to: '/courses' },
   { label: 'About Us', to: '/about' },
   { label: 'Contact', to: '/contact' },
-  { label: 'Policies', to: '/policies' },
+  // { label: 'Policies', to: '/policies' },
 ]
 
 export default function Navbar() {
