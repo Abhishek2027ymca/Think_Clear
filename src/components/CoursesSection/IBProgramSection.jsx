@@ -29,7 +29,7 @@ export default function IBProgramSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} overlay
           transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
-          <h1>Middle School <span className={styles.HomeColor}>& Secondary (Grades 6–10)</span></h1>
+          <h1>Middle School <span className={styles.HomeColor}>(Grades 6–10)</span></h1>
           <span className={styles.HomeLine}></span>
         </motion.div>
 
