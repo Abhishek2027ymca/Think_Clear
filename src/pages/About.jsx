@@ -14,12 +14,14 @@ import AboutContact from '../components/About/AboutContact';
 import AboutGalary from '../components/About/AboutGalary';
 import AboutMath from '../components/About/AboutMath';
 import AboutAcademic from '../components/About/AboutAcademic';
+import AboutPhysics from '../components/About/AboutPhysics';
 
 function About() {
     return ( 
         <>
         <AboutBanner />
         <AboutFounder />
+        <AboutPhysics />
         <AboutMath />
         <AboutAcademic />
         <AboutProfile />
