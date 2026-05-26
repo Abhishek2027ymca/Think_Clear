@@ -310,7 +310,7 @@
   }
 
   .FooterClass{
-    max-width: 320px;
+    max-width: 400px;
   }
 
   .FooterImgText{
@@ -326,7 +326,6 @@
     font-size: 35px;
 }
 .FooterClass{
-    max-width: 40px;
     font-size: 14px;
 }
 
@@ -474,6 +473,9 @@
   .FooterName h1{
     font-size: 26px;
     line-height: 1.4;
+  }
+  .FooterClass{
+    width: 100%;
   }
 
   .Footerwidth{
