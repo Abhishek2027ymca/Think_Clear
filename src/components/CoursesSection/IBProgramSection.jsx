@@ -25,13 +25,13 @@ export default function IBProgramSection() {
     <>
 
       <section className={styles.FreeDemoSection}>
-        <motion.div className={styles.HomeAboutText} initial={{ opacity: 0, y: 100 }}
+        {/* <motion.div className={styles.HomeAboutText} initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} overlay
           transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }}>
           <h1>Middle School <span className={styles.HomeColor}>(Grades 6–10)</span></h1>
           <span className={styles.HomeLine}></span>
-        </motion.div>
+        </motion.div> */}
 
         <div className={styles.FreeDemoSectionFlex}>
           <motion.div className={styles.AboutTextPa} initial={{ opacity: 0, y: 100 }}
