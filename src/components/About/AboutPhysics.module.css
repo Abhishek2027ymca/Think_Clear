@@ -1,408 +1,172 @@
-/* .AboutMath {
-    padding: 50px 60px;
-    width: 100%;
-}
-
-
-
-.HomeAboutText {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.HomeAboutText h1 {
-    font-size: 40px;
-    font-weight: 500;
-}
-
-.HomeColor {
-    background: linear-gradient(90deg, #060A30 0%, #1C2259 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.HomeLine {
-    margin-top: 10px;
-    width: 150px;
-    height: 2px;
-    background-color: #060A30;
-}
-
-
-
-.AboutMathsFlex {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-}
-
-
-
-.ImageWrapper {
-    width: 520px;
-    height: 410px;
-    border-radius: 28px;
-    position: relative;
-}
-
-.ImageWrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 28px;
-    display: block;
-    transition: transform 0.5s ease;
-    cursor: pointer;
-
-}
-
-
-
-.FloatingCard {
-    position: absolute;
-    right: -20px;
-    bottom: -25px;
-
-    width: 250px;
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-
-    background: rgba(255, 255, 255, 0.96);
-    backdrop-filter: blur(12px);
-
-    padding: 16px;
-    border-radius: 18px;
-
-    border: 1px solid rgba(255, 255, 255, 0.4);
-
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.12),
-        0 4px 10px rgba(0, 0, 0, 0.05);
-
-    animation: floatingCard 4s ease-in-out infinite;
-    overflow: hidden;
-}
-
-
-.FloatingCard::before {
-    content: "";
-    position: absolute;
-    top: -40px;
-    right: -40px;
-
-    width: 120px;
-    height: 120px;
-
-    background: rgba(8, 21, 71, 0.12);
-    border-radius: 50%;
-
-    animation: glowMove 6s ease-in-out infinite;
-}
-
-
-.CardIcon {
-    min-width: 40px;
-    height: 40px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 14px;
-    background: linear-gradient(135deg, #0b1748, #050d31);
-    color: white;
-    box-shadow: 0 8px 20px rgba(76, 110, 245, 0.35);
-    animation: iconPulse 2.5s ease-in-out infinite;
-    z-index: 2;
-}
-
-
-.CardContent {
-    position: relative;
-    z-index: 2;
-}
-
-.CardContent h3 {
-    font-size: 13px;
-    font-weight: 600;
-    color: #111827;
-
-    margin-bottom: 6px;
-    font-family: "Poppins", sans-serif;
-}
-
-.CardContent p {
-    font-size: 11px;
-    line-height: 1.6;
-    color: #6b7280;
-
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-}
-
-
-@keyframes floatingCard {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-14px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-@keyframes iconPulse {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 8px 20px rgba(76, 110, 245, 0.35);
-    }
-
-    50% {
-        transform: scale(1.08);
-        box-shadow: 0 12px 28px rgba(76, 110, 245, 0.45);
-    }
-
-    100% {
-        transform: scale(1);
-        box-shadow: 0 8px 20px rgba(76, 110, 245, 0.35);
-    }
-}
-
-@keyframes glowMove {
-    0% {
-        transform: translate(0, 0);
-    }
-
-    50% {
-        transform: translate(-10px, 10px);
-    }
-
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
-
-@keyframes floatCard {
-
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-12px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-
-}
-
-
-
-
-
-
-.AboutTextPa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.AboutText {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 13px;
-}
-
-.AboutText h1 {
-    font-size: 39px;
-    font-weight: 500;
-}
-
-.AboutText p {
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.696);
-}
-
-.para {
-    text-align: center;
-    max-width: 560px;
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.637);
-
-} */
-
-
-
-
-
-
-
-
+/* TeachersSection.module.css */
 .AboutMath {
-    width: 100%;
-    padding: 50px 60px;
+  padding: 50px 60px;
+  width: 100%;
 }
 
-
-.HomeAboutText {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.teacherSection {
+  width: 100%;
+  background: #ffffff;
 }
 
-.HomeAboutText h1 {
-    font-size: 45px;
-    font-weight: 500;
+.topContent {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  margin-bottom: 60px;
 }
 
-.HomeColor {
-    background: linear-gradient(90deg, #060A30 0%, #1C2259 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.heading {
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 11px;
 }
 
 .HomeLine {
-    margin-top: 10px;
-    width: 150px;
-    height: 2px;
-    background-color: #060A30;
+  margin-bottom: 15px;
+  width: 150px;
+  height: 2px;
+  background-color: #060A30;
 }
 
-
-/* text */
-.AboutPhysicsFlex {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-direction: column;
+.shortDescription {
+  max-width: 660px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
 }
 
-.AboutPhysicsFlex h1 {
-    font-size: 40px;
-    font-weight: 500;
+.HomeColor {
+  background: linear-gradient(90deg, #060A30 0%, #1C2259 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.AboutPhysicsFlex p {
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.696);
-    max-width: 580px;
-}
+/* TeachersSection.module.css */
 
+/* TeachersSlider.module.css */
 
-/* space */
-
-.AboutPhysicsSpace {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    margin-top: 70px;
-}
-
-
-.AboutTextPa {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-direction: column;
-    gap: 20px;
-}
-
-
-.AboutText p {
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.696);
-}
-
-.para {
-    text-align: start;
-    max-width: 560px;
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.637);
+.teacherSections {
+  width: 100%;
 
 }
 
-.MiddleLine {
-    width: 1px;
-    height: 380px;
-    margin-left: 10px;
-     border: 1.1px solid #e5e5e5;
+.sliderWrapper {
+  position: relative;
+  max-width: 1300px;
+  margin: auto;
+  min-height: 520px;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 50px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.8s ease;
+}
+
+.active {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 2;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(100%);
+  z-index: 1;
+}
+
+.leftContent {
+  flex: 1;
+}
+
+.subject {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 8px 18px;
+  background: #e0f2fe;
+  color: #0284c7;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.leftContent h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+.leftContent p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #475569;
+}
+
+.rightImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.rightImage img {
+  width: 100%;
+  max-width: 500px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.prevBtn,
+.nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.3s ease;
+  z-index: 10;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+  transform: translateY(-50%) scale(1.08);
+}
+
+.prevBtn {
+  left: -25px;
+}
+
+.nextBtn {
+  right: -25px;
 }
 
 
-/* cards */
-.AboutCardsflex {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-direction: column;
-    gap: 12px
-}
-
-.AboutCardsName {
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    gap: 12px;
-    padding-left: 15px;
-}
-
-
-/* InfoCards.module.css */
-
-.AboutCard {
-    padding: 25px 22px;
-    background: white;
-    border: 1px solid #e5e5e5;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.AboutCard:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-}
-
-.iconBox {
-    width: 32px;
-    height: 32px;
-    background: #060A30;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    margin-bottom: 10px;
-}
-
-.AboutCard h3{
-    font-size: 18px;
-    font-weight:500;
-    margin-bottom:16px;
-}
-
-.AboutCard p{
-    font-size: 13px;
-    max-width: 220px;
-    color: rgba(0, 0, 0, 0.491);
-}
 
 
 
@@ -414,18 +178,19 @@
    1600px and Above
 ========================= */
 
-@media (min-width: 1600px) {
+@media (min-width: 1600px){
 
   .AboutMath{
-    padding: 50px 60px;
+    padding: 5% 6%;
   }
 
-  /* Heading */
+  .topContent{
+    margin-bottom: 5%;
+  }
 
-  .HomeAboutText h1{
+  .heading{
     font-size: 50px;
     line-height: 1.3;
-    text-align: center;
   }
 
   .HomeLine{
@@ -433,75 +198,68 @@
     height: 3px;
   }
 
-  /* Main Layout */
-
-  .AboutPhysicsSpace{
-    margin-top: 5%;
-    gap: 4%;
-    align-items: stretch;
-  }
-
-  /* Left Content */
-
-  .AboutTextPa{
-    gap: 1.4vw;
-  }
-
-  .AboutPhysicsFlex h1{
-    font-size: 2.6vw;
-  }
-
-  .AboutPhysicsFlex p,
-  .para{
+  .shortDescription{
+    max-width: 42vw;
     font-size: 1vw;
     line-height: 1.9;
-    max-width: 34vw;
   }
 
-  /* Divider */
+  /* Slider */
 
-  .MiddleLine{
-    height: auto;
-    min-height: 28vw;
+  .sliderWrapper{
+    max-width: 90vw;
+    min-height: 42vw;
   }
 
-  /* Cards */
-
-  .AboutCardsflex{
-    gap: 1vw;
+  .card{
+    gap: 4%;
+    padding: 3vw;
+    border-radius: 2vw;
   }
 
-  .AboutCardsName{
-    gap: 1vw;
-    padding-left: 1vw;
+  /* Text */
+
+  .subject{
+    font-size: 0.9vw;
+    padding: 0.6vw 1.3vw;
   }
 
-  .AboutCard{
-    width: 18vw;
-    min-width: 280px;
-    max-width: 380px;
-    padding: 2vw 1.8vw;
-    border-radius: 18px;
+  .leftContent h2{
+    font-size: 2.5vw;
+    margin-bottom: 1.5vw;
   }
 
-  .iconBox{
-    width: 3vw;
-    height: 3vw;
-    min-width: 48px;
-    min-height: 48px;
-    border-radius: 14px;
-    margin-bottom: 1vw;
+  .leftContent p{
+    font-size: 1vw;
+    line-height: 2;
+    max-width: 95%;
   }
 
-  .AboutCard h3{
-    font-size: 1.25vw;
-    margin-bottom: 1vw;
+  /* Image */
+
+  .rightImage img{
+    width: 100%;
+    max-width: 38vw;
+    height: 30vw;
+    border-radius: 2vw;
   }
 
-  .AboutCard p{
-    font-size: 0.95vw;
-    line-height: 1.8;
-    max-width: 100%;
+  /* Buttons */
+
+  .prevBtn,
+  .nextBtn{
+    width: 4vw;
+    height: 4vw;
+    min-width: 60px;
+    min-height: 60px;
+  }
+
+  .prevBtn{
+    left: -2%;
+  }
+
+  .nextBtn{
+    right: -2%;
   }
 
 }
@@ -512,46 +270,18 @@
 
 @media (max-width: 1599px){
 
-  .AboutPhysicsSpace{
-    gap: 30px;
+  .sliderWrapper{
+    max-width: 100%;
   }
 
-  .AboutCard{
-    width: 350px;
+  .card{
+    gap: 40px;
   }
 
-    .HomeAboutText h1{
-    font-size: 50px;
-    line-height: 1.3;
-    text-align: center;
+  .rightImage img{
+    max-width: 460px;
+    height: 390px;
   }
-   .AboutPhysicsFlex h1{
-    font-size: 40px;
-  }
-
-  .AboutPhysicsFlex p,
-  .para{
-    font-size: 16px;
-    line-height: 1.9;
-    max-width: 40vw;
-  }
-
-    .MiddleLine{
-    height: auto;
-    min-height: 27vw;
-  }
-
-  .iconBox {
-    width: 60px;
-    height: 60px;
-    background: #060A30;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    margin-bottom: 10px;
-}
 
 }
 
@@ -565,48 +295,32 @@
     padding: 50px 60px;
   }
 
-  .HomeAboutText h1{
+  .heading{
     font-size: 40px;
-    text-align: center;
   }
 
-  .AboutPhysicsSpace{
-    gap: 25px;
+  .shortDescription{
+    max-width: 620px;
   }
 
-  .AboutPhysicsFlex h1{
-    font-size: 34px;
+  .card{
+    padding: 40px;
+    gap: 35px;
   }
 
-  .para{
-    max-width: 500px;
+  .leftContent h2{
+    font-size: 32px;
   }
-    .AboutPhysicsFlex p,
-  .para{
+
+  .leftContent p{
     font-size: 14px;
-    line-height: 1.9;
-    max-width: 47vw;
   }
 
-  .AboutCard{
-    width: 260px;
-    padding: 22px 18px;
+  .rightImage img{
+    max-width: 460px;
+    height: 360px;
   }
-  .iconBox {
-    width: 45px;
-    height: 45px;
-    background: #060A30;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    margin-bottom: 10px;
-}
-    .MiddleLine{
-    height: auto;
-    min-height: 29vw;
-  }
+
 }
 
 /* =========================
@@ -619,42 +333,32 @@
     padding: 45px 35px;
   }
 
-  .HomeAboutText h1{
+  .heading{
     font-size: 36px;
   }
 
-  .AboutPhysicsSpace{
-    gap: 20px;
+  .card{
+    padding: 35px;
+    gap: 30px;
   }
 
-  .AboutPhysicsFlex h1{
+  .leftContent h2{
     font-size: 30px;
+    margin-bottom: 20px;
   }
 
-  .para{
-    max-width: 100%;
+  .leftContent p{
     font-size: 14px;
     line-height: 1.8;
   }
 
-  .MiddleLine{
-    height: auto;
-    min-height: 320px;
+  .rightImage img{
+    max-width: 380px;
+    height: 320px;
   }
 
-
-  .AboutCardsName{
-    gap: 10px;
-    padding-left: 10px;
-  }
-
-  .AboutCard{
-    width: 240px;
-    padding: 20px 16px;
-  }
-
-  .AboutCard h3{
-    font-size: 17px;
+  .sliderWrapper{
+    min-height: 700px;
   }
 
 }
@@ -669,53 +373,60 @@
     padding: 40px 30px;
   }
 
-  .HomeAboutText h1{
+  .topContent{
+    margin-bottom: 45px;
+  }
+
+  .heading{
     font-size: 32px;
     text-align: center;
   }
 
-  .AboutPhysicsSpace{
-    flex-direction: column;
-    gap: 35px;
-    margin-top: 50px;
+  .shortDescription{
+    max-width: 100%;
+    font-size: 15px;
   }
 
-  .MiddleLine{
-    display:none;
-    width: 100%;
-    height: 1px;
-    border: 1px solid #e5e5e5;
-    margin-left: 0;
+  .card{
+    flex-direction: column-reverse;
+    padding: 32px;
+    gap: 28px;
+    border-radius: 24px;
   }
 
-  .AboutTextPa{
+  .leftContent{
     width: 100%;
   }
 
-  .AboutPhysicsFlex h1{
+  .leftContent h2{
     font-size: 28px;
   }
 
-  .para{
-    max-width: 100%;
+  .leftContent p{
     font-size: 14px;
+    line-height: 1.8;
   }
 
-  .AboutCardsflex{
+  .rightImage{
     width: 100%;
-    gap: 14px;
   }
 
-  .AboutCardsName{
+  .rightImage img{
     width: 100%;
-    justify-content: center;
-    gap: 14px;
-    padding-left: 0;
+    max-width: 100%;
+    height: 420px;
   }
 
-  .AboutCard{
-    width: 48%;
-    padding: 20px;
+  .sliderWrapper{
+    min-height: 980px;
+  }
+
+  .prevBtn{
+    left: 10px;
+  }
+
+  .nextBtn{
+    right: 10px;
   }
 
 }
@@ -730,43 +441,57 @@
     padding: 35px 20px;
   }
 
-  .HomeAboutText h1{
+  .topContent{
+    margin-bottom: 40px;
+  }
+
+  .heading{
     font-size: 28px;
     line-height: 1.4;
-    text-align: center;
   }
 
   .HomeLine{
     width: 120px;
   }
 
-  .AboutPhysicsSpace{
-    margin-top: 40px;
-    gap: 30px;
-  }
-
-  .AboutPhysicsFlex h1{
-    font-size: 24px;
-  }
-
-  .para{
+  .shortDescription{
     font-size: 14px;
     line-height: 1.8;
   }
 
-  .AboutCardsName{
-    flex-direction: column;
-    gap: 14px;
+  .card{
+    padding: 24px;
+    gap: 22px;
   }
 
-  .AboutCard{
-    width: 100%;
-    padding: 20px;
+  .subject{
+    font-size: 12px;
+    padding: 7px 15px;
   }
 
-  .iconBox{
-    width: 38px;
-    height: 38px;
+  .leftContent h2{
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .leftContent p{
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .rightImage img{
+    height: 300px;
+    border-radius: 20px;
+  }
+
+  .sliderWrapper{
+    min-height: 860px;
+  }
+
+  .prevBtn,
+  .nextBtn{
+    width: 48px;
+    height: 48px;
   }
 
 }
@@ -781,7 +506,7 @@
     padding: 30px 16px;
   }
 
-  .HomeAboutText h1{
+  .heading{
     font-size: 24px;
   }
 
@@ -789,26 +514,39 @@
     width: 100px;
   }
 
-  .AboutPhysicsFlex h1{
+  .shortDescription{
+    font-size: 13px;
+  }
+
+  .card{
+    padding: 20px;
+    gap: 20px;
+    border-radius: 18px;
+  }
+
+  .leftContent h2{
     font-size: 22px;
   }
 
-  .para{
-    font-size: 13px;
+  .leftContent p{
+    font-size: 12.5px;
     line-height: 1.8;
   }
 
-  .AboutCard{
-    padding: 18px;
+  .rightImage img{
+    height: 240px;
   }
 
-  .AboutCard h3{
-    font-size: 16px;
+  .sliderWrapper{
+    min-height: 860px;
   }
 
-  .AboutCard p{
-    font-size: 12px;
-    max-width: 100%;
+  .prevBtn{
+    left: 5px;
+  }
+
+  .nextBtn{
+    right: 5px;
   }
 
 }
@@ -823,35 +561,45 @@
     padding: 28px 14px;
   }
 
-  .HomeAboutText h1{
+  .heading{
     font-size: 22px;
   }
 
-  .AboutPhysicsFlex h1{
+  .shortDescription{
+    font-size: 12px;
+  }
+
+  .card{
+    padding: 18px;
+  }
+
+  .subject{
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+
+  .leftContent h2{
     font-size: 20px;
   }
 
-  .para{
-    font-size: 12.5px;
-  }
-
-  .AboutCard{
-    padding: 16px;
-  }
-
-  .iconBox{
-    width: 34px;
-    height: 34px;
-    border-radius: 10px;
-  }
-
-  .AboutCard h3{
-    font-size: 15px;
-  }
-
-  .AboutCard p{
+  .leftContent p{
     font-size: 11.5px;
     line-height: 1.7;
+  }
+
+  .rightImage img{
+    height: 210px;
+    border-radius: 16px;
+  }
+
+  .sliderWrapper{
+    min-height: 820px;
+  }
+
+  .prevBtn,
+  .nextBtn{
+    width: 42px;
+    height: 42px;
   }
 
 }

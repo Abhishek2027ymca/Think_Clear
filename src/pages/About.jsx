@@ -17,26 +17,26 @@ import AboutAcademic from '../components/About/AboutAcademic';
 import AboutPhysics from '../components/About/AboutPhysics';
 
 function About() {
-    return ( 
+    return (
         <>
-        <AboutBanner />
-        <AboutFounder />
-        <AboutPhysics />
-        <AboutMath />
-        {/* <AboutAcademic /> */}
-        <AboutProfile />
-        <AboutTeaching />
-        <AboutEducation />
-        <AboutGrowing />
-        <AboutLearning />
-        <AboutCards />
-        <AboutPurpose />
-        <AboutTeam />
-        <AboutGalary />
-        <AboutFAQ />
-        <AboutContact />
+            <AboutBanner />
+            <AboutFounder />
+            {/* <AboutMath /> */}
+            {/* <AboutAcademic /> */}
+            <AboutProfile />
+            <AboutTeaching />
+            <AboutEducation />
+            <AboutGrowing />
+            <AboutLearning />
+            <AboutPhysics />
+            <AboutCards />
+            <AboutPurpose />
+            <AboutTeam />
+            <AboutGalary />
+            <AboutFAQ />
+            <AboutContact />
         </>
-     );
+    );
 }
 
 export default About;
