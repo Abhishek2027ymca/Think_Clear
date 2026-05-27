@@ -21,7 +21,7 @@ function About() {
         <>
         <AboutBanner />
         <AboutFounder />
-        {/* <AboutPhysics /> */}
+        <AboutPhysics />
         <AboutMath />
         {/* <AboutAcademic /> */}
         <AboutProfile />
