@@ -1,4 +1,27 @@
 /* TeachersSection.module.css */
+*{
+  box-sizing: border-box;
+}
+
+.AboutMath{
+  overflow: hidden;
+}
+
+.teacherSections{
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.sliderWrapper{
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.card{
+  width: 100%;
+  max-width: 100%;
+}
+
 .AboutMath {
   padding: 50px 60px;
   width: 100%;
@@ -135,7 +158,7 @@
 .prevBtn,
 .nextBtn {
   position: absolute;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
   width: 55px;
   height: 55px;
@@ -171,9 +194,6 @@
 
 
 
-
-
-
 /* =========================
    1600px and Above
 ========================= */
@@ -181,16 +201,22 @@
 @media (min-width: 1600px){
 
   .AboutMath{
-    padding: 5% 6%;
+    padding: 4% 6%;
   }
 
-  .topContent{
-    margin-bottom: 5%;
+  .sliderWrapper{
+    max-width: 85%;
+    min-height: 38vw;
+  }
+
+  .card{
+    padding: 3vw;
+    gap: 4vw;
+    border-radius: 2vw;
   }
 
   .heading{
-    font-size: 50px;
-    line-height: 1.3;
+    font-size: 3vw;
   }
 
   .HomeLine{
@@ -199,52 +225,31 @@
   }
 
   .shortDescription{
-    max-width: 42vw;
+    max-width: 45vw;
     font-size: 1vw;
-    line-height: 1.9;
+    line-height: 2;
   }
-
-  /* Slider */
-
-  .sliderWrapper{
-    max-width: 90vw;
-    min-height: 42vw;
-  }
-
-  .card{
-    gap: 4%;
-    padding: 3vw;
-    border-radius: 2vw;
-  }
-
-  /* Text */
 
   .subject{
     font-size: 0.9vw;
-    padding: 0.6vw 1.3vw;
+    padding: 0.6vw 1.4vw;
   }
 
   .leftContent h2{
-    font-size: 2.5vw;
+    font-size: 2.4vw;
     margin-bottom: 1.5vw;
   }
 
   .leftContent p{
     font-size: 1vw;
     line-height: 2;
-    max-width: 95%;
   }
-
-  /* Image */
 
   .rightImage img{
-    width: 100%;
-    max-width: 38vw;
-    height: 30vw;
-    border-radius: 2vw;
+    max-width: 34vw;
+    height: 28vw;
+    border-radius: 1.8vw;
   }
-
-  /* Buttons */
 
   .prevBtn,
   .nextBtn{
@@ -261,7 +266,6 @@
   .nextBtn{
     right: -2%;
   }
-
 }
 
 /* =========================
@@ -272,6 +276,7 @@
 
   .sliderWrapper{
     max-width: 100%;
+    min-height: 600px;
   }
 
   .card{
@@ -279,7 +284,7 @@
   }
 
   .rightImage img{
-    max-width: 460px;
+    max-width: 480px;
     height: 390px;
   }
 
@@ -296,11 +301,7 @@
   }
 
   .heading{
-    font-size: 40px;
-  }
-
-  .shortDescription{
-    max-width: 620px;
+    font-size: 42px;
   }
 
   .card{
@@ -309,16 +310,21 @@
   }
 
   .leftContent h2{
-    font-size: 32px;
+    font-size: 34px;
   }
 
   .leftContent p{
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.8;
   }
 
   .rightImage img{
-    max-width: 460px;
+    max-width: 430px;
     height: 360px;
+  }
+
+  .sliderWrapper{
+    min-height: 560px;
   }
 
 }
@@ -330,26 +336,28 @@
 @media (max-width: 1199px){
 
   .AboutMath{
-    padding: 45px 35px;
+    padding: 50px 60px;
   }
 
   .heading{
-    font-size: 36px;
+    font-size:45px;
+  }
+
+  .shortDescription{
+    max-width: 100%;
   }
 
   .card{
-    padding: 35px;
     gap: 30px;
+    padding: 35px;
   }
 
   .leftContent h2{
     font-size: 30px;
-    margin-bottom: 20px;
   }
 
   .leftContent p{
     font-size: 14px;
-    line-height: 1.8;
   }
 
   .rightImage img{
@@ -357,41 +365,62 @@
     height: 320px;
   }
 
+  .prevBtn,
+  .nextBtn{
+    width: 50px;
+    height: 50px;
+  }
+
+  .prevBtn{
+    left: -10px;
+  }
+
+  .nextBtn{
+    right: -10px;
+  }
+
   .sliderWrapper{
-    min-height: 700px;
+    min-height: 520px;
   }
 
 }
 
 /* =========================
-   768px - 991px
+   Tablet
 ========================= */
 
 @media (max-width: 991px){
 
   .AboutMath{
-    padding: 40px 30px;
+    padding: 40px 20px;
   }
 
   .topContent{
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 
   .heading{
-    font-size: 32px;
+    font-size: 34px;
     text-align: center;
   }
 
   .shortDescription{
     max-width: 100%;
     font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .sliderWrapper{
+    min-height: 980px;
+    width: 100%;
   }
 
   .card{
+    width: 100%;
+    max-width: 100%;
     flex-direction: column-reverse;
-    padding: 32px;
-    gap: 28px;
-    border-radius: 24px;
+    gap: 25px;
+    padding: 28px;
   }
 
   .leftContent{
@@ -400,11 +429,13 @@
 
   .leftContent h2{
     font-size: 28px;
+    margin-bottom: 18px;
   }
 
   .leftContent p{
     font-size: 14px;
     line-height: 1.8;
+    word-break: break-word;
   }
 
   .rightImage{
@@ -414,11 +445,8 @@
   .rightImage img{
     width: 100%;
     max-width: 100%;
-    height: 420px;
-  }
-
-  .sliderWrapper{
-    min-height: 980px;
+    height: 340px;
+    object-fit: cover;
   }
 
   .prevBtn{
@@ -431,83 +459,20 @@
 
 }
 
+
 /* =========================
-   576px - 767px
+   Mobile
 ========================= */
 
-@media (max-width: 767px){
+@media (max-width: 576px){
 
   .AboutMath{
-    padding: 35px 20px;
-  }
-
-  .topContent{
-    margin-bottom: 40px;
+    padding: 30px 14px;
   }
 
   .heading{
-    font-size: 28px;
+    font-size: 26px;
     line-height: 1.4;
-  }
-
-  .HomeLine{
-    width: 120px;
-  }
-
-  .shortDescription{
-    font-size: 14px;
-    line-height: 1.8;
-  }
-
-  .card{
-    padding: 24px;
-    gap: 22px;
-  }
-
-  .subject{
-    font-size: 12px;
-    padding: 7px 15px;
-  }
-
-  .leftContent h2{
-    font-size: 24px;
-    margin-bottom: 18px;
-  }
-
-  .leftContent p{
-    font-size: 13px;
-    line-height: 1.8;
-  }
-
-  .rightImage img{
-    height: 300px;
-    border-radius: 20px;
-  }
-
-  .sliderWrapper{
-    min-height: 860px;
-  }
-
-  .prevBtn,
-  .nextBtn{
-    width: 48px;
-    height: 48px;
-  }
-
-}
-
-/* =========================
-   480px - 575px
-========================= */
-
-@media (max-width: 575px){
-
-  .AboutMath{
-    padding: 30px 16px;
-  }
-
-  .heading{
-    font-size: 24px;
   }
 
   .HomeLine{
@@ -516,12 +481,23 @@
 
   .shortDescription{
     font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .sliderWrapper{
+    min-height: 1100px;
   }
 
   .card{
-    padding: 20px;
+    width: 100%;
+    padding: 18px;
     gap: 20px;
     border-radius: 18px;
+  }
+
+  .subject{
+    font-size: 12px;
+    padding: 7px 14px;
   }
 
   .leftContent h2{
@@ -529,53 +505,51 @@
   }
 
   .leftContent p{
-    font-size: 12.5px;
-    line-height: 1.8;
+    font-size: 13px;
+    line-height: 1.7;
   }
 
   .rightImage img{
+    width: 100%;
     height: 240px;
+    border-radius: 16px;
   }
 
-  .sliderWrapper{
-    min-height: 860px;
+  .prevBtn,
+  .nextBtn{
+    width: 42px;
+    height: 42px;
   }
 
   .prevBtn{
-    left: 5px;
+    left: 0;
+    top: 40%;
   }
 
   .nextBtn{
-    right: 5px;
+    right: 0;
+    top:40%;
   }
 
 }
+
 
 /* =========================
    Small Mobile
 ========================= */
 
-@media (max-width: 399px){
+@media (max-width: 390px){
 
-  .AboutMath{
-    padding: 28px 14px;
+  .sliderWrapper{
+    min-height: 1180px;
+  }
+
+  .card{
+    padding: 16px;
   }
 
   .heading{
     font-size: 22px;
-  }
-
-  .shortDescription{
-    font-size: 12px;
-  }
-
-  .card{
-    padding: 18px;
-  }
-
-  .subject{
-    font-size: 11px;
-    padding: 6px 12px;
   }
 
   .leftContent h2{
@@ -583,23 +557,11 @@
   }
 
   .leftContent p{
-    font-size: 11.5px;
-    line-height: 1.7;
+    font-size: 12px;
   }
 
   .rightImage img{
     height: 210px;
-    border-radius: 16px;
-  }
-
-  .sliderWrapper{
-    min-height: 820px;
-  }
-
-  .prevBtn,
-  .nextBtn{
-    width: 42px;
-    height: 42px;
   }
 
 }
